@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; media-src 'none'; object-src 'none'; worker-src 'none'; manifest-src 'self'; base-uri 'self'; form-action 'none'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <!-- CSS critico (anti-FOUC): fondo blu dal primo istante e pagina nascosta finché stile e script non sono pronti.
+       main.js aggiunge la classe "ready" a <html> e la pagina compare; se qualcosa non arrivasse, compare comunque dopo 3 s.
+       Niente JavaScript in linea: la CSP non lo permette. -->
+  <style>html{background:#182b3a}body{color:#f4f0e8;opacity:0;background:#182b3a;margin:0;animation:0s 3s forwards km-show}@keyframes km-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
+  <noscript><style>body{opacity:1!important;animation:none!important}</style></noscript>
+  <title>Kemare | Fish bar a Barletta: panini di mare, fritti, crudi e poke</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <script src="/demo/kemare/demo-mode.js"></script>
+
+  <link rel="preload" href="/demo/kemare/assets/fraunces-latin-full-normal-CFFu7zhK.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/kemare/assets/hanken-grotesk-latin-wght-normal-CaVRRdDk.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="description" content="Kemare, il fish bar pugliese in via Cavour 76 a Barletta: panini di mare, fritti, crudi, ostriche e poke. Da asporto, al banco o a domicilio. Orari, menù e contatti." />
+  <link rel="canonical" href="http://localhost:4000/" />
+  
+  <meta name="theme-color" content="#182b3a" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="geo.region" content="IT-BT" />
+  <meta name="geo.placename" content="Barletta" />
+  <meta name="geo.position" content="41.3192112;16.2859325" />
+
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Kemare" />
+  <meta property="og:title" content="Kemare · Il fish bar pugliese a Barletta" />
+  <meta property="og:description" content="Panini di mare, fritti, crudi, ostriche e poke in via Cavour 76. Da asporto, al banco o a domicilio." />
+  <meta property="og:url" content="http://localhost:4000/" />
+  <meta property="og:image" content="http://localhost:4000/images/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kemare, il fish bar pugliese a Barletta" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kemare · Il fish bar pugliese a Barletta" />
+  <meta name="twitter:description" content="Panini di mare, fritti, crudi, ostriche e poke in via Cavour 76." />
+  <meta name="twitter:image" content="http://localhost:4000/images/og.jpg" />
+
+  <link rel="icon" href="/demo/kemare/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/demo/kemare/site.webmanifest" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"http://localhost:4000/#locale","name":"Kemare, il fish bar pugliese","alternateName":"Kemare","description":"Fish bar a Barletta: panini di mare, fritti, crudi, ostriche e poke, da asporto o al banco.","url":"http://localhost:4000/","image":"http://localhost:4000/images/og.jpg","telephone":"+390883893824","priceRange":"€€","servesCuisine":["Pesce","Street food di mare","Poke"],"address":{"@type":"PostalAddress","streetAddress":"Via Cavour, 76","postalCode":"76121","addressLocality":"Barletta","addressRegion":"BT","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":41.3192112,"longitude":16.2859325},"hasMap":"https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20bar%20Pugliese%2C%20Via%20Cavour%2076%2C%20Barletta","hasMenu":"http://localhost:4000/#menu","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"11:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"18:30","closes":"23:45"}],"sameAs":["https://www.instagram.com/kemare_fishbar/","https://www.facebook.com/Kemare-100431668656041"]}</script>
+  <script type="module" crossorigin src="/demo/kemare/assets/main-PctRlcM_.js"></script>
+  <link rel="modulepreload" crossorigin href="/demo/kemare/assets/main-CXShXH83.js">
+  <link rel="stylesheet" crossorigin href="/demo/kemare/assets/main-CJRZ5cOo.css">
+  <link rel="stylesheet" crossorigin href="/demo/kemare/assets/main-BUt-tFEB.css">
+</head>
+<body>
+  <a href="#main" class="skip">Salta al contenuto</a>
+
+  <!-- TESTATA: solo testo, con "mix-blend-mode: difference" così si legge sia sul blu sia sul chiaro -->
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Kemare, torna all'inizio"><svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg><span>Kemare</span></a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#menu">Menù</a>
+      <a href="#come" class="nav-wide">Come funziona</a>
+      <a href="#contatti">Orari<span class="nav-wide"> e contatti</span></a>
+      <a href="tel:+390883893824" class="nav-call">Chiama</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1. HERO: due metà blu che si separano (la sinistra sale, la destra scende) e scoprono la frase sotto -->
+    <section class="hero" id="top" aria-label="Kemare">
+      <div class="hero-sticky">
+        <div class="hero-half hero-half--l"><div class="hero-face">
+          <p class="hero-kicker"><svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg><span>Il fish bar pugliese</span></p>
+          <h1 class="hero-word" aria-label="Kemare, il fish bar pugliese a Barletta"><span class="ch">K</span><span class="ch">e</span><span class="ch">m</span><span class="ch">a</span><span class="ch">r</span><span class="ch">e</span></h1>
+          <svg class="hero-wave" viewBox="0 0 600 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" vector-effect="non-scaling-stroke" d="M4 12 q37 -14 74 0 t74 0 t74 0 t74 0 t74 0 t74 0 t74 0 t74 0"/></svg>
+          <p class="hero-foot hero-foot--l">Via Cavour 76<br />Barletta</p>
+          <p class="hero-foot hero-foot--r">Scorri</p>
+        </div></div>
+        <div class="hero-half hero-half--r" aria-hidden="true"><div class="hero-face">
+          <p class="hero-kicker"><svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg><span>Il fish bar pugliese</span></p>
+          <div class="hero-word"><span class="ch">K</span><span class="ch">e</span><span class="ch">m</span><span class="ch">a</span><span class="ch">r</span><span class="ch">e</span></div>
+          <svg class="hero-wave" viewBox="0 0 600 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" vector-effect="non-scaling-stroke" d="M4 12 q37 -14 74 0 t74 0 t74 0 t74 0 t74 0 t74 0 t74 0 t74 0"/></svg>
+          <p class="hero-foot hero-foot--l">Via Cavour 76<br />Barletta</p>
+          <p class="hero-foot hero-foot--r">Scorri</p>
+        </div></div>
+        <div class="hero-reveal">
+          <div class="hero-reveal-inner">
+          <p class="eyebrow">Barletta · Via Cavour 76</p>
+          <p class="statement">Panini di mare, fritti, <em>crudi</em> e poke.</p>
+          <p class="lede">Si ordina al banco e si porta via. Oppure ci si ferma: un calice, due ostriche, e il resto può aspettare.</p>
+          <a href="#menu" class="link-arrow">Guarda il menù</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MENÙ: schermo diviso a metà. A destra scorrono i piatti, a sinistra i pannelli scendono in senso opposto -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <header class="menu-top">
+        <h2 class="display" id="menu-title"><span class="rise"><span>Il menù</span></span></h2>
+        <p class="menu-top-note" data-fade>Il menù può cambiare: per i piatti del giorno e i prezzi chiedi al banco, oppure <a href="tel:+390883893824">chiama</a>.</p>
+      </header>
+      <div class="menu-split">
+        <div class="menu-visual" aria-hidden="true">
+          <div class="menu-panel menu-panel--0" data-panel="0">
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Panini di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M52 112 Q52 62 120 62 Q188 62 188 112 Z"/><path pathLength="1" d="M46 128 q12.5 -10 25 0 t25 0 t25 0 t25 0 t25 0 t25 0"/><path pathLength="1" d="M54 144 H186 Q186 168 164 168 H76 Q54 168 54 144 Z"/><path pathLength="1" d="M96 84 l6 -3"/><path pathLength="1" d="M124 78 l6 2"/><path pathLength="1" d="M150 90 l5 -4"/><path pathLength="1" d="M24 204 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <p class="menu-panel-count"><span>01</span> / 05</p>
+            <p class="menu-panel-name">Panini</p>
+          </div>
+          <div class="menu-panel menu-panel--1" data-panel="1">
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Fritti di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M70 96 L120 206 L170 96"/><path pathLength="1" d="M70 96 Q120 116 170 96"/><circle pathLength="1" cx="96" cy="78" r="17"/><circle pathLength="1" cx="96" cy="78" r="7"/><circle pathLength="1" cx="136" cy="64" r="20"/><circle pathLength="1" cx="136" cy="64" r="9"/><circle pathLength="1" cx="156" cy="92" r="12"/><circle pathLength="1" cx="156" cy="92" r="4.5"/><path pathLength="1" d="M98 150 l44 -18"/><path pathLength="1" d="M106 170 l28 -11"/></svg></span></div>
+            <p class="menu-panel-count"><span>02</span> / 05</p>
+            <p class="menu-panel-name">Fritti</p>
+          </div>
+          <div class="menu-panel menu-panel--2" data-panel="2">
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Crudi e ostriche di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M50 124 Q44 62 118 54 Q196 58 192 126 Q186 178 120 182 Q56 178 50 124 Z"/><path pathLength="1" d="M74 124 Q70 84 120 78 Q170 82 168 126 Q164 158 120 160 Q78 158 74 124 Z"/><path pathLength="1" d="M92 112 Q112 96 138 104"/><path pathLength="1" d="M100 136 Q122 146 148 132"/><circle pathLength="1" cx="126" cy="121" r="7"/><path pathLength="1" d="M24 214 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <p class="menu-panel-count"><span>03</span> / 05</p>
+            <p class="menu-panel-name">Crudi e ostriche</p>
+          </div>
+          <div class="menu-panel menu-panel--0" data-panel="3">
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Dalla cucina di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M48 120 Q104 62 176 120 Q104 178 48 120 Z"/><path pathLength="1" d="M176 120 L204 96 V144 Z"/><circle pathLength="1" cx="78" cy="113" r="3.5"/><path pathLength="1" d="M100 96 Q110 120 100 144"/><path pathLength="1" d="M120 88 l-20 64"/><path pathLength="1" d="M144 92 l-20 56"/><path pathLength="1" d="M166 104 l-12 34"/><path pathLength="1" d="M24 206 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <p class="menu-panel-count"><span>04</span> / 05</p>
+            <p class="menu-panel-name">Dalla cucina</p>
+          </div>
+          <div class="menu-panel menu-panel--1" data-panel="4">
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Poke di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M40 116 H200 Q200 186 120 186 Q40 186 40 116 Z"/><path pathLength="1" d="M58 116 Q74 88 92 116"/><path pathLength="1" d="M92 116 Q112 80 134 116"/><path pathLength="1" d="M134 116 Q154 92 180 116"/><path pathLength="1" d="M96 40 L150 108"/><path pathLength="1" d="M116 36 L164 104"/><path pathLength="1" d="M92 204 H148"/></svg></span></div>
+            <p class="menu-panel-count"><span>05</span> / 05</p>
+            <p class="menu-panel-name">Poke</p>
+          </div></div>
+        <div class="menu-lists">
+          <article class="menu-cat" id="menu-panini" data-cat="0">
+            <div class="menu-cat-media menu-panel--0"><span class="slot-art" role="img" aria-label="Panini di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M52 112 Q52 62 120 62 Q188 62 188 112 Z"/><path pathLength="1" d="M46 128 q12.5 -10 25 0 t25 0 t25 0 t25 0 t25 0 t25 0"/><path pathLength="1" d="M54 144 H186 Q186 168 164 168 H76 Q54 168 54 144 Z"/><path pathLength="1" d="M96 84 l6 -3"/><path pathLength="1" d="M124 78 l6 2"/><path pathLength="1" d="M150 90 l5 -4"/><path pathLength="1" d="M24 204 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <header class="menu-cat-head">
+              <p class="menu-cat-count">01</p>
+              <h3 class="menu-cat-title">Panini</h3>
+              <p class="menu-cat-note">Pane bianco, al nero di seppia o rosa alla barbabietola.</p>
+            </header>
+            <ul class="dishes">
+              <li class="dish"><span class="dish-name">Polpo fritto</span><span class="dish-desc">Pane bianco, rape alla barlettana, mozzarella di bufala</span></li>
+              <li class="dish"><span class="dish-name">Cotoletta di pesce spada</span><span class="dish-desc">Pane rosa alla barbabietola, insalata, melanzane grigliate, mozzarella di bufala, salsa cocktail</span></li>
+              <li class="dish"><span class="dish-name">Tonno scottato</span><span class="dish-desc">Pane al nero di seppia, pesto di basilico senza aglio, mozzarella di bufala DOP, pomodorino infornato</span></li>
+              <li class="dish"><span class="dish-name">Gamberi rossi</span><span class="dish-desc">Pane bianco, olio evo, sale affumicato, insalata, melanzane grigliate, stracciatella affumicata</span></li>
+              <li class="dish"><span class="dish-name">Scampi</span><span class="dish-desc">Pane bianco, olio evo, sale affumicato, insalata, zucchine fritte, crema salata alla polpa di ricci</span></li>
+              <li class="dish"><span class="dish-name">Tartar di salmone</span><span class="dish-desc">Pane bianco, misticanza, stracciatella, zucchine fritte, mandorle</span></li>
+              <li class="dish"><span class="dish-name">Tartar di tonno</span><span class="dish-desc">Pane al nero di seppia, stracciatella, pomodorino infornato, cipolla caramellata, insalata</span></li>
+              <li class="dish"><span class="dish-name">Tartar di pesce spada</span><span class="dish-desc">Pane rosa alla barbabietola, insalata, cetriolo, mozzarella di bufala, pistacchio</span></li>
+              <li class="dish"><span class="dish-name">Gamberoni al ghiaccio</span><span class="dish-desc">Pane rosa alla barbabietola, stracciatella, insalata, ketchup di datterino giallo, pancetta</span></li>
+              <li class="dish"><span class="dish-name">Aragosta al vapore</span><span class="dish-desc">Pane bianco, maionese, erba cipollina, sedano, pepe, chips di patate</span></li>
+            </ul>
+          </article>
+          <article class="menu-cat" id="menu-fritti" data-cat="1">
+            <div class="menu-cat-media menu-panel--1"><span class="slot-art" role="img" aria-label="Fritti di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M70 96 L120 206 L170 96"/><path pathLength="1" d="M70 96 Q120 116 170 96"/><circle pathLength="1" cx="96" cy="78" r="17"/><circle pathLength="1" cx="96" cy="78" r="7"/><circle pathLength="1" cx="136" cy="64" r="20"/><circle pathLength="1" cx="136" cy="64" r="9"/><circle pathLength="1" cx="156" cy="92" r="12"/><circle pathLength="1" cx="156" cy="92" r="4.5"/><path pathLength="1" d="M98 150 l44 -18"/><path pathLength="1" d="M106 170 l28 -11"/></svg></span></div>
+            <header class="menu-cat-head">
+              <p class="menu-cat-count">02</p>
+              <h3 class="menu-cat-title">Fritti</h3>
+              <p class="menu-cat-note">Nel cartoccio, da mangiare subito.</p>
+            </header>
+            <ul class="dishes">
+              <li class="dish"><span class="dish-name">Frittura mista</span><span class="dish-desc">Gamberi, totani, polpo e tonno</span></li>
+              <li class="dish"><span class="dish-name">Anelli di totano</span></li>
+              <li class="dish"><span class="dish-name">Pepite di baccalà</span></li>
+              <li class="dish"><span class="dish-name">Gamberi in laccio di patate</span><span class="dish-desc">Cinque pezzi</span></li>
+              <li class="dish"><span class="dish-name">Cozze fritte sgusciate</span></li>
+              <li class="dish"><span class="dish-name">Polpette di polpo e patate</span></li>
+              <li class="dish"><span class="dish-name">Frittelle</span><span class="dish-desc">Con tartar di gambero, oppure salmone o tonno e mozzarella di bufala DOP</span></li>
+              <li class="dish"><span class="dish-name">Chips di patate</span></li>
+            </ul>
+          </article>
+          <article class="menu-cat" id="menu-crudi" data-cat="2">
+            <div class="menu-cat-media menu-panel--2"><span class="slot-art" role="img" aria-label="Crudi e ostriche di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M50 124 Q44 62 118 54 Q196 58 192 126 Q186 178 120 182 Q56 178 50 124 Z"/><path pathLength="1" d="M74 124 Q70 84 120 78 Q170 82 168 126 Q164 158 120 160 Q78 158 74 124 Z"/><path pathLength="1" d="M92 112 Q112 96 138 104"/><path pathLength="1" d="M100 136 Q122 146 148 132"/><circle pathLength="1" cx="126" cy="121" r="7"/><path pathLength="1" d="M24 214 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <header class="menu-cat-head">
+              <p class="menu-cat-count">03</p>
+              <h3 class="menu-cat-title">Crudi e ostriche</h3>
+              <p class="menu-cat-note">Carpacci, tartare e ostriche, anche per l’aperitivo.</p>
+            </header>
+            <ul class="dishes">
+              <li class="dish"><span class="dish-name">Gran misto</span></li>
+              <li class="dish"><span class="dish-name">Tris sfilettato</span><span class="dish-desc">Salmone, tonno e spigola</span></li>
+              <li class="dish"><span class="dish-name">Carpaccio di scampi e gamberi rossi</span></li>
+              <li class="dish"><span class="dish-name">Carpaccio di tonno</span></li>
+              <li class="dish"><span class="dish-name">Carpaccio di spigola</span></li>
+              <li class="dish"><span class="dish-name">Carpaccio di salmone al mojito</span></li>
+              <li class="dish"><span class="dish-name">Tartar di gamberi rossi</span></li>
+              <li class="dish"><span class="dish-name">Tartar di tonno</span></li>
+              <li class="dish"><span class="dish-name">Tartar di salmone</span></li>
+              <li class="dish"><span class="dish-name">Scampi</span></li>
+              <li class="dish"><span class="dish-name">Gamberi rossi</span></li>
+              <li class="dish"><span class="dish-name">Crostini di mare misti</span><span class="dish-desc">Quattro pezzi</span></li>
+              <li class="dish"><span class="dish-name">Ostriche</span><span class="dish-desc">Crisalda, San Michele, della Sardegna</span></li>
+            </ul>
+          </article>
+          <article class="menu-cat" id="menu-cucina" data-cat="3">
+            <div class="menu-cat-media menu-panel--0"><span class="slot-art" role="img" aria-label="Dalla cucina di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M48 120 Q104 62 176 120 Q104 178 48 120 Z"/><path pathLength="1" d="M176 120 L204 96 V144 Z"/><circle pathLength="1" cx="78" cy="113" r="3.5"/><path pathLength="1" d="M100 96 Q110 120 100 144"/><path pathLength="1" d="M120 88 l-20 64"/><path pathLength="1" d="M144 92 l-20 56"/><path pathLength="1" d="M166 104 l-12 34"/><path pathLength="1" d="M24 206 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <header class="menu-cat-head">
+              <p class="menu-cat-count">04</p>
+              <h3 class="menu-cat-title">Dalla cucina</h3>
+              <p class="menu-cat-note">Griglia, pinsa, tacos e friselle.</p>
+            </header>
+            <ul class="dishes">
+              <li class="dish"><span class="dish-name">Polpo grigliato</span></li>
+              <li class="dish"><span class="dish-name">Bistecca di tonno alla griglia</span></li>
+              <li class="dish"><span class="dish-name">Gamberoni grigliati “alla Cialdella”</span></li>
+              <li class="dish"><span class="dish-name">Salmone in panko</span></li>
+              <li class="dish"><span class="dish-name">Pinsa</span><span class="dish-desc">Pesce spada, polpo lesso o tartar di tonno</span></li>
+              <li class="dish"><span class="dish-name">Tacos</span><span class="dish-desc">Gamberetti lessi, salmone scottato o tonno fritto</span></li>
+              <li class="dish"><span class="dish-name">Frisella</span><span class="dish-desc">Con tartar di salmone o di tonno</span></li>
+            </ul>
+          </article>
+          <article class="menu-cat" id="menu-poke" data-cat="4">
+            <div class="menu-cat-media menu-panel--1"><span class="slot-art" role="img" aria-label="Poke di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M40 116 H200 Q200 186 120 186 Q40 186 40 116 Z"/><path pathLength="1" d="M58 116 Q74 88 92 116"/><path pathLength="1" d="M92 116 Q112 80 134 116"/><path pathLength="1" d="M134 116 Q154 92 180 116"/><path pathLength="1" d="M96 40 L150 108"/><path pathLength="1" d="M116 36 L164 104"/><path pathLength="1" d="M92 204 H148"/></svg></span></div>
+            <header class="menu-cat-head">
+              <p class="menu-cat-count">05</p>
+              <h3 class="menu-cat-title">Poke</h3>
+              <p class="menu-cat-note">Si compone al banco, come piace a te.</p>
+            </header>
+            <ul class="dishes">
+              <li class="dish"><span class="dish-name">La tua poke</span><span class="dish-desc">Scegli la base, le proteine, le verdure, le salse e il topping</span></li>
+            </ul>
+          </article></div>
+      </div>
+    </section>
+
+    <!-- 3. COME FUNZIONA: una maschera ovale (come quella del logo) si apre dal centro e porta alla sezione blu -->
+    <section class="come" aria-labelledby="come-title">
+      <div class="oval">
+        <div class="oval-sticky">
+          <div class="oval-seed" aria-hidden="true"><svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg></div>
+          <div class="oval-mask">
+            <h2 class="oval-text" id="come-title">Si porta via.<br /><em>O ci si ferma.</em></h2>
+          </div>
+        </div>
+        <span class="anchor" id="come"></span>
+      </div>
+      <div class="come-inner">
+        <div class="come-media" data-clip><span class="slot-art" role="img" aria-label="Il banco di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M30 156 H210"/><path pathLength="1" d="M48 156 V204"/><path pathLength="1" d="M192 156 V204"/><path pathLength="1" d="M84 84 H124 Q124 122 104 122 Q84 122 84 84 Z"/><path pathLength="1" d="M104 122 V156"/><path pathLength="1" d="M90 156 H118"/><path pathLength="1" d="M88 100 Q104 108 120 100"/><path pathLength="1" d="M140 148 Q140 132 164 132 Q188 132 188 148 Q188 156 164 156 Q140 156 140 148 Z"/><path pathLength="1" d="M152 144 Q164 138 176 144"/><path pathLength="1" d="M24 222 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+        <div class="come-body">
+          <ol class="ways">
+            <li class="way" data-fade>
+              <span class="way-n">01</span>
+              <h3>Da asporto</h3>
+              <p>Ordini al banco, oppure chiami prima e passi a ritirare.</p>
+            </li>
+            <li class="way" data-fade>
+              <span class="way-n">02</span>
+              <h3>Al banco</h3>
+              <p>Pochi posti, dentro e fuori. Per un panino al volo o per un aperitivo con un calice e qualche ostrica.</p>
+            </li>
+            <li class="way" data-fade>
+              <span class="way-n">03</span>
+              <h3>A domicilio</h3>
+              <!-- DA VERIFICARE: piattaforme citate sul vecchio sito nel 2022 -->
+              <p>A casa con Deliveroo, Just Eat, Glovo e Foodat.</p>
+            </li>
+          </ol>
+          <a href="tel:+390883893824" class="btn btn--light" data-fade>Chiama 0883 893824</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. VOCI: i voti pubblici e la citazione del Gambero Rosso (DA VERIFICARE e aggiornare, vedi config.js) -->
+    <section class="voci" aria-labelledby="voci-title">
+      <h2 class="eyebrow" id="voci-title" data-fade>Chi c'è stato</h2>
+      <div class="voci-grid">
+        <p class="voce" data-fade><span class="voce-n">4,4</span><span class="voce-l">su 5 su Google<br />389 recensioni</span></p>
+        <p class="voce" data-fade><span class="voce-n">4,9</span><span class="voce-l">su 5 su TripAdvisor<br />8 recensioni</span></p>
+        <figure class="voce voce--quote" data-fade>
+          <blockquote>«Fish bar principalmente da asporto dove i must sono fritti e panini ben imbottiti.»</blockquote>
+          <figcaption><a href="https://www.gamberorosso.it/notizie/ristoranti/dove-mangiare-a-barletta-i-migliori-locali/" target="_blank" rel="noopener">Gambero Rosso</a>, «Dove mangiare a Barletta», giugno 2023</figcaption>
+        </figure>
+      </div>
+      <p class="voci-note" data-fade>Voti rilevati a novembre 2026.</p>
+    </section>
+
+    <!-- 5. ORARI E CONTATTI: le due metà arrivano sfalsate e si riallineano, come una pagina che si richiude -->
+    <section class="contatti" id="contatti" aria-label="Orari e contatti">
+      <div class="contatti-half contatti-half--l">
+        <div class="contatti-box">
+          <h2 class="display display--light"><span class="rise"><span>Orari</span></span></h2>
+          <p class="status" data-open-status hidden><i aria-hidden="true"></i><span></span></p>
+          <dl class="hours">
+            <div class="hours-row is-closed" data-day="1"><dt>Lunedì</dt><dd>Chiuso</dd></div>
+            <div class="hours-row" data-day="2"><dt>Martedì</dt><dd>11:30–14:45<span class="sep"> · </span>18:30–23:30</dd></div>
+            <div class="hours-row" data-day="3"><dt>Mercoledì</dt><dd>11:30–14:45<span class="sep"> · </span>18:30–23:30</dd></div>
+            <div class="hours-row" data-day="4"><dt>Giovedì</dt><dd>11:30–14:45<span class="sep"> · </span>18:30–23:30</dd></div>
+            <div class="hours-row" data-day="5"><dt>Venerdì</dt><dd>11:30–14:45<span class="sep"> · </span>18:30–23:30</dd></div>
+            <div class="hours-row" data-day="6"><dt>Sabato</dt><dd>11:30–15:00<span class="sep"> · </span>18:30–23:45</dd></div>
+            <div class="hours-row" data-day="0"><dt>Domenica</dt><dd>11:30–15:00<span class="sep"> · </span>18:30–23:30</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="contatti-half contatti-half--r">
+        <div class="contatti-box">
+          <h2 class="display"><span class="rise"><span>Dove siamo</span></span></h2>
+          <address class="where" data-fade>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20bar%20Pugliese%2C%20Via%20Cavour%2076%2C%20Barletta" target="_blank" rel="noopener">Via Cavour, 76<br />76121 Barletta (BT)</a>
+          </address>
+          <a class="phone" href="tel:+390883893824" data-fade>0883 893824</a>
+          <div class="actions" data-fade>
+            <a class="btn" href="tel:+390883893824">Chiama</a>
+            <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20bar%20Pugliese%2C%20Via%20Cavour%2076%2C%20Barletta" target="_blank" rel="noopener">Indicazioni</a>
+            
+          </div>
+          <p class="socials" data-fade>
+            <a href="https://www.instagram.com/kemare_fishbar/" target="_blank" rel="noopener">Instagram <span>@kemare_fishbar</span></a>
+            <a href="https://www.facebook.com/Kemare-100431668656041" target="_blank" rel="noopener">Facebook</a>
+          </p>
+          <div class="where-media" data-clip><span class="slot-art" role="img" aria-label="L'ingresso di Kemare in via Cavour"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M48 196 V88 H192 V196"/><path pathLength="1" d="M40 88 H200"/><path pathLength="1" d="M48 88 Q72 112 96 88 Q120 112 144 88 Q168 112 192 88"/><path pathLength="1" d="M100 196 V136 H140 V196"/><path pathLength="1" d="M64 136 H86 V168 H64 Z"/><path pathLength="1" d="M154 136 H176 V168 H154 Z"/><path pathLength="1" d="M32 196 H208"/></svg></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-word" aria-hidden="true"><span class="rise"><span>Kemare</span></span></p>
+    <div class="footer-row">
+      <p>© 2026 Kemare · Il fish bar pugliese<br />Via Cavour, 76, 76121 Barletta (BT)</p>
+      <!-- DA VERIFICARE: ragione sociale e partita IVA (config.js → legal). Per legge vanno indicate nel sito. -->
+      <p></p>
+      <p><a href="/demo/kemare/privacy.html">Privacy e cookie</a><br /><a href="#top">Torna su</a></p>
+    </div>
+  </footer>
+</body>
+</html>
