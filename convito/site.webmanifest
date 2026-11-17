@@ -1,0 +1,13 @@
+{
+  "name": "Il Convito delle Muse",
+  "short_name": "Convito",
+  "lang": "it",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f3ede3",
+  "theme_color": "#f3ede3",
+  "icons": [
+    { "src": "/demo/convito/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/demo/convito/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

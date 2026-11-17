@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data:; frame-src https://maps.google.com https://www.google.com; media-src 'none'; object-src 'none'; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Il Convito delle Muse | Ristorante pizzeria in via Marina, Barletta</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <script src="/demo/convito/demo-mode.js"></script>
+
+  <link rel="preload" href="/demo/convito/assets/cinzel-latin-wght-normal-DMUuCU8H.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/convito/assets/cormorant-latin-wght-italic-BMf3v8-7.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/convito/assets/figtree-latin-wght-normal-D_ZTVpCC.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- CSS critico: sfondo e pagina nascosta finché non arriva lo stile vero (niente lampo di HTML nudo).
+       Se il JavaScript non parte, la pagina compare comunque dopo 2,5 secondi. -->
+  <style>html{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;background:#f3ede3}body{color:#14202b;opacity:0;background:#f3ede3;margin:0;animation:0s 2.5s forwards cm-show}@keyframes cm-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
+  <noscript><style>body{opacity:1!important;animation:none!important}</style></noscript>
+  <meta name="description" content="Il Convito delle Muse, ristorante pizzeria in via Marina 9 a Barletta, tra il centro storico e il porto. Pizza, antipasti e cucina, la sera dal martedì alla domenica. Prenota online o chiama lo 0883 950709." />
+  <link rel="canonical" href="http://localhost:4100/" />
+  
+  <meta name="theme-color" content="#f3ede3" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="geo.region" content="IT-BT" />
+  <meta name="geo.placename" content="Barletta" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Il Convito delle Muse" />
+  <meta property="og:title" content="Il Convito delle Muse · Ristorante pizzeria a Barletta" />
+  <meta property="og:description" content="In via Marina 9, tra il centro storico e il porto. Aperti la sera, lunedì chiuso. Prenota il tavolo online." />
+  <meta property="og:url" content="http://localhost:4100/" />
+  <meta property="og:image" content="http://localhost:4100/images/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/demo/convito/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/demo/convito/apple-touch-icon.png" />
+  <link rel="manifest" href="/demo/convito/site.webmanifest" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"http://localhost:4100/#restaurant","name":"Il Convito delle Muse","description":"Ristorante pizzeria in via Marina 9 a Barletta, tra il centro storico e il porto: pizza a lunga lievitazione, antipasti e piatti di cucina. Aperto la sera, lunedì chiuso.","url":"http://localhost:4100/","image":"http://localhost:4100/images/og.png","logo":"http://localhost:4100/favicon.svg","telephone":"+39 0883 950709","priceRange":"€10-20","servesCuisine":["Pizza","Italiana","Pugliese"],"address":{"@type":"PostalAddress","streetAddress":"Via Marina, 9","postalCode":"76121","addressLocality":"Barletta","addressRegion":"BT","addressCountry":"IT"},"hasMap":"https://www.google.com/maps/search/?api=1&query=Il+Convito+delle+Muse+Via+Marina+9+Barletta","acceptsReservations":true,"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"20:00","closes":"00:00"}],"sameAs":["https://www.facebook.com/ilconvitodellemuse/","https://www.instagram.com/il_convitodellemuse/"]}</script>
+  <script type="module" crossorigin src="/demo/convito/assets/main-aO_mT5Jz.js"></script>
+  <link rel="modulepreload" crossorigin href="/demo/convito/assets/figtree-D1r8qAgz.js">
+  <link rel="modulepreload" crossorigin href="/demo/convito/assets/booking-rules-BkKhVOMz.js">
+  <link rel="stylesheet" crossorigin href="/demo/convito/assets/figtree-CZ7gmpjl.css">
+  <link rel="stylesheet" crossorigin href="/demo/convito/assets/main-BhmExQwj.css">
+</head>
+<body>
+  <a href="#main" class="skip">Salta al contenuto</a>
+
+  <header class="site-header" id="header">
+    <a href="#top" class="brand" aria-label="Il Convito delle Muse, torna su">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 44V22a16 16 0 0 1 32 0v22" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 44V23a10 10 0 0 1 20 0v21" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/><circle cx="24" cy="24" r="3.2" fill="#9c3b2b"/><path d="M4 44h40" stroke="currentColor" stroke-width="2"/></svg>
+      <span class="brand-word"><small>Il Convito</small>delle Muse</span>
+    </a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#posto">Il posto</a>
+      <a href="#menu">Menù</a>
+      <a href="#nome">Il nome</a>
+      <a href="#contatti">Dove siamo</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#prenota" class="btn btn--ink btn--sm">Prenota</a>
+      <button type="button" class="burger" aria-label="Apri il menù di navigazione" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Navigazione mobile">
+      <a href="#posto"><span>I</span>Il posto</a>
+      <a href="#menu"><span>II</span>Menù</a>
+      <a href="#nome"><span>III</span>Il nome</a>
+      <a href="#prenota"><span>IV</span>Prenota</a>
+      <a href="#contatti"><span>V</span>Dove siamo</a>
+    </nav>
+    <p class="mobile-nav-foot"><a href="tel:+390883950709">0883 950709</a> · Via Marina, 9 · Barletta</p>
+  </div>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- HERO: titolo inciso a sinistra, un arco a destra con la foto (o il mare di sera, finché la foto non c'è).
+         Scorrendo l'arco si apre piano e l'immagine rallenta: niente di più. -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow" data-hero-line>Ristorante · Pizzeria · Barletta</p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="hero-title-small" data-hero-line>Il Convito</span>
+            <span class="hero-title-big" data-hero-line>delle <em>Muse</em></span>
+          </h1>
+          <p class="hero-lead" data-hero-line>In via Marina, a pochi passi dal porto. Una tavola apparecchiata, la pizza dal forno, i piatti della cucina: si viene la sera, si resta a parlare.</p>
+          <div class="hero-actions" data-hero-line>
+            <a href="#prenota" class="btn btn--ink">Prenota un tavolo</a>
+            <a href="#menu" class="btn btn--line">Guarda il menù</a>
+          </div>
+          <p class="hero-status" data-hero-line><span class="status" data-open-status><i></i><span>Solo a cena, dalle 20:00 · lunedì chiuso</span></span></p>
+        </div>
+        <div class="hero-visual">
+          <div class="arch" data-arch>
+            <div class="arch-media" data-arch-media><div class="ph ph--sea" aria-hidden="true"><!-- segnaposto: public/images/foto/hero.jpg --><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="sky-hero" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14202b"/><stop offset=".55" stop-color="#2d4a5c"/><stop offset=".78" stop-color="#b9876a"/><stop offset="1" stop-color="#e2b98a"/></linearGradient>
+      <linearGradient id="water-hero" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d4a5c"/><stop offset="1" stop-color="#14202b"/></linearGradient>
+      <radialGradient id="glow-hero" cx=".5" cy=".64" r=".45"><stop offset="0" stop-color="#f3d9a4" stop-opacity=".55"/><stop offset="1" stop-color="#f3d9a4" stop-opacity="0"/></radialGradient>
+    </defs>
+    <rect width="400" height="330" fill="url(#sky-hero)"/>
+    <rect width="400" height="500" fill="url(#glow-hero)"/>
+    <circle cx="200" cy="318" r="44" fill="#f1d7a6"/>
+    <rect y="326" width="400" height="174" fill="url(#water-hero)"/>
+    <g stroke="#f1d7a6" stroke-linecap="round">
+      <path d="M150 346h100M165 362h70M140 380h120M176 398h48M158 418h84M184 440h32M170 466h60" stroke-width="3" opacity=".75"/>
+    </g>
+    <g stroke="#f3ede3" stroke-linecap="round" opacity=".18" stroke-width="2">
+      <path d="M20 352h80M300 356h70M40 392h60M320 404h50M10 436h110M290 448h96M60 480h70M260 486h90"/>
+    </g>
+    <path d="M318 326v-30h6l14 30Z" fill="#14202b" opacity=".7"/>
+  </svg></div></div>
+          </div>
+          <div class="arch-line" aria-hidden="true"></div>
+        </div>
+      </div>
+      <a href="#posto" class="hero-scroll" aria-label="Scorri al contenuto"><span></span></a>
+    </section>
+
+    <!-- I · IL POSTO -->
+    <section class="section posto" id="posto" aria-labelledby="posto-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-n" aria-hidden="true">I</span>
+          <p class="eyebrow">Il posto</p>
+          <h2 id="posto-title" data-reveal>Tra il centro storico <em>e il mare</em></h2>
+          <svg class="meander" viewBox="0 0 240 12" aria-hidden="true"><path pathLength="1" d="M0 11.5H240M2 11V1H22V9H8V4H16V6.5M26 11V1H46V9H32V4H40V6.5M50 11V1H70V9H56V4H64V6.5M74 11V1H94V9H80V4H88V6.5M98 11V1H118V9H104V4H112V6.5M122 11V1H142V9H128V4H136V6.5M146 11V1H166V9H152V4H160V6.5M170 11V1H190V9H176V4H184V6.5M194 11V1H214V9H200V4H208V6.5M218 11V1H238V9H224V4H232V6.5"/></svg>
+        </header>
+
+        <div class="posto-grid">
+          <div class="posto-text" data-reveal>
+            <p class="lead">Via Marina è la strada che dal centro scende verso il porto. Al numero 9 c’è il Convito: una sala curata e, quando il tempo lo permette, i tavoli fuori.</p>
+            <p>Si apre la sera, dal martedì alla domenica. In carta pizze, antipasti e qualche piatto della cucina, con le cozze al forno nel tegame di terracotta tra quelli che i clienti citano più spesso.</p>
+            <dl class="facts">
+              <div><dt>Quando</dt><dd>La sera, lunedì chiuso</dd></div>
+              <div><dt>Dove</dt><dd>Via Marina, 9 · Barletta</dd></div>
+              <div><dt>Su Google</dt><dd><span data-rating>4,4</span> su 5 · 255 recensioni</dd></div>
+            </dl>
+          </div>
+          <figure class="frame frame--sala" data-parallax>
+            <div class="frame-media"><div class="ph ph--sala" aria-hidden="true"><!-- segnaposto: public/images/foto/sala.jpg --><svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+    <defs><linearGradient id="warm-sala" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1d7a6"/><stop offset="1" stop-color="#c98a5a"/></linearGradient></defs>
+    <rect width="600" height="400" fill="#e9e1d3"/>
+    <g fill="url(#warm-sala)">
+      <path d="M40 400V170a70 70 0 0 1 140 0v230Z"/><path d="M230 400V170a70 70 0 0 1 140 0v230Z"/><path d="M420 400V170a70 70 0 0 1 140 0v230Z"/>
+    </g>
+    <g fill="none" stroke="#14202b" stroke-width="2" opacity=".55">
+      <path d="M40 400V170a70 70 0 0 1 140 0v230M230 400V170a70 70 0 0 1 140 0v230M420 400V170a70 70 0 0 1 140 0v230"/>
+      <path d="M0 318h600" opacity=".5"/>
+    </g>
+    <g fill="#14202b" opacity=".6">
+      <rect x="78" y="300" width="64" height="6" rx="3"/><rect x="268" y="300" width="64" height="6" rx="3"/><rect x="458" y="300" width="64" height="6" rx="3"/>
+      <rect x="108" y="306" width="4" height="60"/><rect x="298" y="306" width="4" height="60"/><rect x="488" y="306" width="4" height="60"/>
+    </g>
+    <g fill="#9c3b2b"><circle cx="110" cy="292" r="5"/><circle cx="300" cy="292" r="5"/><circle cx="490" cy="292" r="5"/></g>
+  </svg></div></div>
+          </figure>
+          <figure class="frame frame--dehors" data-parallax="-1">
+            <div class="frame-media"><div class="ph ph--dehors" aria-hidden="true"><!-- segnaposto: public/images/foto/dehors.jpg --><svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+    <defs><linearGradient id="dsky-dehors" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d4a5c"/><stop offset="1" stop-color="#d9a77e"/></linearGradient></defs>
+    <rect width="600" height="230" fill="url(#dsky-dehors)"/>
+    <rect y="230" width="600" height="60" fill="#2d4a5c"/>
+    <g stroke="#f1d7a6" stroke-width="2" stroke-linecap="round" opacity=".5"><path d="M60 246h70M240 252h120M420 244h90M120 270h60M380 274h70"/></g>
+    <rect y="290" width="600" height="110" fill="#e9e1d3"/>
+    <g fill="none" stroke="#14202b" stroke-width="2.5" stroke-linecap="round" opacity=".75">
+      <ellipse cx="160" cy="330" rx="56" ry="10"/><path d="M160 340v50M136 392h48"/>
+      <ellipse cx="420" cy="330" rx="56" ry="10"/><path d="M420 340v50M396 392h48"/>
+      <path d="M160 320V190M420 320V190"/>
+    </g>
+    <g fill="#9c3b2b" opacity=".9"><path d="M80 196Q160 140 240 196Z"/><path d="M340 196Q420 140 500 196Z"/></g>
+    <g fill="#b08a4a"><circle cx="150" cy="322" r="5"/><circle cx="430" cy="322" r="5"/></g>
+  </svg></div></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- II · IL MENÙ -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-n" aria-hidden="true">II</span>
+          <p class="eyebrow">Il menù</p>
+          <h2 id="menu-title" data-reveal>Le portate <em>del convito</em></h2>
+          <svg class="meander" viewBox="0 0 240 12" aria-hidden="true"><path pathLength="1" d="M0 11.5H240M2 11V1H22V9H8V4H16V6.5M26 11V1H46V9H32V4H40V6.5M50 11V1H70V9H56V4H64V6.5M74 11V1H94V9H80V4H88V6.5M98 11V1H118V9H104V4H112V6.5M122 11V1H142V9H128V4H136V6.5M146 11V1H166V9H152V4H160V6.5M170 11V1H190V9H176V4H184V6.5M194 11V1H214V9H200V4H208V6.5M218 11V1H238V9H224V4H232V6.5"/></svg>
+        </header>
+
+        <nav class="menu-tabs" aria-label="Sezioni del menù"><a href="#cat-antipasti" class="menu-tab is-active" data-cat="antipasti"><span class="menu-tab-n">I</span>Per cominciare</a><a href="#cat-pizze" class="menu-tab" data-cat="pizze"><span class="menu-tab-n">II</span>Le pizze</a><a href="#cat-cucina" class="menu-tab" data-cat="cucina"><span class="menu-tab-n">III</span>Dalla cucina</a><a href="#cat-dolci" class="menu-tab" data-cat="dolci"><span class="menu-tab-n">IV</span>Per finire</a></nav>
+
+        <div class="menu-layout">
+          <div class="menu-aside" aria-hidden="true">
+            <div class="menu-plates">
+              <figure class="plate" data-plate="antipasti"><div class="ph ph--tegame" aria-hidden="true"><!-- segnaposto: public/images/foto/cozze.jpg --><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+    <defs><radialGradient id="pan-cozze" cx=".5" cy=".45" r=".55"><stop offset="0" stop-color="#b8603d"/><stop offset="1" stop-color="#7d3a24"/></radialGradient></defs>
+    <rect width="400" height="500" fill="#14202b"/>
+    <circle cx="200" cy="250" r="165" fill="#2d4a5c" opacity=".35"/>
+    <circle cx="200" cy="250" r="140" fill="url(#pan-cozze)"/>
+    <circle cx="200" cy="250" r="118" fill="#6e321f"/>
+    <path d="M340 236h34a8 8 0 0 1 0 16h-34Z" fill="#8a4128"/>
+    <g fill="#1b1e24" stroke="#b08a4a" stroke-width="1.5">
+      <ellipse cx="264.0" cy="250.0" rx="26" ry="13" transform="rotate(0 264.0 250.0)"/><ellipse cx="265.6" cy="292.2" rx="26" ry="13" transform="rotate(33 265.6 292.2)"/><ellipse cx="226.6" cy="308.2" rx="26" ry="13" transform="rotate(65 226.6 308.2)"/><ellipse cx="188.9" cy="327.2" rx="26" ry="13" transform="rotate(98 188.9 327.2)"/><ellipse cx="158.1" cy="298.4" rx="26" ry="13" transform="rotate(131 158.1 298.4)"/><ellipse cx="125.2" cy="272.0" rx="26" ry="13" transform="rotate(164 125.2 272.0)"/><ellipse cx="138.6" cy="232.0" rx="26" ry="13" transform="rotate(196 138.6 232.0)"/><ellipse cx="148.9" cy="191.1" rx="26" ry="13" transform="rotate(229 148.9 191.1)"/><ellipse cx="190.9" cy="186.7" rx="26" ry="13" transform="rotate(262 190.9 186.7)"/><ellipse cx="232.4" cy="179.0" rx="26" ry="13" transform="rotate(295 232.4 179.0)"/><ellipse cx="253.8" cy="215.4" rx="26" ry="13" transform="rotate(327 253.8 215.4)"/>
+      <ellipse cx="200" cy="250" rx="24" ry="12" transform="rotate(-30 200 250)"/>
+    </g>
+    <g fill="#e2a46a" opacity=".85">
+      <ellipse cx="264.0" cy="250.0" rx="9" ry="5"/><ellipse cx="265.6" cy="292.2" rx="9" ry="5"/><ellipse cx="226.6" cy="308.2" rx="9" ry="5"/><ellipse cx="188.9" cy="327.2" rx="9" ry="5"/><ellipse cx="158.1" cy="298.4" rx="9" ry="5"/><ellipse cx="125.2" cy="272.0" rx="9" ry="5"/><ellipse cx="138.6" cy="232.0" rx="9" ry="5"/><ellipse cx="148.9" cy="191.1" rx="9" ry="5"/><ellipse cx="190.9" cy="186.7" rx="9" ry="5"/><ellipse cx="232.4" cy="179.0" rx="9" ry="5"/><ellipse cx="253.8" cy="215.4" rx="9" ry="5"/>
+    </g>
+    <g fill="#5d7a45"><circle cx="150" cy="300" r="3"/><circle cx="246" cy="196" r="3"/><circle cx="262" cy="292" r="2.5"/><circle cx="156" cy="206" r="2.5"/></g>
+  </svg></div></figure>
+              <figure class="plate" data-plate="pizze"><div class="ph ph--pizza" aria-hidden="true"><!-- segnaposto: public/images/foto/pizza.jpg --><svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+    <defs><radialGradient id="crust-pizza" cx=".45" cy=".4" r=".6"><stop offset="0" stop-color="#e6b77d"/><stop offset="1" stop-color="#b9783f"/></radialGradient></defs>
+    <rect width="400" height="400" fill="#e9e1d3"/>
+    <circle cx="200" cy="200" r="168" fill="none" stroke="#b08a4a" stroke-width="2" opacity=".6"/>
+    <circle cx="200" cy="200" r="150" fill="url(#crust-pizza)"/>
+    <circle cx="200" cy="200" r="122" fill="#a8402c"/>
+    <g fill="#f6efe2">
+      <ellipse cx="160" cy="150" rx="26" ry="20"/><ellipse cx="244" cy="172" rx="22" ry="18"/><ellipse cx="190" cy="232" rx="28" ry="21"/>
+      <ellipse cx="258" cy="252" rx="18" ry="15"/><ellipse cx="132" cy="226" rx="16" ry="13"/><ellipse cx="214" cy="118" rx="14" ry="11"/>
+    </g>
+    <g fill="#4f6b3a">
+      <path d="M150 192c14-16 34-14 40-4-12 12-30 14-40 4Z"/><path d="M236 214c6-18 24-22 34-14-6 14-22 22-34 14Z"/><path d="M182 286c12-12 30-8 34 2-12 8-26 8-34-2Z"/>
+    </g>
+    <g fill="#7a2c1f" opacity=".5"><circle cx="120" cy="180" r="3"/><circle cx="276" cy="210" r="3"/><circle cx="222" cy="290" r="3"/><circle cx="176" cy="122" r="2.5"/></g>
+  </svg></div></figure>
+              <figure class="plate" data-plate="cucina"><div class="ph ph--antipasti" aria-hidden="true"><!-- segnaposto: public/images/foto/antipasti.jpg --><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+    <rect width="400" height="500" fill="#2d4a5c"/>
+    <rect width="400" height="500" fill="#14202b" opacity=".35"/>
+    <g>
+      <circle cx="132" cy="150" r="82" fill="#f3ede3"/><circle cx="132" cy="150" r="66" fill="none" stroke="#b08a4a" stroke-width="1.5"/>
+      <g fill="#fbf7ef" stroke="#e1d6c4"><circle cx="118" cy="140" r="22"/><circle cx="148" cy="160" r="20"/><circle cx="130" cy="176" r="12"/></g>
+      <circle cx="286" cy="236" r="76" fill="#f3ede3"/><circle cx="286" cy="236" r="60" fill="none" stroke="#b08a4a" stroke-width="1.5"/>
+      <g fill="none" stroke="#6b8a4a" stroke-width="5" stroke-linecap="round">
+        <path d="M262 214a12 12 0 1 1 6 12"/><path d="M300 222a12 12 0 1 1 6 12"/><path d="M270 256a12 12 0 1 1 6 12"/><path d="M306 262a10 10 0 1 1 5 10"/>
+      </g>
+      <circle cx="150" cy="360" r="90" fill="#f3ede3"/><circle cx="150" cy="360" r="74" fill="none" stroke="#b08a4a" stroke-width="1.5"/>
+      <g fill="#d9a35f" stroke="#b3773b"><rect x="104" y="324" width="40" height="36" rx="6"/><rect x="152" y="318" width="42" height="38" rx="6"/><rect x="118" y="368" width="44" height="36" rx="6"/><rect x="168" y="364" width="34" height="34" rx="6"/></g>
+      <circle cx="318" cy="420" r="40" fill="#f3ede3"/><circle cx="318" cy="420" r="26" fill="#3d4a2e"/><circle cx="318" cy="420" r="26" fill="none" stroke="#b08a4a"/>
+    </g>
+  </svg></div></figure>
+            </div>
+          </div>
+          <div class="menu-body">
+            <section class="menu-cat" id="cat-antipasti" data-cat="antipasti" aria-labelledby="h-antipasti">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">I</span>
+        <h3 id="h-antipasti">Per cominciare</h3>
+      </header>
+      
+      <ul class="dish-list"><li class="dish">
+        <p class="dish-name">Cozze al forno in tegame di terracotta</p>
+        
+      </li><li class="dish">
+        <p class="dish-name">Involtini di zucchine</p>
+        
+      </li><li class="dish">
+        <p class="dish-name">Involtini con speck</p>
+        
+      </li><li class="dish">
+        <p class="dish-name">Stracciatella</p>
+        
+      </li><li class="dish">
+        <p class="dish-name">Focaccia</p>
+        
+      </li><li class="dish">
+        <p class="dish-name">Crostini</p>
+        
+      </li><li class="dish">
+        <p class="dish-name">Panzerotto</p>
+        
+      </li></ul>
+    </section><section class="menu-cat" id="cat-pizze" data-cat="pizze" aria-labelledby="h-pizze">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">II</span>
+        <h3 id="h-pizze">Le pizze</h3>
+      </header>
+      <p class="menu-note">Impasto a lunga lievitazione.</p>
+      <ul class="dish-list"><li class="dish">
+        <p class="dish-name">Margherita <span class="veg" title="Vegetariana">veg</span></p>
+        <p class="dish-desc">Pomodoro, fior di latte, basilico, olio extravergine.</p>
+      </li><li class="dish">
+        <p class="dish-name">Marinara <span class="veg" title="Vegetariana">veg</span></p>
+        <p class="dish-desc">Pomodoro, aglio, origano, olio extravergine.</p>
+      </li><li class="dish">
+        <p class="dish-name">Cime di rapa <span class="veg" title="Vegetariana">veg</span></p>
+        <p class="dish-desc">Fior di latte e cime di rapa ripassate, quando è stagione.</p>
+      </li><li class="dish">
+        <p class="dish-name">Stracciatella e crudo</p>
+        <p class="dish-desc">In uscita dal forno: stracciatella, prosciutto crudo, rucola.</p>
+      </li><li class="dish">
+        <p class="dish-name">Diavola</p>
+        <p class="dish-desc">Pomodoro, fior di latte, salame piccante.</p>
+      </li><li class="dish">
+        <p class="dish-name">Capricciosa</p>
+        <p class="dish-desc">Pomodoro, fior di latte, prosciutto cotto, funghi, carciofi, olive.</p>
+      </li></ul>
+    </section><section class="menu-cat" id="cat-cucina" data-cat="cucina" aria-labelledby="h-cucina">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">III</span>
+        <h3 id="h-cucina">Dalla cucina</h3>
+      </header>
+      
+      <ul class="dish-list"><li class="dish">
+        <p class="dish-name">Primi della casa</p>
+        <p class="dish-desc">Le proposte cambiano: chiedetele al tavolo.</p>
+      </li><li class="dish">
+        <p class="dish-name">Secondi di carne</p>
+        
+      </li></ul>
+    </section><section class="menu-cat" id="cat-dolci" data-cat="dolci" aria-labelledby="h-dolci">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">IV</span>
+        <h3 id="h-dolci">Per finire</h3>
+      </header>
+      
+      <ul class="dish-list"><li class="dish">
+        <p class="dish-name">Dolci della casa</p>
+        <p class="dish-desc">Chiedete al tavolo quelli del giorno.</p>
+      </li><li class="dish">
+        <p class="dish-name">Amaro o liquore</p>
+        <p class="dish-desc">Per chiudere il convito come si deve.</p>
+      </li></ul>
+    </section>
+            <div class="menu-foot"><p class="menu-price"><span>Spesa media</span> €10–20 a persona</p>
+    <p class="menu-allergens">Allergie o intolleranze? Ditelo prima di ordinare: vi diciamo cosa c’è in ogni piatto.</p><p class="menu-demo">Menù dimostrativo: piatti e prezzi definitivi arrivano dalla carta del locale.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- III · IL NOME: la frase si "accende" parola per parola scorrendo -->
+    <section class="section nome" id="nome" aria-labelledby="nome-title">
+      <div class="wrap nome-wrap">
+        <header class="sec-head sec-head--light">
+          <span class="sec-n" aria-hidden="true">III</span>
+          <p class="eyebrow">Il nome</p>
+          <h2 id="nome-title" class="visually-hidden">Il nome</h2>
+        </header>
+        <p class="nome-quote" data-ink>Convito è una parola antica per dire banchetto: una tavola lunga, ospiti che arrivano, piatti che girano. Le Muse, nel mito greco, sono le nove figlie di Zeus e Mnemosine, custodi delle arti.</p>
+        <ul class="muses" aria-label="Le nove Muse">
+          <li>Calliope</li><li>Clio</li><li>Erato</li><li>Euterpe</li><li>Melpomene</li><li>Polimnia</li><li>Talia</li><li>Tersicore</li><li>Urania</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- IV · PRENOTA -->
+    <section class="section booking" id="prenota" aria-labelledby="booking-title">
+      <div class="wrap booking-wrap">
+        <header class="sec-head booking-head">
+          <span class="sec-n" aria-hidden="true">IV</span>
+          <p class="eyebrow">Prenota</p>
+          <h2 id="booking-title" data-reveal>Un posto <em>a tavola</em></h2>
+          <p class="sec-sub">Scegli giorno, ora e quante persone siete. La richiesta arriva al locale, che ti richiama per confermare. Per i gruppi oltre le 12 persone è meglio telefonare allo <a href="tel:+390883950709">0883 950709</a>.</p>
+        </header>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <fieldset class="bf-block">
+            <legend>Giorno</legend>
+            <div class="chips" id="bf-days" role="radiogroup" aria-label="Giorno"></div>
+            <label class="bf-other">Altra data <input type="date" id="bf-date" name="date" required /></label>
+            <p class="bf-error" data-error="date"></p>
+          </fieldset>
+
+          <fieldset class="bf-block">
+            <legend>Orario</legend>
+            <div class="chips chips--time" id="bf-times" role="radiogroup" aria-label="Orario"><p class="bf-hint">Scegli prima il giorno</p></div>
+            <p class="bf-error" data-error="time"></p>
+          </fieldset>
+
+          <fieldset class="bf-block bf-guests">
+            <legend>Persone</legend>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="Una persona in meno">−</button>
+              <output id="bf-guests-out" aria-live="polite">2</output>
+              <button type="button" data-step="1" aria-label="Una persona in più">+</button>
+            </div>
+            <input type="hidden" name="guests" id="bf-guests" value="2" />
+            <p class="bf-error" data-error="guests"></p>
+          </fieldset>
+
+          <div class="bf-grid">
+            <label class="field"><input type="text" name="name" autocomplete="name" required maxlength="60" placeholder=" " /><span>Nome e cognome</span><em class="bf-error" data-error="name"></em></label>
+            <label class="field"><input type="tel" name="phone" autocomplete="tel" required maxlength="20" placeholder=" " inputmode="tel" /><span>Telefono</span><em class="bf-error" data-error="phone"></em></label>
+            <label class="field field--wide"><input type="email" name="email" autocomplete="email" maxlength="120" placeholder=" " /><span>Email (facoltativa)</span><em class="bf-error" data-error="email"></em></label>
+            <label class="field field--wide"><textarea name="notes" rows="2" maxlength="300" placeholder=" "></textarea><span>Note: allergie, seggiolone, tavolo fuori…</span></label>
+          </div>
+
+          <!-- Campo trappola per i bot: invisibile alle persone -->
+          <label class="hp" aria-hidden="true">Sito web <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+
+          <label class="check">
+            <input type="checkbox" name="privacy" required />
+            <span>Accetto il trattamento dei dati per gestire la prenotazione (<a href="/demo/convito/privacy.html" target="_blank" rel="noopener">informativa privacy</a>).</span>
+          </label>
+          <p class="bf-error" data-error="privacy"></p>
+
+          <div class="bf-submit">
+            <button type="submit" class="btn btn--pompeii btn--lg">Invia la richiesta</button>
+            <p class="bf-status" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="bf-success" hidden>
+            <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" /><path d="m25 41 10 10 21-22" /></svg>
+            <h3>Richiesta inviata</h3>
+            <p>Ti richiamiamo per confermare il tavolo.<br />Codice richiesta: <strong data-code></strong></p>
+            <button type="button" class="btn btn--line" data-reset>Nuova prenotazione</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- V · DOVE SIAMO -->
+    <section class="section contact" id="contatti" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="contact-main">
+          <header class="sec-head sec-head--light">
+            <span class="sec-n" aria-hidden="true">V</span>
+            <p class="eyebrow">Dove siamo</p>
+            <h2 id="contact-title" data-reveal>Via Marina, 9 <em>Barletta</em></h2>
+          </header>
+          <p class="contact-sub">Scendendo dal centro storico verso il porto.</p>
+          <p class="status status--big" data-open-status><i></i><span>Solo a cena, dalle 20:00 · lunedì chiuso</span></p>
+          <div class="contact-actions">
+            <a class="btn btn--marble" href="tel:+390883950709">Chiama 0883 950709</a>
+            <a class="btn btn--line-light" href="https://www.google.com/maps/search/?api=1&amp;query=Il+Convito+delle+Muse+Via+Marina+9+Barletta" target="_blank" rel="noopener noreferrer">Indicazioni</a>
+          </div>
+          <ul class="contact-list">
+            <li><span>Telefono</span><a href="tel:+390883950709">0883 950709</a></li>
+            <li><span>Facebook</span><a href="https://www.facebook.com/ilconvitodellemuse/" target="_blank" rel="noopener noreferrer">ilconvitodellemuse</a></li>
+            <li><span>Instagram</span><a href="https://www.instagram.com/il_convitodellemuse/" target="_blank" rel="noopener noreferrer">@il_convitodellemuse</a></li>
+          </ul>
+        </div>
+        <div class="contact-side">
+          <h3 class="hours-title">Orari</h3>
+          <ul class="hours" data-hours><li data-day="1"><span>Lunedì</span><span>Chiuso</span></li><li data-day="2"><span>Martedì</span><span>20:00 – 00:00</span></li><li data-day="3"><span>Mercoledì</span><span>20:00 – 00:00</span></li><li data-day="4"><span>Giovedì</span><span>20:00 – 00:00</span></li><li data-day="5"><span>Venerdì</span><span>20:00 – 00:00</span></li><li data-day="6"><span>Sabato</span><span>20:00 – 00:00</span></li><li data-day="0"><span>Domenica</span><span>20:00 – 00:00</span></li></ul>
+          <div class="map" id="map">
+            <button type="button" class="map-btn" data-map>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+              <span>Mostra la mappa</span>
+              <small>Si carica da Google Maps</small>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand">Il Convito delle Muse</p>
+      <p>Ristorante pizzeria · Via Marina, 9 · 76121 Barletta (BT) · <a href="tel:+390883950709">0883 950709</a></p>
+      <p class="footer-legal"><a href="/demo/convito/privacy.html">Privacy</a> · Nessun cookie di profilazione · P.IVA da inserire</p>
+    </div>
+  </footer>
+
+  <a href="#prenota" class="book-bar" id="book-bar">Prenota un tavolo</a>
+</body>
+</html>
