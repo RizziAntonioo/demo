@@ -1,0 +1,12 @@
+{
+  "name": "Cibio · Cucina biologica",
+  "short_name": "Cibio",
+  "icons": [
+    { "src": "/demo/cibio/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/demo/cibio/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#efe7d6",
+  "background_color": "#efe7d6",
+  "display": "browser",
+  "lang": "it"
+}

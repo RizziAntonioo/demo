@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data:; frame-src https://maps.google.com https://www.google.com; media-src 'none'; object-src 'none'; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Cibio | Cucina biologica in via del Duomo, Barletta</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <script src="/demo/cibio/demo-mode.js"></script>
+
+  <link rel="preload" href="/demo/cibio/assets/young-serif-latin-400-normal-DIMmNPI9.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/cibio/assets/newsreader-latin-wght-italic-Bxi8ein9.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/cibio/assets/schibsted-grotesk-latin-wght-normal-Bb8VGrTG.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- CSS critico: sfondo e pagina nascosta finché non arriva lo stile vero (niente lampo di HTML nudo).
+       Se il JavaScript non parte, la pagina compare comunque dopo 2,5 secondi. -->
+  <style>html{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;background:#efe7d6}body{color:#1f2419;opacity:0;background:#efe7d6;margin:0;animation:0s 2.5s forwards cb-show}@keyframes cb-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
+  <noscript><style>body{opacity:1!important;animation:none!important}</style></noscript>
+  <meta name="description" content="Cibio, cucina biologica in via del Duomo 19 a Barletta, a due passi dalla Cattedrale. Ricette pugliesi con un tocco creativo, piatti vegani, vegetariani e senza glutine segnati in carta. Pranzo e cena, martedì chiuso. Prenota online o chiama lo 0883 953285." />
+  <link rel="canonical" href="http://localhost:4300/" />
+  
+  <meta name="theme-color" content="#efe7d6" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="geo.region" content="IT-BT" />
+  <meta name="geo.placename" content="Barletta" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Cibio" />
+  <meta property="og:title" content="Cibio · Cucina biologica a Barletta" />
+  <meta property="og:description" content="In via del Duomo 19, nel centro storico. Cucina pugliese e biologica, piatti vegani e senza glutine segnati in carta. Prenota il tavolo online." />
+  <meta property="og:url" content="http://localhost:4300/" />
+  <meta property="og:image" content="http://localhost:4300/images/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Cibio, cucina biologica a Barletta: illustrazione di una barbabietola" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/demo/cibio/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/demo/cibio/apple-touch-icon.png" />
+  <link rel="manifest" href="/demo/cibio/site.webmanifest" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"http://localhost:4300/#restaurant","name":"Cibio","alternateName":"Cibio · Cucina biologica","description":"Ristorante di cucina biologica in via del Duomo a Barletta: ricette pugliesi con un tocco creativo, piatti segnati per vegani, vegetariani e senza glutine, vini pugliesi e biologici. Pranzo e cena, martedì chiuso.","url":"http://localhost:4300/","image":"http://localhost:4300/images/og.png","logo":"http://localhost:4300/favicon.svg","telephone":"+39 0883 953285","priceRange":"€€","servesCuisine":["Italiana","Pugliese","Biologica","Vegetariana","Vegana"],"address":{"@type":"PostalAddress","streetAddress":"Via del Duomo, 19","postalCode":"76121","addressLocality":"Barletta","addressRegion":"BT","addressCountry":"IT"},"hasMap":"https://www.google.com/maps/search/?api=1&query=Cibio+Via+del+Duomo+19+Barletta","acceptsReservations":true,"hasMenu":"http://localhost:4300/#menu","amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Accessibile in sedia a rotelle","value":true}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"12:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"12:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"12:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"12:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"20:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:30","closes":"15:00"}]}</script>
+  <script type="module" crossorigin src="/demo/cibio/assets/main-BVHEI7je.js"></script>
+  <link rel="modulepreload" crossorigin href="/demo/cibio/assets/schibsted-grotesk-Bf9aobDd.js">
+  <link rel="modulepreload" crossorigin href="/demo/cibio/assets/booking-rules-DcKKB2dL.js">
+  <link rel="stylesheet" crossorigin href="/demo/cibio/assets/schibsted-grotesk-b86l5L-t.css">
+  <link rel="stylesheet" crossorigin href="/demo/cibio/assets/main-BCWXaho4.css">
+</head>
+<body>
+  <a href="#main" class="skip">Salta al contenuto</a>
+
+  <header class="site-header" id="header">
+    <a href="#top" class="brand" aria-label="Cibio, torna su">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 36 C 20 28 20 22 21 14" /><path d="M21 22 C 12 21 7 14 8 6 C 16 7 21 13 21 22 Z" /><path d="M21 18 C 28 17 33 11 32 4 C 25 5 21 10 21 18 Z" /><path d="M8 36 H32" /></svg>
+      <span class="brand-word">Cibio</span>
+    </a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#cucina">La cucina</a>
+      <a href="#menu">Menù</a>
+      <a href="#stagioni">Stagioni</a>
+      <a href="#filiera">Dal campo</a>
+      <a href="#contatti">Dove siamo</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#prenota" class="btn btn--beet btn--sm">Prenota</a>
+      <button type="button" class="burger" aria-label="Apri il menù di navigazione" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Navigazione mobile">
+      <a href="#cucina">La cucina</a>
+      <a href="#menu">Menù</a>
+      <a href="#stagioni">Le stagioni</a>
+      <a href="#filiera">Dal campo al piatto</a>
+      <a href="#prenota">Prenota</a>
+      <a href="#contatti">Dove siamo</a>
+    </nav>
+    <p class="mobile-nav-foot"><a href="tel:+390883953285">0883 953285</a> · Via del Duomo, 19 · Barletta</p>
+  </div>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- HERO: una tavola botanica. Al caricamento la barbabietola germoglia, scorrendo finisce di crescere
+         e la radice si colora sotto terra. Con "riduci movimento" è già cresciuta e ferma. -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow" data-hero-line>Cucina biologica · Barletta</p>
+          <h1 id="hero-title" class="hero-title" data-hero-line>Cibio</h1>
+          <p class="hero-sub" data-hero-line><em>La terra, cucinata con cura.</em></p>
+          <p class="hero-lead" data-hero-line>In via del Duomo, a due passi dalla Cattedrale. Ricette pugliesi con un tocco creativo, ingredienti biologici e una carta che segna con chiarezza cosa è vegano, vegetariano o senza glutine.</p>
+          <div class="hero-actions" data-hero-line>
+            <a href="#prenota" class="btn btn--beet">Prenota un tavolo</a>
+            <a href="#menu" class="btn btn--line">Guarda il menù</a>
+          </div>
+          <ul class="hero-meta" data-hero-line>
+            <li class="rating"><strong>4,7</strong><span class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="part"></i></span><span>su Google · 221 recensioni</span></li>
+            <li class="status" data-open-status><i></i><span>Pranzo e cena · martedì chiuso</span></li>
+          </ul>
+        </div>
+        <figure class="hero-plate">
+          <div class="plate-frame">
+            <svg class="plant" viewBox="0 0 400 560" role="img" aria-labelledby="plant-t">
+    <title id="plant-t">Illustrazione: una pianta di barbabietola, con le foglie sopra la terra e la radice rossa sotto</title>
+    <defs>
+      <radialGradient id="beet-g" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#b03a68"/><stop offset=".55" stop-color="#7b1e45"/><stop offset="1" stop-color="#4c1029"/></radialGradient>
+      <linearGradient id="soil-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b4a2f" stop-opacity=".22"/><stop offset="1" stop-color="#6b4a2f" stop-opacity="0"/></linearGradient>
+    </defs>
+    <g class="soil">
+      <rect x="10" y="338" width="380" height="210" fill="url(#soil-g)"/>
+      <path class="soil-line" pathLength="1" d="M10 340 C 70 334 120 344 200 338 S 330 334 390 341"/>
+      <path class="soil-hatch" d="M34 352 l14 -8 M59 358 l14 -8 M84 364 l14 -8 M109 352 l14 -8 M134 358 l14 -8 M159 364 l14 -8 M184 352 l14 -8 M209 358 l14 -8 M234 364 l14 -8 M259 352 l14 -8 M284 358 l14 -8 M309 364 l14 -8 M334 352 l14 -8 M359 358 l14 -8"/>
+      <g class="pebbles"><ellipse cx="70" cy="392" rx="7" ry="5"/><ellipse cx="118" cy="430" rx="4.8999999999999995" ry="3.5"/><ellipse cx="300" cy="404" rx="6.3" ry="4.5"/><ellipse cx="336" cy="448" rx="4.199999999999999" ry="3"/><ellipse cx="252" cy="488" rx="4.8999999999999995" ry="3.5"/><ellipse cx="96" cy="486" rx="5.6" ry="4"/><ellipse cx="330" cy="372" rx="4.199999999999999" ry="3"/></g>
+    </g>
+    <g class="root" data-pos="translate(200 334)" data-unpos="translate(-200 -334)">
+      <path class="root-tail" pathLength="1" d="M200 486 C 203 506 196 524 201 548"/>
+      <path class="root-hair" d="M188 470 l-16 10 M214 462 l17 8 M193 492 l-11 9 M207 500 l10 7"/>
+      <path class="root-bulb" d="M200 334 C 150 336 122 370 128 408 C 134 444 170 462 200 492 C 230 462 266 444 272 408 C 278 370 250 336 200 334 Z"/>
+      <path class="root-ring" d="M160 372 C 180 360 222 360 244 374 M150 408 C 178 394 224 394 252 410 M164 442 C 184 432 216 432 236 444"/>
+      <path class="root-shine" d="M150 380 C 146 396 150 414 160 428"/>
+    </g>
+    <g class="stems"><path class="stem" pathLength="1" d="M200 338 C 194 290 160 250 124 214"/><path class="stem" pathLength="1" d="M200 338 C 200 286 208 230 204 176"/><path class="stem" pathLength="1" d="M200 338 C 207 292 246 256 284 210"/><path class="stem" pathLength="1" d="M200 338 C 192 312 150 300 92 288"/><path class="stem" pathLength="1" d="M200 338 C 210 314 256 304 312 282"/><path class="stem" pathLength="1" d="M200 338 C 198 324 184 306 170 292"/><path class="stem" pathLength="1" d="M200 338 C 203 324 218 308 232 296"/></g>
+    <g class="leaves"><g class="leaf" data-pos="translate(124 214) rotate(-45)" transform="translate(124 214) rotate(-45)"><g>
+      <path class="leaf-fill" d="M0 0 C 3 -1.8 13.4 -6.1 17.9 -10.8 C 22.5 -15.5 23.1 -21.6 27.2 -28.1 C 31.4 -34.6 40.2 -42.1 42.8 -49.7 C 45.3 -57.2 42.2 -65.5 42.3 -73.4 C 42.5 -81.4 45.8 -89.6 43.8 -97.2 C 41.9 -104.8 34.2 -112.3 30.5 -118.8 C 26.7 -125.3 26.2 -131 21.2 -136.1 C 16.1 -141.1 3.5 -146.9 0 -149 C -2.4 -146.9 -9 -141.1 -14.2 -136.1 C -19.4 -131 -28 -125.3 -31.3 -118.8 C -34.6 -112.3 -32.4 -104.8 -34.2 -97.2 C -35.9 -89.6 -41.9 -81.4 -41.8 -73.4 C -41.6 -65.5 -35.4 -57.2 -33.2 -49.7 C -31 -42.1 -32.1 -34.6 -28.5 -28.1 C -24.8 -21.6 -16.1 -15.5 -11.4 -10.8 C -6.6 -6.1 -1.9 -1.8 0 0 Z"/>
+      <path class="leaf-vein" d="M0 -30.2 Q 10.7 -36.7 23.8 -54 M0 -34.6 Q -9.5 -41 -20.9 -58.3 M0 -56.2 Q 14.6 -62.6 32.4 -79.9 M0 -60.5 Q -13 -67 -28.5 -84.2 M0 -82.1 Q 14.6 -88.6 32.4 -105.8 M0 -86.4 Q -13 -92.9 -28.5 -110.2 M0 -105.8 Q 11.7 -112.3 25.9 -129.6 M0 -110.2 Q -10.4 -116.6 -22.8 -133.9 M0 -125.3 Q 6.8 -131.8 15.1 -149 M0 -129.6 Q -6 -136.1 -13.3 -153.4"/>
+      <path class="leaf-rib" d="M0 4 C 2.2 -54 -2.2 -97.2 0 -142.6"/>
+    </g></g><g class="leaf" data-pos="translate(204 176) rotate(-4.2)" transform="translate(204 176) rotate(-4.2)"><g>
+      <path class="leaf-fill" d="M0 0 C 3.2 -1.9 14.4 -6.6 19.3 -11.6 C 24.1 -16.6 24.8 -23.2 29.2 -30.2 C 33.7 -37.1 43.2 -45.2 45.9 -53.4 C 48.6 -61.5 45.3 -70.4 45.5 -78.9 C 45.7 -87.4 49.2 -96.3 47.1 -104.4 C 45 -112.5 36.8 -120.6 32.7 -127.6 C 28.7 -134.6 28.2 -140.7 22.7 -146.2 C 17.3 -151.6 3.8 -157.8 0 -160.1 C -2.5 -157.8 -9.7 -151.6 -15.3 -146.2 C -20.9 -140.7 -30.1 -134.6 -33.6 -127.6 C -37.2 -120.6 -34.8 -112.5 -36.7 -104.4 C -38.6 -96.3 -45 -87.4 -44.9 -78.9 C -44.7 -70.4 -38.1 -61.5 -35.7 -53.4 C -33.3 -45.2 -34.5 -37.1 -30.6 -30.2 C -26.7 -23.2 -17.3 -16.6 -12.2 -11.6 C -7.1 -6.6 -2 -1.9 0 0 Z"/>
+      <path class="leaf-vein" d="M0 -32.5 Q 11.5 -39.4 25.5 -58 M0 -37.1 Q -10.2 -44.1 -22.5 -62.6 M0 -60.3 Q 15.7 -67.3 34.8 -85.8 M0 -65 Q -13.9 -71.9 -30.6 -90.5 M0 -88.2 Q 15.7 -95.1 34.8 -113.7 M0 -92.8 Q -13.9 -99.8 -30.6 -118.3 M0 -113.7 Q 12.5 -120.6 27.8 -139.2 M0 -118.3 Q -11.1 -125.3 -24.5 -143.8 M0 -134.6 Q 7.3 -141.5 16.2 -160.1 M0 -139.2 Q -6.5 -146.2 -14.3 -164.7"/>
+      <path class="leaf-rib" d="M0 4 C 2.3 -58 -2.3 -104.4 0 -153.1"/>
+    </g></g><g class="leaf" data-pos="translate(284 210) rotate(39.6)" transform="translate(284 210) rotate(39.6)"><g>
+      <path class="leaf-fill" d="M0 0 C 2.9 -1.7 12.9 -5.9 17.3 -10.4 C 21.6 -14.9 22.2 -20.8 26.2 -27 C 30.2 -33.3 38.8 -40.6 41.2 -47.8 C 43.6 -55.1 40.6 -63.1 40.8 -70.7 C 40.9 -78.3 44.1 -86.3 42.2 -93.6 C 40.3 -100.9 33 -108.2 29.3 -114.4 C 25.7 -120.6 25.3 -126.2 20.4 -131 C 15.5 -135.9 3.4 -141.4 0 -143.5 C -2.3 -141.4 -8.7 -135.9 -13.7 -131 C -18.7 -126.2 -27 -120.6 -30.2 -114.4 C -33.4 -108.2 -31.2 -100.9 -32.9 -93.6 C -34.6 -86.3 -40.4 -78.3 -40.2 -70.7 C -40.1 -63.1 -34.1 -55.1 -32 -47.8 C -29.9 -40.6 -30.9 -33.3 -27.4 -27 C -23.9 -20.8 -15.5 -14.9 -10.9 -10.4 C -6.4 -5.9 -1.8 -1.7 0 0 Z"/>
+      <path class="leaf-vein" d="M0 -29.1 Q 10.3 -35.4 22.9 -52 M0 -33.3 Q -9.2 -39.5 -20.1 -56.2 M0 -54.1 Q 14 -60.3 31.2 -77 M0 -58.2 Q -12.5 -64.5 -27.5 -81.1 M0 -79 Q 14 -85.3 31.2 -101.9 M0 -83.2 Q -12.5 -89.4 -27.5 -106.1 M0 -101.9 Q 11.2 -108.2 25 -124.8 M0 -106.1 Q -10 -112.3 -22 -129 M0 -120.6 Q 6.6 -126.9 14.6 -143.5 M0 -124.8 Q -5.8 -131 -12.8 -147.7"/>
+      <path class="leaf-rib" d="M0 4 C 2.1 -52 -2.1 -93.6 0 -137.3"/>
+    </g></g><g class="leaf" data-pos="translate(92 288) rotate(-78.3)" transform="translate(92 288) rotate(-78.3)"><g>
+      <path class="leaf-fill" d="M0 0 C 2.2 -1.3 9.7 -4.4 12.9 -7.8 C 16.2 -11.2 16.7 -15.6 19.7 -20.3 C 22.6 -25 29.1 -30.4 30.9 -35.9 C 32.7 -41.3 30.4 -47.3 30.6 -53 C 30.7 -58.8 33.1 -64.7 31.7 -70.2 C 30.2 -75.7 24.7 -81.1 22 -85.8 C 19.3 -90.5 19 -94.6 15.3 -98.3 C 11.6 -101.9 2.5 -106.1 0 -107.6 C -1.7 -106.1 -6.5 -101.9 -10.3 -98.3 C -14 -94.6 -20.2 -90.5 -22.6 -85.8 C -25 -81.1 -23.4 -75.7 -24.7 -70.2 C -25.9 -64.7 -30.3 -58.8 -30.2 -53 C -30.1 -47.3 -25.6 -41.3 -24 -35.9 C -22.4 -30.4 -23.2 -25 -20.6 -20.3 C -17.9 -15.6 -11.6 -11.2 -8.2 -7.8 C -4.8 -4.4 -1.4 -1.3 0 0 Z"/>
+      <path class="leaf-vein" d="M0 -21.8 Q 7.7 -26.5 17.2 -39 M0 -25 Q -6.9 -29.6 -15.1 -42.1 M0 -40.6 Q 10.5 -45.2 23.4 -57.7 M0 -43.7 Q -9.4 -48.4 -20.6 -60.8 M0 -59.3 Q 10.5 -64 23.4 -76.4 M0 -62.4 Q -9.4 -67.1 -20.6 -79.6 M0 -76.4 Q 8.4 -81.1 18.7 -93.6 M0 -79.6 Q -7.5 -84.2 -16.5 -96.7 M0 -90.5 Q 4.9 -95.2 10.9 -107.6 M0 -93.6 Q -4.4 -98.3 -9.6 -110.8"/>
+      <path class="leaf-rib" d="M0 4 C 1.6 -39 -1.6 -70.2 0 -103"/>
+    </g></g><g class="leaf" data-pos="translate(312 282) rotate(68.6)" transform="translate(312 282) rotate(68.6)"><g>
+      <path class="leaf-fill" d="M0 0 C 2 -1.2 9.2 -4.2 12.3 -7.4 C 15.4 -10.6 15.8 -14.8 18.6 -19.2 C 21.5 -23.7 27.6 -28.9 29.3 -34 C 31 -39.2 28.9 -44.9 29 -50.3 C 29.1 -55.7 31.4 -61.4 30 -66.6 C 28.7 -71.8 23.5 -77 20.9 -81.4 C 18.3 -85.8 18 -89.8 14.5 -93.2 C 11 -96.7 2.4 -100.6 0 -102.1 C -1.6 -100.6 -6.2 -96.7 -9.7 -93.2 C -13.3 -89.8 -19.2 -85.8 -21.5 -81.4 C -23.7 -77 -22.2 -71.8 -23.4 -66.6 C -24.6 -61.4 -28.7 -55.7 -28.6 -50.3 C -28.5 -44.9 -24.3 -39.2 -22.8 -34 C -21.2 -28.9 -22 -23.7 -19.5 -19.2 C -17 -14.8 -11 -10.6 -7.8 -7.4 C -4.5 -4.2 -1.3 -1.2 0 0 Z"/>
+      <path class="leaf-vein" d="M0 -20.7 Q 7.3 -25.2 16.3 -37 M0 -23.7 Q -6.5 -28.1 -14.3 -40 M0 -38.5 Q 10 -42.9 22.2 -54.8 M0 -41.4 Q -8.9 -45.9 -19.5 -57.7 M0 -56.2 Q 10 -60.7 22.2 -72.5 M0 -59.2 Q -8.9 -63.6 -19.5 -75.5 M0 -72.5 Q 8 -77 17.8 -88.8 M0 -75.5 Q -7.1 -79.9 -15.6 -91.8 M0 -85.8 Q 4.7 -90.3 10.4 -102.1 M0 -88.8 Q -4.1 -93.2 -9.1 -105.1"/>
+      <path class="leaf-rib" d="M0 4 C 1.5 -37 -1.5 -66.6 0 -97.7"/>
+    </g></g><g class="leaf" data-pos="translate(170 292) rotate(-45)" transform="translate(170 292) rotate(-45)"><g>
+      <path class="leaf-fill" d="M0 0 C 1.3 -0.8 5.7 -2.6 7.6 -4.6 C 9.6 -6.6 9.8 -9.2 11.6 -12 C 13.4 -14.7 17.1 -17.9 18.2 -21.2 C 19.3 -24.4 18 -27.9 18 -31.3 C 18.1 -34.7 19.5 -38.2 18.7 -41.4 C 17.8 -44.6 14.6 -47.8 13 -50.6 C 11.4 -53.4 11.2 -55.8 9 -58 C 6.9 -60.1 1.5 -62.6 0 -63.5 C -1 -62.6 -3.8 -60.1 -6.1 -58 C -8.3 -55.8 -11.9 -53.4 -13.3 -50.6 C -14.8 -47.8 -13.8 -44.6 -14.6 -41.4 C -15.3 -38.2 -17.9 -34.7 -17.8 -31.3 C -17.7 -27.9 -15.1 -24.4 -14.1 -21.2 C -13.2 -17.9 -13.7 -14.7 -12.1 -12 C -10.6 -9.2 -6.9 -6.6 -4.8 -4.6 C -2.8 -2.6 -0.8 -0.8 0 0 Z"/>
+      <path class="leaf-vein" d="M0 -12.9 Q 4.6 -15.6 10.1 -23 M0 -14.7 Q -4 -17.5 -8.9 -24.8 M0 -23.9 Q 6.2 -26.7 13.8 -34 M0 -25.8 Q -5.5 -28.5 -12.1 -35.9 M0 -35 Q 6.2 -37.7 13.8 -45.1 M0 -36.8 Q -5.5 -39.6 -12.1 -46.9 M0 -45.1 Q 5 -47.8 11 -55.2 M0 -46.9 Q -4.4 -49.7 -9.7 -57 M0 -53.4 Q 2.9 -56.1 6.4 -63.5 M0 -55.2 Q -2.6 -58 -5.7 -65.3"/>
+      <path class="leaf-rib" d="M0 4 C 0.9 -23 -0.9 -41.4 0 -60.7"/>
+    </g></g><g class="leaf" data-pos="translate(232 296) rotate(49.4)" transform="translate(232 296) rotate(49.4)"><g>
+      <path class="leaf-fill" d="M0 0 C 1.2 -0.7 5.2 -2.4 7 -4.2 C 8.7 -6 9 -8.4 10.6 -10.9 C 12.2 -13.4 15.7 -16.4 16.6 -19.3 C 17.6 -22.3 16.4 -25.5 16.5 -28.6 C 16.5 -31.6 17.8 -34.9 17.1 -37.8 C 16.3 -40.7 13.3 -43.7 11.8 -46.2 C 10.4 -48.7 10.2 -51 8.2 -52.9 C 6.3 -54.9 1.4 -57.1 0 -58 C -0.9 -57.1 -3.5 -54.9 -5.5 -52.9 C -7.6 -51 -10.9 -48.7 -12.2 -46.2 C -13.5 -43.7 -12.6 -40.7 -13.3 -37.8 C -14 -34.9 -16.3 -31.6 -16.2 -28.6 C -16.2 -25.5 -13.8 -22.3 -12.9 -19.3 C -12.1 -16.4 -12.5 -13.4 -11.1 -10.9 C -9.7 -8.4 -6.3 -6 -4.4 -4.2 C -2.6 -2.4 -0.7 -0.7 0 0 Z"/>
+      <path class="leaf-vein" d="M0 -11.8 Q 4.2 -14.3 9.2 -21 M0 -13.4 Q -3.7 -16 -8.1 -22.7 M0 -21.8 Q 5.7 -24.4 12.6 -31.1 M0 -23.5 Q -5 -26 -11.1 -32.8 M0 -31.9 Q 5.7 -34.4 12.6 -41.2 M0 -33.6 Q -5 -36.1 -11.1 -42.8 M0 -41.2 Q 4.5 -43.7 10.1 -50.4 M0 -42.8 Q -4 -45.4 -8.9 -52.1 M0 -48.7 Q 2.6 -51.2 5.9 -58 M0 -50.4 Q -2.4 -52.9 -5.2 -59.6"/>
+      <path class="leaf-rib" d="M0 4 C 0.8 -21 -0.8 -37.8 0 -55.4"/>
+    </g></g></g>
+  </svg>
+          </div>
+          <figcaption class="plate-label">
+            <span class="plate-n">Tav. I</span>
+            <span><em>Beta vulgaris</em> · barbabietola</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="hero-scroll" aria-hidden="true"><span>Scorri, cresce</span><i></i></p>
+    </section>
+
+    <!-- LA CUCINA: tre "cartellini da erbario" con i fatti che si sanno del locale -->
+    <section class="section kitchen" id="cucina" aria-labelledby="kitchen-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="sec-n">01</span> La cucina</p>
+          <h2 id="kitchen-title" data-reveal>Pugliese di radice, <em>biologica</em> per scelta.</h2>
+        </header>
+        <div class="kitchen-grid">
+          <div class="kitchen-text" data-reveal>
+            <p class="lead">Cibio sta in una delle vie più antiche di Barletta, quella che sale verso il Duomo. In cucina si parte dalla tradizione pugliese e la si guarda con occhi nuovi: verdure dell’orto, legumi, pesce, paste fatte con cura.</p>
+            <p>Gli ingredienti sono biologici, e la carta è scritta per tutti: chi mangia di tutto, chi ha scelto il vegetale, chi deve stare attento al glutine. Ogni piatto dice chiaramente cosa contiene.</p>
+          </div>
+          <figure class="kitchen-photo" data-reveal>
+            <div class="ph ph--piatto" aria-hidden="true"><!-- segnaposto: public/images/foto/piatto.jpg --><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+    <defs><radialGradient id="cb-beet" cx=".4" cy=".35" r=".75"><stop offset="0" stop-color="#b03a68"/><stop offset=".6" stop-color="#7b1e45"/><stop offset="1" stop-color="#5a1433"/></radialGradient></defs>
+    <rect width="400" height="500" fill="#262c1f"/>
+    <g stroke="#efe7d6" stroke-width="1" opacity=".07"><path d="M0 4H400"/><path d="M3 0V500"/><path d="M0 16H400"/><path d="M13 0V500"/><path d="M0 28H400"/><path d="M23 0V500"/><path d="M0 40H400"/><path d="M33 0V500"/><path d="M0 52H400"/><path d="M43 0V500"/><path d="M0 64H400"/><path d="M53 0V500"/><path d="M0 76H400"/><path d="M63 0V500"/><path d="M0 88H400"/><path d="M73 0V500"/><path d="M0 100H400"/><path d="M83 0V500"/><path d="M0 112H400"/><path d="M93 0V500"/><path d="M0 124H400"/><path d="M103 0V500"/><path d="M0 136H400"/><path d="M113 0V500"/><path d="M0 148H400"/><path d="M123 0V500"/><path d="M0 160H400"/><path d="M133 0V500"/><path d="M0 172H400"/><path d="M143 0V500"/><path d="M0 184H400"/><path d="M153 0V500"/><path d="M0 196H400"/><path d="M163 0V500"/><path d="M0 208H400"/><path d="M173 0V500"/><path d="M0 220H400"/><path d="M183 0V500"/><path d="M0 232H400"/><path d="M193 0V500"/><path d="M0 244H400"/><path d="M203 0V500"/><path d="M0 256H400"/><path d="M213 0V500"/><path d="M0 268H400"/><path d="M223 0V500"/><path d="M0 280H400"/><path d="M233 0V500"/><path d="M0 292H400"/><path d="M243 0V500"/><path d="M0 304H400"/><path d="M253 0V500"/><path d="M0 316H400"/><path d="M263 0V500"/><path d="M0 328H400"/><path d="M273 0V500"/><path d="M0 340H400"/><path d="M283 0V500"/><path d="M0 352H400"/><path d="M293 0V500"/><path d="M0 364H400"/><path d="M303 0V500"/><path d="M0 376H400"/><path d="M313 0V500"/><path d="M0 388H400"/><path d="M323 0V500"/><path d="M0 400H400"/><path d="M333 0V500"/><path d="M0 412H400"/><path d="M343 0V500"/><path d="M0 424H400"/><path d="M353 0V500"/><path d="M0 436H400"/><path d="M363 0V500"/><path d="M0 448H400"/><path d="M373 0V500"/><path d="M0 460H400"/><path d="M383 0V500"/><path d="M0 472H400"/><path d="M393 0V500"/><path d="M0 484H400"/><path d="M403 0V500"/><path d="M0 496H400"/><path d="M413 0V500"/></g>
+    <ellipse cx="206" cy="262" rx="162" ry="160" fill="#14180f" opacity=".45"/>
+    <circle cx="200" cy="250" r="158" fill="#f6f0e4"/>
+    <circle cx="200" cy="250" r="158" fill="none" stroke="#1f2419" stroke-width="2"/>
+    <circle cx="200" cy="250" r="128" fill="none" stroke="#1f2419" stroke-width="1" opacity=".22"/>
+    <g opacity=".5" fill="#e0b54a"><ellipse cx="134" cy="196" rx="9" ry="5"/><ellipse cx="270" cy="312" rx="11" ry="6"/><ellipse cx="282" cy="204" rx="6" ry="4"/></g>
+    <g transform="translate(200 176) rotate(0)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(247.6 193.3) rotate(40)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(272.9 237.2) rotate(80)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(264.1 287) rotate(120)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(225.3 319.5) rotate(160)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(174.7 319.5) rotate(200)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(135.9 287) rotate(240)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(127.1 237.2) rotate(280)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(152.4 193.3) rotate(320)"><circle r="34" fill="url(#cb-beet)" stroke="#4c1029" stroke-width="1.2"/><circle r="24" fill="none" stroke="#d27a9b" stroke-width="1.4" opacity=".55"/><circle r="13" fill="none" stroke="#d27a9b" stroke-width="1.2" opacity=".45"/><path d="M-20 -14 Q -24 0 -18 12" fill="none" stroke="#f3c4d5" stroke-width="2" opacity=".4" stroke-linecap="round"/></g><g transform="translate(200 236) rotate(-20)"><path d="M-22 0 A22 22 0 0 1 22 0 Q 0 9 -22 0 Z" fill="#e8952f" stroke="#a6561a" stroke-width="1.2"/><path d="M-14 -2 L-8 -13 M0 -3 V-17 M14 -2 L8 -13" stroke="#f6c47a" stroke-width="1.4" stroke-linecap="round"/></g><g transform="translate(214 262) rotate(50)"><path d="M-22 0 A22 22 0 0 1 22 0 Q 0 9 -22 0 Z" fill="#e8952f" stroke="#a6561a" stroke-width="1.2"/><path d="M-14 -2 L-8 -13 M0 -3 V-17 M14 -2 L8 -13" stroke="#f6c47a" stroke-width="1.4" stroke-linecap="round"/></g><g transform="translate(184 266) rotate(140)"><path d="M-22 0 A22 22 0 0 1 22 0 Q 0 9 -22 0 Z" fill="#e8952f" stroke="#a6561a" stroke-width="1.2"/><path d="M-14 -2 L-8 -13 M0 -3 V-17 M14 -2 L8 -13" stroke="#f6c47a" stroke-width="1.4" stroke-linecap="round"/></g>
+    <g transform="translate(150 320) rotate(-30)" fill="none" stroke="#6f8a3a" stroke-width="1.6" stroke-linecap="round"><path d="M0 0 V-46"/><path d="M0 -10 L-12 -22 M0 -10 L12 -22 M0 -22 L-10 -34 M0 -22 L10 -34 M0 -34 L-7 -44 M0 -34 L7 -44 M-12 -22 L-18 -26 M12 -22 L18 -26"/></g><g transform="translate(262 196) rotate(40)" fill="none" stroke="#6f8a3a" stroke-width="1.6" stroke-linecap="round"><path d="M0 0 V-46"/><path d="M0 -10 L-12 -22 M0 -10 L12 -22 M0 -22 L-10 -34 M0 -22 L10 -34 M0 -34 L-7 -44 M0 -34 L7 -44 M-12 -22 L-18 -26 M12 -22 L18 -26"/></g><g transform="translate(204 214) rotate(8)" fill="none" stroke="#6f8a3a" stroke-width="1.6" stroke-linecap="round"><path d="M0 0 V-46"/><path d="M0 -10 L-12 -22 M0 -10 L12 -22 M0 -22 L-10 -34 M0 -22 L10 -34 M0 -34 L-7 -44 M0 -34 L7 -44 M-12 -22 L-18 -26 M12 -22 L18 -26"/></g>
+    <g fill="#efe0b8" stroke="#8a7a52" stroke-width=".6"><ellipse cx="150" cy="214" rx="3.2" ry="2" transform="rotate(0 150 214)"/><ellipse cx="262" cy="300" rx="3.2" ry="2" transform="rotate(37 262 300)"/><ellipse cx="240" cy="196" rx="3.2" ry="2" transform="rotate(74 240 196)"/><ellipse cx="160" cy="300" rx="3.2" ry="2" transform="rotate(111 160 300)"/><ellipse cx="292" cy="238" rx="3.2" ry="2" transform="rotate(148 292 238)"/><ellipse cx="118" cy="262" rx="3.2" ry="2" transform="rotate(185 118 262)"/><ellipse cx="206" cy="326" rx="3.2" ry="2" transform="rotate(222 206 326)"/><ellipse cx="196" cy="168" rx="3.2" ry="2" transform="rotate(259 196 168)"/></g>
+  </svg></div>
+          </figure>
+        </div>
+        <ul class="tags-cards">
+          <li class="card" data-reveal>
+            <svg class="sprout" viewBox="0 0 80 80" aria-hidden="true"><path pathLength="1" d="M40 78 C 40 60 40 46 41 30"/><path pathLength="1" d="M41 46 C 30 42 20 32 20 18 C 34 18 42 30 41 46 Z"/><path pathLength="1" d="M41 36 C 52 32 62 22 62 8 C 48 8 40 20 41 36 Z"/></svg>
+            <h3>Biologico</h3>
+            <p>Materie prime da agricoltura biologica, scelte secondo la stagione.</p>
+          </li>
+          <li class="card" data-reveal>
+            <svg class="sprout" viewBox="0 0 80 80" aria-hidden="true"><path pathLength="1" d="M40 78 C 38 62 44 50 40 26"/><path pathLength="1" d="M40 26 C 30 22 26 10 32 2 C 42 8 44 18 40 26 Z"/><path pathLength="1" d="M41 52 C 30 50 16 54 10 44 C 22 36 36 42 41 52 Z"/><path pathLength="1" d="M41 42 C 54 42 64 34 70 26 C 58 22 46 30 41 42 Z"/></svg>
+            <h3>Per ogni tavola</h3>
+            <p>Vegano, vegetariano, senza glutine: segnato in carta, piatto per piatto.</p>
+          </li>
+          <li class="card" data-reveal>
+            <svg class="sprout" viewBox="0 0 80 80" aria-hidden="true"><path pathLength="1" d="M40 78 C 40 64 36 52 40 40"/><path pathLength="1" d="M40 40 C 24 40 14 28 16 12 C 32 14 42 26 40 40 Z"/><path pathLength="1" d="M40 40 C 56 40 66 28 64 12 C 48 14 38 26 40 40 Z"/><path pathLength="1" d="M10 78 H70"/></svg>
+            <h3>Vino del territorio</h3>
+            <p>Soprattutto etichette pugliesi, accanto a produttori biologici e biodinamici di tutta Italia.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MENÙ con i filtri: etichette (vegano, vegetariano, senza glutine, crudo) e allergeni da escludere -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="sec-n">02</span> Il menù</p>
+          <h2 id="menu-title" data-reveal>Scegli <em>cosa fa per te.</em></h2>
+          <p class="sec-sub">Filtra la carta per esigenza o togli gli allergeni che non puoi mangiare: restano solo i piatti adatti.</p>
+        </header>
+
+        <div class="filters" id="menu-filters">
+          <div class="filters-row" role="group" aria-label="Mostra solo i piatti">
+      <span class="filters-label">Mostra</span>
+      <button type="button" class="f-chip f-chip--all" data-tag="" aria-pressed="true">Tutto</button><button type="button" class="f-chip f-chip--vegan" data-tag="vegan" aria-pressed="false"><i aria-hidden="true"></i>Vegano</button><button type="button" class="f-chip f-chip--veg" data-tag="veg" aria-pressed="false"><i aria-hidden="true"></i>Vegetariano</button><button type="button" class="f-chip f-chip--gf" data-tag="gf" aria-pressed="false"><i aria-hidden="true"></i>Senza glutine</button><button type="button" class="f-chip f-chip--raw" data-tag="raw" aria-pressed="false"><i aria-hidden="true"></i>Crudo</button>
+    </div>
+    <details class="allergen-box">
+      <summary><span>Escludi allergeni</span><b data-allergen-count></b></summary>
+      <div class="allergen-grid" role="group" aria-label="Nascondi i piatti che contengono"><button type="button" class="a-chip" data-allergen="glutine" aria-pressed="false"><span aria-hidden="true">1</span>Glutine</button><button type="button" class="a-chip" data-allergen="crostacei" aria-pressed="false"><span aria-hidden="true">2</span>Crostacei</button><button type="button" class="a-chip" data-allergen="uova" aria-pressed="false"><span aria-hidden="true">3</span>Uova</button><button type="button" class="a-chip" data-allergen="pesce" aria-pressed="false"><span aria-hidden="true">4</span>Pesce</button><button type="button" class="a-chip" data-allergen="arachidi" aria-pressed="false"><span aria-hidden="true">5</span>Arachidi</button><button type="button" class="a-chip" data-allergen="soia" aria-pressed="false"><span aria-hidden="true">6</span>Soia</button><button type="button" class="a-chip" data-allergen="latte" aria-pressed="false"><span aria-hidden="true">7</span>Latte</button><button type="button" class="a-chip" data-allergen="frutta-guscio" aria-pressed="false"><span aria-hidden="true">8</span>Frutta a guscio</button><button type="button" class="a-chip" data-allergen="sedano" aria-pressed="false"><span aria-hidden="true">9</span>Sedano</button><button type="button" class="a-chip" data-allergen="senape" aria-pressed="false"><span aria-hidden="true">10</span>Senape</button><button type="button" class="a-chip" data-allergen="sesamo" aria-pressed="false"><span aria-hidden="true">11</span>Sesamo</button><button type="button" class="a-chip" data-allergen="solfiti" aria-pressed="false"><span aria-hidden="true">12</span>Solfiti</button><button type="button" class="a-chip" data-allergen="lupini" aria-pressed="false"><span aria-hidden="true">13</span>Lupini</button><button type="button" class="a-chip" data-allergen="molluschi" aria-pressed="false"><span aria-hidden="true">14</span>Molluschi</button></div>
+      <p class="allergen-hint">Tocca un allergene per nascondere i piatti che lo contengono.</p>
+    </details>
+          <p class="filters-count" aria-live="polite" data-menu-count></p>
+        </div>
+
+        <nav class="menu-tabs" aria-label="Sezioni del menù"><a href="#cat-orto" class="menu-tab" data-cat="orto">Dall’orto</a><a href="#cat-primi" class="menu-tab" data-cat="primi">Primi</a><a href="#cat-burger" class="menu-tab" data-cat="burger">I burger vegetali</a><a href="#cat-secondi" class="menu-tab" data-cat="secondi">Secondi</a><a href="#cat-dolci" class="menu-tab" data-cat="dolci">Dolci</a></nav>
+        <div class="menu-body" id="menu-body">
+          <section class="menu-cat" id="cat-orto" data-cat="orto" aria-labelledby="h-orto">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">01</span>
+        <h3 id="h-orto">Dall’orto</h3>
+        <p>Per cominciare</p>
+      </header>
+      <ul class="dish-list"><li class="dish" data-tags="vegan veg gf" data-allergens="soia">
+        <div class="dish-top">
+          <p class="dish-name">Tempura di verdure di stagione</p>
+          
+        </div>
+        <p class="dish-desc">Pastella leggera di farina di riso, salsa allo yogurt di soia.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="tag tag--gf">Senza glutine</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Soia">6</abbr><span class="dish-al-names" aria-hidden="true">soia</span></span></p>
+      </li><li class="dish" data-tags="vegan veg" data-allergens="glutine">
+        <div class="dish-top">
+          <p class="dish-name">Bruschetta del giorno</p>
+          
+        </div>
+        <p class="dish-desc">Pane di grano duro tostato, olio extravergine nuovo e quello che offre l’orto.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Glutine">1</abbr><span class="dish-al-names" aria-hidden="true">glutine</span></span></p>
+      </li><li class="dish" data-tags="vegan veg gf raw" data-allergens="sesamo">
+        <div class="dish-top">
+          <p class="dish-name">Carpaccio di barbabietola</p>
+          
+        </div>
+        <p class="dish-desc">Barbabietola cruda a fette sottili, arancia, finocchio e semi tostati.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="tag tag--gf">Senza glutine</span><span class="tag tag--raw">Crudo</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Sesamo">11</abbr><span class="dish-al-names" aria-hidden="true">sesamo</span></span></p>
+      </li><li class="dish" data-tags="vegan veg gf raw" data-allergens="sedano">
+        <div class="dish-top">
+          <p class="dish-name">Pinzimonio dell’orto</p>
+          
+        </div>
+        <p class="dish-desc">Verdure crude da intingere in olio, sale e limone.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="tag tag--gf">Senza glutine</span><span class="tag tag--raw">Crudo</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Sedano">9</abbr><span class="dish-al-names" aria-hidden="true">sedano</span></span></p>
+      </li><li class="dish" data-tags="veg" data-allergens="latte glutine">
+        <div class="dish-top">
+          <p class="dish-name">Burrata e pomodori secchi</p>
+          
+        </div>
+        <p class="dish-desc">Con friselle sbriciolate e basilico.</p>
+        <p class="dish-meta"><span class="tag tag--veg">Vegetariano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Latte">7</abbr><abbr title="Glutine">1</abbr><span class="dish-al-names" aria-hidden="true">latte, glutine</span></span></p>
+      </li></ul>
+    </section><section class="menu-cat" id="cat-primi" data-cat="primi" aria-labelledby="h-primi">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">02</span>
+        <h3 id="h-primi">Primi</h3>
+        <p>Paste, riso e zuppe</p>
+      </header>
+      <ul class="dish-list"><li class="dish" data-tags="veg" data-allergens="glutine uova latte frutta-guscio">
+        <div class="dish-top">
+          <p class="dish-name">Ravioli alla barbabietola</p>
+          
+        </div>
+        <p class="dish-desc">Ripieni di ricotta, burro alle erbe e noci.</p>
+        <p class="dish-meta"><span class="tag tag--veg">Vegetariano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Glutine">1</abbr><abbr title="Uova">3</abbr><abbr title="Latte">7</abbr><abbr title="Frutta a guscio">8</abbr><span class="dish-al-names" aria-hidden="true">glutine, uova, latte, frutta a guscio</span></span></p>
+      </li><li class="dish" data-tags="vegan veg" data-allergens="glutine">
+        <div class="dish-top">
+          <p class="dish-name">Fusilli con cime di rapa</p>
+          
+        </div>
+        <p class="dish-desc">Pangrattato croccante all’aglio, peperoncino dolce.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Glutine">1</abbr><span class="dish-al-names" aria-hidden="true">glutine</span></span></p>
+      </li><li class="dish" data-tags="vegan veg gf" data-allergens="sedano">
+        <div class="dish-top">
+          <p class="dish-name">Risotto alla zucca e rosmarino</p>
+          
+        </div>
+        <p class="dish-desc">Riso Carnaroli, zucca arrostita, mantecato con olio.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="tag tag--gf">Senza glutine</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Sedano">9</abbr><span class="dish-al-names" aria-hidden="true">sedano</span></span></p>
+      </li><li class="dish" data-tags="vegan veg" data-allergens="glutine sedano">
+        <div class="dish-top">
+          <p class="dish-name">Zuppa di legumi e cereali</p>
+          
+        </div>
+        <p class="dish-desc">Ceci, lenticchie e farro, crostini all’olio a parte.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Glutine">1</abbr><abbr title="Sedano">9</abbr><span class="dish-al-names" aria-hidden="true">glutine, sedano</span></span></p>
+      </li></ul>
+    </section><section class="menu-cat" id="cat-burger" data-cat="burger" aria-labelledby="h-burger">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">03</span>
+        <h3 id="h-burger">I burger vegetali</h3>
+        <p>Tre ricette, pane morbido</p>
+      </header>
+      <ul class="dish-list"><li class="dish" data-tags="vegan veg" data-allergens="glutine senape sesamo">
+        <div class="dish-top">
+          <p class="dish-name">Burger di ceci e curcuma</p>
+          
+        </div>
+        <p class="dish-desc">Maionese vegetale, insalata e pomodoro.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Glutine">1</abbr><abbr title="Senape">10</abbr><abbr title="Sesamo">11</abbr><span class="dish-al-names" aria-hidden="true">glutine, senape, sesamo</span></span></p>
+      </li><li class="dish" data-tags="vegan veg" data-allergens="glutine senape sesamo">
+        <div class="dish-top">
+          <p class="dish-name">Burger di lenticchie e barbabietola</p>
+          
+        </div>
+        <p class="dish-desc">Cipolla rossa in agrodolce, salsa di senape.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Glutine">1</abbr><abbr title="Senape">10</abbr><abbr title="Sesamo">11</abbr><span class="dish-al-names" aria-hidden="true">glutine, senape, sesamo</span></span></p>
+      </li><li class="dish" data-tags="vegan veg" data-allergens="glutine sesamo">
+        <div class="dish-top">
+          <p class="dish-name">Burger di quinoa e verdure</p>
+          
+        </div>
+        <p class="dish-desc">Zucchine grigliate, hummus al limone.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Glutine">1</abbr><abbr title="Sesamo">11</abbr><span class="dish-al-names" aria-hidden="true">glutine, sesamo</span></span></p>
+      </li></ul>
+    </section><section class="menu-cat" id="cat-secondi" data-cat="secondi" aria-labelledby="h-secondi">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">04</span>
+        <h3 id="h-secondi">Secondi</h3>
+        <p>Mare, terra e verdure</p>
+      </header>
+      <ul class="dish-list"><li class="dish" data-tags="gf" data-allergens="molluschi">
+        <div class="dish-top">
+          <p class="dish-name">Polpo arrosto</p>
+          
+        </div>
+        <p class="dish-desc">Crema di patate e prezzemolo, olive.</p>
+        <p class="dish-meta"><span class="tag tag--gf">Senza glutine</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Molluschi">14</abbr><span class="dish-al-names" aria-hidden="true">molluschi</span></span></p>
+      </li><li class="dish" data-tags="vegan veg gf raw" data-allergens="frutta-guscio">
+        <div class="dish-top">
+          <p class="dish-name">Insalata grande di stagione</p>
+          
+        </div>
+        <p class="dish-desc">Foglie, semi, frutta secca e verdure crude.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="tag tag--gf">Senza glutine</span><span class="tag tag--raw">Crudo</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Frutta a guscio">8</abbr><span class="dish-al-names" aria-hidden="true">frutta a guscio</span></span></p>
+      </li><li class="dish" data-tags="vegan veg" data-allergens="glutine">
+        <div class="dish-top">
+          <p class="dish-name">Verdure fritte e grigliate</p>
+          
+        </div>
+        <p class="dish-desc">Un piatto di contorni, per chi vuole assaggiare tutto.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Glutine">1</abbr><span class="dish-al-names" aria-hidden="true">glutine</span></span></p>
+      </li><li class="dish" data-tags="gf" data-allergens="latte">
+        <div class="dish-top">
+          <p class="dish-name">Tagliata di manzo</p>
+          
+        </div>
+        <p class="dish-desc">Rucola e scaglie di formaggio stagionato.</p>
+        <p class="dish-meta"><span class="tag tag--gf">Senza glutine</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Latte">7</abbr><span class="dish-al-names" aria-hidden="true">latte</span></span></p>
+      </li></ul>
+    </section><section class="menu-cat" id="cat-dolci" data-cat="dolci" aria-labelledby="h-dolci">
+      <header class="menu-cat-head">
+        <span class="menu-cat-n" aria-hidden="true">05</span>
+        <h3 id="h-dolci">Dolci</h3>
+        <p>Per finire</p>
+      </header>
+      <ul class="dish-list"><li class="dish" data-tags="vegan veg gf" data-allergens="">
+        <div class="dish-top">
+          <p class="dish-name">Sorbetto al limone</p>
+          
+        </div>
+        <p class="dish-desc">Limoni non trattati, solo frutta, acqua e zucchero.</p>
+        <p class="dish-meta"><span class="tag tag--vegan">Vegano</span><span class="tag tag--gf">Senza glutine</span><span class="dish-al dish-al--none">Nessuno dei 14 allergeni</span></p>
+      </li><li class="dish" data-tags="veg gf" data-allergens="latte">
+        <div class="dish-top">
+          <p class="dish-name">Gelato della casa</p>
+          
+        </div>
+        <p class="dish-desc">Chiedete i gusti del giorno.</p>
+        <p class="dish-meta"><span class="tag tag--veg">Vegetariano</span><span class="tag tag--gf">Senza glutine</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Latte">7</abbr><span class="dish-al-names" aria-hidden="true">latte</span></span></p>
+      </li><li class="dish" data-tags="veg gf" data-allergens="uova frutta-guscio">
+        <div class="dish-top">
+          <p class="dish-name">Torta di mandorle e arancia</p>
+          
+        </div>
+        <p class="dish-desc">Senza farina e senza burro.</p>
+        <p class="dish-meta"><span class="tag tag--veg">Vegetariano</span><span class="tag tag--gf">Senza glutine</span><span class="dish-al"><span class="sr">Allergeni:</span><abbr title="Uova">3</abbr><abbr title="Frutta a guscio">8</abbr><span class="dish-al-names" aria-hidden="true">uova, frutta a guscio</span></span></p>
+      </li></ul>
+    </section>
+          <p class="menu-empty" hidden>Nessun piatto con questa combinazione di filtri. Prova a toglierne uno, oppure chiedi in sala: spesso una ricetta si può adattare.</p>
+        </div>
+        <div class="menu-foot"><p class="menu-price"><span>Spesa</span> €€ · fascia media</p>
+    <p class="menu-allergens"><strong>Celiachia e allergie gravi:</strong> “senza glutine” vuol dire che la ricetta non contiene ingredienti con glutine, ma la cucina è una sola. Ditelo prima di ordinare: vi diciamo cosa c’è in ogni piatto e come lo prepariamo.</p><p class="menu-demo">Menù dimostrativo: piatti, ricette e allergeni definitivi arrivano dalla carta del locale.</p></div>
+      </div>
+    </section>
+
+    <!-- LE STAGIONI: la ruota dei mesi gira con lo scroll (su schermo fermo: frecce e mesi da toccare) -->
+    <section class="section seasons" id="stagioni" aria-labelledby="seasons-title">
+      <div class="seasons-pin">
+        <div class="wrap seasons-grid">
+          <header class="sec-head seasons-head">
+            <p class="eyebrow"><span class="sec-n">03</span> Le stagioni</p>
+            <h2 id="seasons-title"><span class="nowrap">Il calendario</span> <em>dell’orto.</em></h2>
+            <p class="sec-sub">Cosa matura in Puglia, mese per mese. Una cucina biologica segue questo ritmo: <span class="only-motion">scorri e fai girare l’anno.</span><span class="only-static">tocca un mese per vederlo.</span></p>
+          </header>
+          <div class="wheel-wrap">
+            <svg class="wheel" viewBox="-210 -210 420 420" aria-hidden="true">
+    <g class="wheel-rot">
+      <g class="wheel-ticks"><path d="M0 -194 V-204" transform="rotate(0)"/><path d="M0 -194 V-198" transform="rotate(7.5)"/><path d="M0 -194 V-198" transform="rotate(15)"/><path d="M0 -194 V-198" transform="rotate(22.5)"/><path d="M0 -194 V-204" transform="rotate(30)"/><path d="M0 -194 V-198" transform="rotate(37.5)"/><path d="M0 -194 V-198" transform="rotate(45)"/><path d="M0 -194 V-198" transform="rotate(52.5)"/><path d="M0 -194 V-204" transform="rotate(60)"/><path d="M0 -194 V-198" transform="rotate(67.5)"/><path d="M0 -194 V-198" transform="rotate(75)"/><path d="M0 -194 V-198" transform="rotate(82.5)"/><path d="M0 -194 V-204" transform="rotate(90)"/><path d="M0 -194 V-198" transform="rotate(97.5)"/><path d="M0 -194 V-198" transform="rotate(105)"/><path d="M0 -194 V-198" transform="rotate(112.5)"/><path d="M0 -194 V-204" transform="rotate(120)"/><path d="M0 -194 V-198" transform="rotate(127.5)"/><path d="M0 -194 V-198" transform="rotate(135)"/><path d="M0 -194 V-198" transform="rotate(142.5)"/><path d="M0 -194 V-204" transform="rotate(150)"/><path d="M0 -194 V-198" transform="rotate(157.5)"/><path d="M0 -194 V-198" transform="rotate(165)"/><path d="M0 -194 V-198" transform="rotate(172.5)"/><path d="M0 -194 V-204" transform="rotate(180)"/><path d="M0 -194 V-198" transform="rotate(187.5)"/><path d="M0 -194 V-198" transform="rotate(195)"/><path d="M0 -194 V-198" transform="rotate(202.5)"/><path d="M0 -194 V-204" transform="rotate(210)"/><path d="M0 -194 V-198" transform="rotate(217.5)"/><path d="M0 -194 V-198" transform="rotate(225)"/><path d="M0 -194 V-198" transform="rotate(232.5)"/><path d="M0 -194 V-204" transform="rotate(240)"/><path d="M0 -194 V-198" transform="rotate(247.5)"/><path d="M0 -194 V-198" transform="rotate(255)"/><path d="M0 -194 V-198" transform="rotate(262.5)"/><path d="M0 -194 V-204" transform="rotate(270)"/><path d="M0 -194 V-198" transform="rotate(277.5)"/><path d="M0 -194 V-198" transform="rotate(285)"/><path d="M0 -194 V-198" transform="rotate(292.5)"/><path d="M0 -194 V-204" transform="rotate(300)"/><path d="M0 -194 V-198" transform="rotate(307.5)"/><path d="M0 -194 V-198" transform="rotate(315)"/><path d="M0 -194 V-198" transform="rotate(322.5)"/><path d="M0 -194 V-204" transform="rotate(330)"/><path d="M0 -194 V-198" transform="rotate(337.5)"/><path d="M0 -194 V-198" transform="rotate(345)"/><path d="M0 -194 V-198" transform="rotate(352.5)"/></g>
+      <path class="wheel-seg" data-m="0" d="M-30.5 -114 L-48.7 -181.6 A188 188 0 0 1 48.7 -181.6 L30.5 -114 A118 118 0 0 0 -30.5 -114 Z" fill="#55654a"/><path class="wheel-seg" data-m="1" d="M30.5 -114 L48.7 -181.6 A188 188 0 0 1 132.9 -132.9 L83.4 -83.4 A118 118 0 0 0 30.5 -114 Z" fill="#55654a"/><path class="wheel-seg" data-m="2" d="M83.4 -83.4 L132.9 -132.9 A188 188 0 0 1 181.6 -48.7 L114 -30.5 A118 118 0 0 0 83.4 -83.4 Z" fill="#8fa35a"/><path class="wheel-seg" data-m="3" d="M114 -30.5 L181.6 -48.7 A188 188 0 0 1 181.6 48.7 L114 30.5 A118 118 0 0 0 114 -30.5 Z" fill="#8fa35a"/><path class="wheel-seg" data-m="4" d="M114 30.5 L181.6 48.7 A188 188 0 0 1 132.9 132.9 L83.4 83.4 A118 118 0 0 0 114 30.5 Z" fill="#8fa35a"/><path class="wheel-seg" data-m="5" d="M83.4 83.4 L132.9 132.9 A188 188 0 0 1 48.7 181.6 L30.5 114 A118 118 0 0 0 83.4 83.4 Z" fill="#d99a2b"/><path class="wheel-seg" data-m="6" d="M30.5 114 L48.7 181.6 A188 188 0 0 1 -48.7 181.6 L-30.5 114 A118 118 0 0 0 30.5 114 Z" fill="#d99a2b"/><path class="wheel-seg" data-m="7" d="M-30.5 114 L-48.7 181.6 A188 188 0 0 1 -132.9 132.9 L-83.4 83.4 A118 118 0 0 0 -30.5 114 Z" fill="#d99a2b"/><path class="wheel-seg" data-m="8" d="M-83.4 83.4 L-132.9 132.9 A188 188 0 0 1 -181.6 48.7 L-114 30.5 A118 118 0 0 0 -83.4 83.4 Z" fill="#d99a2b"/><path class="wheel-seg" data-m="9" d="M-114 30.5 L-181.6 48.7 A188 188 0 0 1 -181.6 -48.7 L-114 -30.5 A118 118 0 0 0 -114 30.5 Z" fill="#a64b2a"/><path class="wheel-seg" data-m="10" d="M-114 -30.5 L-181.6 -48.7 A188 188 0 0 1 -132.9 -132.9 L-83.4 -83.4 A118 118 0 0 0 -114 -30.5 Z" fill="#a64b2a"/><path class="wheel-seg" data-m="11" d="M-83.4 -83.4 L-132.9 -132.9 A188 188 0 0 1 -48.7 -181.6 L-30.5 -114 A118 118 0 0 0 -83.4 -83.4 Z" fill="#55654a"/>
+      <circle class="wheel-ring" r="118"/>
+      <circle class="wheel-ring" r="188"/>
+      <g transform="rotate(0)"><text class="wheel-label" data-m="0" x="0" y="-155" text-anchor="middle">Gen</text></g><g transform="rotate(30)"><text class="wheel-label" data-m="1" x="0" y="-155" text-anchor="middle">Feb</text></g><g transform="rotate(60)"><text class="wheel-label" data-m="2" x="0" y="-155" text-anchor="middle">Mar</text></g><g transform="rotate(90)"><text class="wheel-label" data-m="3" x="0" y="-155" text-anchor="middle">Apr</text></g><g transform="rotate(120)"><text class="wheel-label" data-m="4" x="0" y="-155" text-anchor="middle">Mag</text></g><g transform="rotate(150)"><text class="wheel-label" data-m="5" x="0" y="-155" text-anchor="middle">Giu</text></g><g transform="rotate(180)"><text class="wheel-label" data-m="6" x="0" y="-155" text-anchor="middle">Lug</text></g><g transform="rotate(210)"><text class="wheel-label" data-m="7" x="0" y="-155" text-anchor="middle">Ago</text></g><g transform="rotate(240)"><text class="wheel-label" data-m="8" x="0" y="-155" text-anchor="middle">Set</text></g><g transform="rotate(270)"><text class="wheel-label" data-m="9" x="0" y="-155" text-anchor="middle">Ott</text></g><g transform="rotate(300)"><text class="wheel-label" data-m="10" x="0" y="-155" text-anchor="middle">Nov</text></g><g transform="rotate(330)"><text class="wheel-label" data-m="11" x="0" y="-155" text-anchor="middle">Dic</text></g>
+    </g>
+    <path class="wheel-pointer" d="M0 -204 L8 -194 L0 -184 L-8 -194 Z"/>
+  </svg>
+            <div class="wheel-center">
+              <p class="wheel-month" data-season-month>Novembre</p>
+              <p class="wheel-season" data-season-name>autunno</p>
+            </div>
+          </div>
+          <div class="season-panel">
+            <p class="season-kicker">Nell’orto <span data-season-when>adesso</span></p>
+            <ul class="season-list" data-season-list aria-live="polite"></ul>
+            <div class="months" role="group" aria-label="Scegli il mese"><button type="button" class="month" data-m="0" aria-pressed="false">Gen<span class="sr">naio</span></button><button type="button" class="month" data-m="1" aria-pressed="false">Feb<span class="sr">braio</span></button><button type="button" class="month" data-m="2" aria-pressed="false">Mar<span class="sr">zo</span></button><button type="button" class="month" data-m="3" aria-pressed="false">Apr<span class="sr">ile</span></button><button type="button" class="month" data-m="4" aria-pressed="false">Mag<span class="sr">gio</span></button><button type="button" class="month" data-m="5" aria-pressed="false">Giu<span class="sr">gno</span></button><button type="button" class="month" data-m="6" aria-pressed="false">Lug<span class="sr">lio</span></button><button type="button" class="month" data-m="7" aria-pressed="false">Ago<span class="sr">sto</span></button><button type="button" class="month" data-m="8" aria-pressed="false">Set<span class="sr">tembre</span></button><button type="button" class="month" data-m="9" aria-pressed="false">Ott<span class="sr">obre</span></button><button type="button" class="month" data-m="10" aria-pressed="false">Nov<span class="sr">embre</span></button><button type="button" class="month" data-m="11" aria-pressed="false">Dic<span class="sr">embre</span></button></div>
+          </div>
+        </div>
+      </div>
+      <script type="application/json" id="seasons-data">[{"m":"Gennaio","s":"inverno","items":["cime di rapa","cavolfiore","finocchi","carciofi","arance","cicorie"]},{"m":"Febbraio","s":"inverno","items":["carciofi","cime di rapa","finocchi","arance","limoni","cavolo nero"]},{"m":"Marzo","s":"primavera","items":["carciofi","asparagi selvatici","lampascioni","bietole","limoni","fave fresche"]},{"m":"Aprile","s":"primavera","items":["fave","piselli","asparagi","lattuga","fragole","carciofi"]},{"m":"Maggio","s":"primavera","items":["fave","piselli","zucchine","rucola","fragole","ciliegie"]},{"m":"Giugno","s":"estate","items":["ciliegie","albicocche","zucchine","fiori di zucca","fagiolini","pomodori"]},{"m":"Luglio","s":"estate","items":["pomodori","melanzane","peperoni","cetrioli","pesche","cocomero"]},{"m":"Agosto","s":"estate","items":["pomodori","melanzane","fichi","meloni","peperoni","basilico"]},{"m":"Settembre","s":"estate","items":["fichi","uva","fichi d’India","peperoni","pomodori","mandorle"]},{"m":"Ottobre","s":"autunno","items":["uva","melagrane","zucca","castagne","cardoncelli","olive"]},{"m":"Novembre","s":"autunno","items":["olio nuovo","cime di rapa","cachi","melagrane","cavolfiore","finocchi"]},{"m":"Dicembre","s":"inverno","items":["cime di rapa","arance","mandarini","cicorie","cardi","cavoli"]}]</script>
+    </section>
+
+    <!-- DAL CAMPO AL PIATTO: una radice che si disegna scorrendo e collega le tappe -->
+    <section class="section field" id="filiera" aria-labelledby="field-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="sec-n">04</span> Dal campo al piatto</p>
+          <h2 id="field-title" data-reveal>Una strada corta, <em>dalla terra alla tavola.</em></h2>
+        </header>
+        <div class="field-path">
+          <svg class="field-root" viewBox="0 0 40 1000" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M20 0 C 4 120 36 200 20 320 S 4 520 20 640 S 36 860 20 1000" /></svg>
+          <ol class="field-steps">
+            <li class="step" data-step-reveal>
+              <span class="step-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 50 C 22 44 42 44 58 50"/><path d="M10 58 C 24 53 40 53 54 58"/><path d="M20 46 V30 M20 36 C 14 34 12 28 12 24 C 18 26 20 30 20 36 Z M20 34 C 26 32 28 26 28 22 C 22 24 20 28 20 34 Z"/><path d="M42 46 V26 M42 32 C 36 30 34 22 35 18 C 41 20 42 26 42 32 Z M42 30 C 48 28 50 22 49 16 C 43 18 42 24 42 30 Z"/><circle cx="50" cy="12" r="5"/></svg></span>
+              <div><h3>Il campo</h3><p>Verdure, legumi e frutta da agricoltura biologica. Quello che c’è dipende dal mese: per questo la carta cambia.</p></div>
+            </li>
+            <li class="step" data-step-reveal>
+              <span class="step-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 50 C 22 40 36 30 56 12"/><path d="M22 41 C 18 34 20 26 26 22 C 28 30 26 36 22 41 Z"/><path d="M32 33 C 36 26 44 24 50 26 C 46 32 40 34 32 33 Z"/><path d="M40 25 C 38 18 40 12 46 8 C 48 14 46 20 40 25 Z"/><ellipse cx="26" cy="50" rx="5" ry="6.5"/><ellipse cx="40" cy="42" rx="4.5" ry="6"/></svg></span>
+              <div><h3>L’olio</h3><p>Extravergine pugliese, a crudo su quasi tutto. In Puglia si dice che un piatto è finito solo quando ha il suo filo d’olio.</p></div>
+            </li>
+            <li class="step" data-step-reveal>
+              <span class="step-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M22 8 H42 C 44 20 42 30 32 34 C 22 30 20 20 22 8 Z"/><path d="M23 18 H41"/><path d="M32 34 V54 M22 56 H42"/><path d="M50 16 C 52 22 56 24 58 22 M50 16 V10"/><circle cx="50" cy="26" r="3"/><circle cx="55" cy="30" r="3"/><circle cx="48" cy="32" r="3"/><circle cx="53" cy="36" r="3"/></svg></span>
+              <div><h3>La cantina</h3><p>Una carta dei vini soprattutto pugliese, con produttori biologici e biodinamici da tutta Italia.</p></div>
+            </li>
+            <li class="step" data-step-reveal>
+              <span class="step-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="40" rx="26" ry="10"/><ellipse cx="32" cy="38" rx="16" ry="5"/><path d="M24 36 C 26 30 30 28 34 30 C 38 28 42 32 40 36"/><path d="M26 22 C 24 18 28 16 26 12 M32 24 C 30 18 34 16 32 10 M38 22 C 36 18 40 16 38 12"/></svg></span>
+              <div><h3>Il piatto</h3><p>Ricette del territorio con un tocco creativo, pensate perché a tavola nessuno debba rinunciare.</p></div>
+            </li>
+          </ol>
+        </div>
+        <figure class="field-photo" data-reveal>
+          <div class="ph ph--ramo" aria-hidden="true"><!-- segnaposto: public/images/foto/tavola.jpg --><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+    <rect width="400" height="500" fill="#f4eee2"/>
+    <rect x="16" y="16" width="368" height="468" fill="none" stroke="#1f2419" stroke-width="1" opacity=".18"/>
+    <path d="M60 450 C 140 330 250 250 350 70" fill="none" stroke="#5b4630" stroke-width="5" stroke-linecap="round"/>
+    <g stroke="#1f2419" stroke-width="1.3" stroke-linejoin="round"><g transform="translate(79.8 421.9) rotate(-9.6)"><path class="lf" d="M0 0 C 9 -15.2 10 -42.5 0 -60.7 C -9 -42.5 -8 -15.2 0 0 Z" fill="#8a9a66"/><path d="M0 -2 V-54.7" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(94.2 402.9) rotate(90)"><path class="lf" d="M0 0 C 9 -18.5 10 -51.7 0 -73.8 C -9 -51.7 -8 -18.5 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-67.8" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(109.1 384.3) rotate(-18.6)"><path class="lf" d="M0 0 C 9 -21.7 10 -60.8 0 -86.9 C -9 -60.8 -8 -21.7 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-80.9" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(124.4 366) rotate(86.4)"><path class="lf" d="M0 0 C 9 -16.3 10 -45.5 0 -65 C -9 -45.5 -8 -16.3 0 0 Z" fill="#8a9a66"/><path d="M0 -2 V-59" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(140.2 347.7) rotate(-11)"><path class="lf" d="M0 0 C 9 -19.5 10 -54.7 0 -78.1 C -9 -54.7 -8 -19.5 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-72.1" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(156.2 329.4) rotate(99.4)"><path class="lf" d="M0 0 C 9 -14.1 10 -39.4 0 -56.2 C -9 -39.4 -8 -14.1 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-50.2" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(172.5 310.9) rotate(-4.5)"><path class="lf" d="M0 0 C 9 -17.3 10 -48.5 0 -69.3 C -9 -48.5 -8 -17.3 0 0 Z" fill="#8a9a66"/><path d="M0 -2 V-63.3" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(189.1 292.1) rotate(93.2)"><path class="lf" d="M0 0 C 9 -20.6 10 -57.7 0 -82.4 C -9 -57.7 -8 -20.6 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-76.4" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(205.9 272.8) rotate(-17.3)"><path class="lf" d="M0 0 C 9 -15.1 10 -42.4 0 -60.6 C -9 -42.4 -8 -15.1 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-54.6" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(222.9 252.8) rotate(86)"><path class="lf" d="M0 0 C 9 -18.4 10 -51.6 0 -73.7 C -9 -51.6 -8 -18.4 0 0 Z" fill="#8a9a66"/><path d="M0 -2 V-67.7" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(240 232.1) rotate(-13)"><path class="lf" d="M0 0 C 9 -12.9 10 -36.2 0 -51.8 C -9 -36.2 -8 -12.9 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-45.8" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(257.2 210.4) rotate(95.8)"><path class="lf" d="M0 0 C 9 -16.2 10 -45.4 0 -64.9 C -9 -45.4 -8 -16.2 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-58.9" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(274.4 187.6) rotate(-9.6)"><path class="lf" d="M0 0 C 9 -19.5 10 -54.6 0 -78 C -9 -54.6 -8 -19.5 0 0 Z" fill="#8a9a66"/><path d="M0 -2 V-72" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(291.6 163.6) rotate(86.9)"><path class="lf" d="M0 0 C 9 -14 10 -39.3 0 -56.1 C -9 -39.3 -8 -14 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-50.1" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(308.7 138.2) rotate(-24.7)"><path class="lf" d="M0 0 C 9 -17.3 10 -48.4 0 -69.2 C -9 -48.4 -8 -17.3 0 0 Z" fill="#6b7a3a"/><path d="M0 -2 V-63.2" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g><g transform="translate(325.8 111.4) rotate(77.6)"><path class="lf" d="M0 0 C 9 -11.8 10 -33.1 0 -47.3 C -9 -33.1 -8 -11.8 0 0 Z" fill="#8a9a66"/><path d="M0 -2 V-41.3" stroke="#d6dcc0" stroke-width="1" opacity=".7"/></g></g>
+    <path d="M139 349 Q 154.8 357.5 158.6 366.1" fill="none" stroke="#4a3a2a" stroke-width="1.6"/><ellipse cx="158.6" cy="376.1" rx="10" ry="13" fill="#4f5d27" stroke="#1f2419" stroke-width="1.4"/><ellipse cx="155.6" cy="372.1" rx="2.5" ry="4" fill="#fff" opacity=".35"/><path d="M173.7 309.6 Q 170 301 154.2 292.4" fill="none" stroke="#4a3a2a" stroke-width="1.6"/><ellipse cx="154.2" cy="302.4" rx="10" ry="13" fill="#2c1a22" stroke="#1f2419" stroke-width="1.4"/><ellipse cx="151.2" cy="298.4" rx="2.5" ry="4" fill="#fff" opacity=".35"/><path d="M212.6 265 Q 228.5 273.4 232.4 281.9" fill="none" stroke="#4a3a2a" stroke-width="1.6"/><ellipse cx="232.4" cy="291.9" rx="10" ry="13" fill="#6b3a4c" stroke="#1f2419" stroke-width="1.4"/><ellipse cx="229.4" cy="287.9" rx="2.5" ry="4" fill="#fff" opacity=".35"/><path d="M240 232.1 Q 235.9 223.9 219.8 215.7" fill="none" stroke="#4a3a2a" stroke-width="1.6"/><ellipse cx="219.8" cy="225.7" rx="10" ry="13" fill="#4f5d27" stroke="#1f2419" stroke-width="1.4"/><ellipse cx="216.8" cy="221.7" rx="2.5" ry="4" fill="#fff" opacity=".35"/><path d="M276.8 184.3 Q 293.3 191.9 297.8 199.6" fill="none" stroke="#4a3a2a" stroke-width="1.6"/><ellipse cx="297.8" cy="209.6" rx="10" ry="13" fill="#2c1a22" stroke="#1f2419" stroke-width="1.4"/><ellipse cx="294.8" cy="205.6" rx="2.5" ry="4" fill="#fff" opacity=".35"/>
+  </svg></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PRENOTA: modulo come un'etichetta da sacchetto di semi -->
+    <section class="section booking" id="prenota" aria-labelledby="booking-title">
+      <div class="wrap booking-wrap">
+        <header class="sec-head booking-head">
+          <p class="eyebrow"><span class="sec-n">05</span> Prenota</p>
+          <h2 id="booking-title" data-reveal>Un posto <em>a tavola.</em></h2>
+          <p class="sec-sub">Scegli giorno, ora e quante persone siete. La richiesta arriva al locale, che ti richiama per confermare. Per gruppi oltre le 10 persone è meglio telefonare allo <a href="tel:+390883953285">0883 953285</a>.</p>
+          <p class="booking-note">Allergie o intolleranze? Scrivile nelle note: la cucina si prepara prima.</p>
+        </header>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <fieldset class="bf-block">
+            <legend>Giorno</legend>
+            <div class="chips" id="bf-days" role="radiogroup" aria-label="Giorno"></div>
+            <label class="bf-other">Altra data <input type="date" id="bf-date" name="date" required /></label>
+            <p class="bf-error" data-error="date"></p>
+          </fieldset>
+
+          <fieldset class="bf-block">
+            <legend>Orario</legend>
+            <div class="chips chips--time" id="bf-times" role="radiogroup" aria-label="Orario"><p class="bf-hint">Scegli prima il giorno</p></div>
+            <p class="bf-error" data-error="time"></p>
+          </fieldset>
+
+          <fieldset class="bf-block bf-guests">
+            <legend>Persone</legend>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="Una persona in meno">−</button>
+              <output id="bf-guests-out" aria-live="polite">2</output>
+              <button type="button" data-step="1" aria-label="Una persona in più">+</button>
+            </div>
+            <input type="hidden" name="guests" id="bf-guests" value="2" />
+            <p class="bf-error" data-error="guests"></p>
+          </fieldset>
+
+          <div class="bf-grid">
+            <label class="field"><input type="text" name="name" autocomplete="name" required maxlength="60" placeholder=" " /><span>Nome e cognome</span><em class="bf-error" data-error="name"></em></label>
+            <label class="field"><input type="tel" name="phone" autocomplete="tel" required maxlength="20" placeholder=" " inputmode="tel" /><span>Telefono</span><em class="bf-error" data-error="phone"></em></label>
+            <label class="field field--wide"><input type="email" name="email" autocomplete="email" maxlength="120" placeholder=" " /><span>Email (facoltativa)</span><em class="bf-error" data-error="email"></em></label>
+            <label class="field field--wide"><textarea name="notes" rows="2" maxlength="300" placeholder=" "></textarea><span>Note: allergie, celiachia, seggiolone…</span></label>
+          </div>
+
+          <!-- Campo trappola per i bot: invisibile alle persone -->
+          <label class="hp" aria-hidden="true">Sito web <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+
+          <label class="check">
+            <input type="checkbox" name="privacy" required />
+            <span>Accetto il trattamento dei dati per gestire la prenotazione, comprese le eventuali allergie che scrivo nelle note (<a href="/demo/cibio/privacy.html" target="_blank" rel="noopener">informativa privacy</a>).</span>
+          </label>
+          <p class="bf-error" data-error="privacy"></p>
+
+          <div class="bf-submit">
+            <button type="submit" class="btn btn--beet btn--lg">Invia la richiesta</button>
+            <p class="bf-status" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="bf-success" hidden>
+            <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" /><path d="M40 60 C 40 48 40 40 41 28" /><path d="M41 42 C 31 40 25 32 26 22 C 35 24 41 31 41 42 Z" /><path d="M41 36 C 50 34 55 27 55 18 C 47 20 41 26 41 36 Z" /></svg>
+            <h3>Richiesta inviata</h3>
+            <p>Ti richiamiamo per confermare il tavolo.<br />Codice richiesta: <strong data-code></strong></p>
+            <button type="button" class="btn btn--line" data-reset>Nuova prenotazione</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact" id="contatti" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="contact-main">
+          <header class="sec-head sec-head--light">
+            <p class="eyebrow"><span class="sec-n">06</span> Dove siamo</p>
+            <h2 id="contact-title" data-reveal>Via del Duomo, 19 <em>Barletta</em></h2>
+          </header>
+          <p class="contact-sub">Nel centro storico, sulla strada che porta alla Cattedrale di Santa Maria Maggiore.</p>
+          <p class="status status--big" data-open-status><i></i><span>Pranzo e cena · martedì chiuso</span></p>
+          <div class="contact-actions">
+            <a class="btn btn--paper" href="tel:+390883953285">Chiama 0883 953285</a>
+            <a class="btn btn--line-light" href="https://www.google.com/maps/search/?api=1&amp;query=Cibio+Via+del+Duomo+19+Barletta" target="_blank" rel="noopener noreferrer">Indicazioni</a>
+          </div>
+          <ul class="contact-list">
+            <li><span>Telefono</span><a href="tel:+390883953285">0883 953285</a></li>
+            <li><span>Servizi</span>Pranzo e cena · asporto · accessibile in sedia a rotelle</li>
+            <li><span>Pagamenti</span>Carte e smartphone</li>
+          </ul>
+        </div>
+        <div class="contact-side">
+          <h3 class="hours-title">Orari</h3>
+          <ul class="hours" data-hours><li data-day="1"><span>Lunedì</span><span>12:30–15:00 · 20:00–24:00</span></li><li data-day="2"><span>Martedì</span><span>Chiuso</span></li><li data-day="3"><span>Mercoledì</span><span>12:30–15:00 · 20:00–24:00</span></li><li data-day="4"><span>Giovedì</span><span>12:30–15:00 · 20:00–24:00</span></li><li data-day="5"><span>Venerdì</span><span>12:30–15:00 · 20:00–24:00</span></li><li data-day="6"><span>Sabato</span><span>12:30–15:00 · 20:00–24:00</span></li><li data-day="0"><span>Domenica</span><span>12:30–15:00</span></li></ul>
+          <div class="map" id="map">
+            <button type="button" class="map-btn" data-map>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+              <span>Mostra la mappa</span>
+              <small>Si carica da Google Maps</small>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand">Cibio</p>
+      <p>Cucina biologica · Via del Duomo, 19 · 76121 Barletta (BT) · <a href="tel:+390883953285">0883 953285</a></p>
+      <p class="footer-legal"><a href="/demo/cibio/privacy.html">Privacy</a> · Nessun cookie di profilazione · P.IVA da inserire</p>
+    </div>
+  </footer>
+
+  <a href="#prenota" class="book-bar" id="book-bar">Prenota un tavolo</a>
+</body>
+</html>
