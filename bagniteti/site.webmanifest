@@ -1,0 +1,13 @@
+{
+  "name": "Bagni Teti · Lido e pizzeria",
+  "short_name": "Bagni Teti",
+  "lang": "it",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f3e9d6",
+  "theme_color": "#1b5568",
+  "icons": [
+    { "src": "/demo/bagniteti/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/demo/bagniteti/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
