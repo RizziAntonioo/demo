@@ -1,0 +1,11 @@
+{
+  "name": "Forneria Paolillo",
+  "short_name": "Paolillo",
+  "icons": [
+    { "src": "/demo/paolillo/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/demo/paolillo/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#1b130f",
+  "background_color": "#f4ecdd",
+  "display": "browser"
+}

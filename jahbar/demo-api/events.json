@@ -1,0 +1,68 @@
+{
+  "today": "__TODAY__",
+  "items": [
+    {
+      "id": 1,
+      "date": "__DAY+1__",
+      "startTime": "21:30",
+      "kind": "acustico",
+      "title": "Duo acustico sotto le mura",
+      "description": "Due chitarre e una voce, tra cantautori italiani e classici rock riletti piano.",
+      "demo": true
+    },
+    {
+      "id": 2,
+      "date": "__DAY+3__",
+      "startTime": "22:00",
+      "kind": "rock",
+      "title": "Notte rock’n’roll",
+      "description": "Band dal vivo e scaletta da cantare tutti insieme. Si va avanti finché c’è voce.",
+      "demo": true
+    },
+    {
+      "id": 3,
+      "date": "__DAY+5__",
+      "startTime": "20:30",
+      "kind": "arte",
+      "title": "Serata d’arte",
+      "description": "Opere di artisti del territorio appese in sala e musica dal vivo in sottofondo.",
+      "demo": true
+    },
+    {
+      "id": 4,
+      "date": "__DAY+8__",
+      "startTime": "22:00",
+      "kind": "live",
+      "title": "Live nel dehors",
+      "description": "Concerto all’aperto, con le luci accese lungo le mura.",
+      "demo": true
+    },
+    {
+      "id": 5,
+      "date": "__DAY+10__",
+      "startTime": "21:30",
+      "kind": "acustico",
+      "title": "Voce e piano",
+      "description": "Standard, soul e qualche sorpresa, con un calice in mano.",
+      "demo": true
+    },
+    {
+      "id": 6,
+      "date": "__DAY+13__",
+      "startTime": "22:00",
+      "kind": "rock",
+      "title": "Tributo rock",
+      "description": "Una serata dedicata a una grande band: il nome lo annunciamo su Facebook.",
+      "demo": true
+    },
+    {
+      "id": 7,
+      "date": "__DAY+17__",
+      "startTime": "21:00",
+      "kind": "live",
+      "title": "Jam session",
+      "description": "Palco aperto: porta il tuo strumento, si suona insieme.",
+      "demo": true
+    }
+  ]
+}

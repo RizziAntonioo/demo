@@ -1,0 +1,88 @@
+{
+ "today": "__TODAY__",
+ "openToday": true,
+ "updatedAt": "__AGO+10m__",
+ "items": [
+  {
+   "id": 1,
+   "name": "Focaccia barese",
+   "category": "focacce",
+   "art": "focaccia",
+   "note": "Pomodorini, olive e origano",
+   "soldOut": false,
+   "bakedAt": "__AGO+12m__"
+  },
+  {
+   "id": 2,
+   "name": "Focaccia alle patate",
+   "category": "focacce",
+   "art": "patate",
+   "note": "Con le patate a fette sopra",
+   "soldOut": false,
+   "bakedAt": "__AGO+35m__"
+  },
+  {
+   "id": 3,
+   "name": "Pizza in teglia",
+   "category": "focacce",
+   "art": "teglia",
+   "note": "Pomodoro e mozzarella",
+   "soldOut": false,
+   "bakedAt": "__AGO+150m__"
+  },
+  {
+   "id": 4,
+   "name": "Pane di Altamura",
+   "category": "pane",
+   "art": "altamura",
+   "note": "Il profumo che citano le recensioni",
+   "soldOut": false,
+   "bakedAt": "__AGO+240m__"
+  },
+  {
+   "id": 5,
+   "name": "Filone",
+   "category": "pane",
+   "art": "filone",
+   "note": "Crosta croccante",
+   "soldOut": false,
+   "bakedAt": "__AGO+300m__"
+  },
+  {
+   "id": 6,
+   "name": "Lasagne",
+   "category": "gastronomia",
+   "art": "sformato",
+   "note": "Al forno, anche da mangiare qui",
+   "soldOut": true,
+   "bakedAt": null
+  },
+  {
+   "id": 7,
+   "name": "Insalata di polpo",
+   "category": "gastronomia",
+   "art": "polpo",
+   "note": "Fresca, per il pranzo",
+   "soldOut": false,
+   "bakedAt": null
+  },
+  {
+   "id": 8,
+   "name": "Taralli",
+   "category": "dolci",
+   "art": "taralli",
+   "note": "Imperdibili, dice il Gambero Rosso",
+   "soldOut": false,
+   "bakedAt": null
+  },
+  {
+   "id": 9,
+   "name": "Dolci tipici",
+   "category": "dolci",
+   "art": "dolci",
+   "note": "Chiedi al banco quelli di oggi",
+   "soldOut": false,
+   "bakedAt": null
+  }
+ ]
+}

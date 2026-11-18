@@ -1,0 +1,13 @@
+{
+  "name": "Jahbar · Barletta",
+  "short_name": "Jahbar",
+  "lang": "it",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0e0c10",
+  "theme_color": "#0e0c10",
+  "icons": [
+    { "src": "/demo/jahbar/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/demo/jahbar/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
