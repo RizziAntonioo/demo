@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data:; frame-src https://maps.google.com https://www.google.com; media-src 'none'; object-src 'none'; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Gelateria 3 Galletti | Gelato artigianale in via De Nittis, Barletta</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <script src="/demo/tregalletti/demo-mode.js"></script>
+
+  <link rel="preload" href="/demo/tregalletti/assets/shrikhand-latin-400-normal-PjOFgsiX.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/tregalletti/assets/onest-latin-wght-normal-Dun_Rd-l.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- CSS critico: sfondo color panna e pagina nascosta finché non arriva lo stile vero (niente lampo di HTML nudo).
+       Se il JavaScript non parte, la pagina compare comunque dopo 2,5 secondi. -->
+  <style>html{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;background:#fdf6ec}body{color:#3b2219;opacity:0;background:#fdf6ec;margin:0;animation:0s 2.5s forwards tg-show}@keyframes tg-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
+  <noscript><style>body{opacity:1!important;animation:none!important}</style></noscript>
+  <meta name="description" content="Gelateria 3 Galletti, gelato artigianale in via Giuseppe De Nittis 41 a Barletta. I gusti di oggi aggiornati ogni giorno, torte gelato su ordinazione. Aperti tutti i giorni tranne il mercoledì." />
+  <link rel="canonical" href="http://localhost:4200/" />
+  
+  <meta name="theme-color" content="#fdf6ec" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="geo.region" content="IT-BT" />
+  <meta name="geo.placename" content="Barletta" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Gelateria 3 Galletti" />
+  <meta property="og:title" content="Gelateria 3 Galletti · Gelato artigianale a Barletta" />
+  <meta property="og:description" content="In via De Nittis 41. I gusti di oggi, le torte gelato su ordinazione, orari e dove siamo." />
+  <meta property="og:url" content="http://localhost:4200/" />
+  <meta property="og:image" content="http://localhost:4200/images/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Un cono con tre palline color pistacchio, fragola e cioccolato e la scritta 3 Galletti" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/demo/tregalletti/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/demo/tregalletti/apple-touch-icon.png" />
+  <link rel="manifest" href="/demo/tregalletti/site.webmanifest" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"IceCreamShop","@id":"http://localhost:4200/#gelateria","name":"Gelateria 3 Galletti","alternateName":["3 Galletti","Tre Galletti"],"url":"http://localhost:4200/","image":"http://localhost:4200/images/og.png","logo":"http://localhost:4200/favicon.svg","telephone":"+39 0883 521416","servesCuisine":["Gelato artigianale","Torte gelato"],"address":{"@type":"PostalAddress","streetAddress":"Via Giuseppe De Nittis, 41","postalCode":"76121","addressLocality":"Barletta","addressRegion":"BT","addressCountry":"IT"},"hasMap":"https://www.google.com/maps/search/?api=1&query=Gelateria+3+Galletti+Via+Giuseppe+De+Nittis+41+Barletta","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"23:59"}]}</script>
+  <script type="module" crossorigin src="/demo/tregalletti/assets/main-Fcw6t4kk.js"></script>
+  <link rel="modulepreload" crossorigin href="/demo/tregalletti/assets/onest-DslreO91.js">
+  <link rel="modulepreload" crossorigin href="/demo/tregalletti/assets/time-CV8vO-i5.js">
+  <link rel="stylesheet" crossorigin href="/demo/tregalletti/assets/onest-LOHUz9ZL.css">
+  <link rel="stylesheet" crossorigin href="/demo/tregalletti/assets/main-CjmADqTI.css">
+</head>
+<body>
+  <a href="#main" class="skip">Salta al contenuto</a>
+
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Gelateria 3 Galletti, torna su">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M14.5 24 24 46l9.5-22z" fill="#e2b679" stroke="#3b2219" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M18 28l9 12M22 26l8 9M30 28l-9 12" stroke="#b98446" stroke-width="1.2"/>
+        <path d="M11 24a13 12 0 0 1 26 0c-2 1.6-4 .2-6.5 1.4-2.4 1.2-4 .3-6.5.3s-4.1.9-6.5-.3C15 24.2 13 25.6 11 24z" fill="#c6d89a" stroke="#3b2219" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M16 13.5c-.3-2.2 1.5-3.2 2.4-2 .3-2 2.6-2 2.8-.1" fill="#d6455d" stroke="#3b2219" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M21.6 11.2c-.3-2.4 1.6-3.5 2.6-2.2.3-2.2 2.9-2.2 3.1-.1" fill="#d6455d" stroke="#3b2219" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M27.3 11.5c-.3-2.2 1.5-3.2 2.4-2 .3-2 2.6-2 2.8-.1" fill="#d6455d" stroke="#3b2219" stroke-width="1.4" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-word">3 Galletti<small>Gelateria · Barletta</small></span>
+    </a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#gusti">Gusti di oggi</a>
+      <a href="#gelateria">La gelateria</a>
+      <a href="#torte">Torte gelato</a>
+      <a href="#dove">Orari e dove</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+390883521416" class="btn btn--ink btn--sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>Chiama</span></a>
+      <button type="button" class="burger" aria-label="Apri il menù di navigazione" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Navigazione mobile">
+      <a href="#gusti" style="--c:#c6d89a">Gusti di oggi</a>
+      <a href="#gelateria" style="--c:#f5a9b2">La gelateria</a>
+      <a href="#torte" style="--c:#fbeb9a">Torte gelato</a>
+      <a href="#dove" style="--c:#bfe5d3">Orari e dove</a>
+    </nav>
+    <p class="mobile-nav-foot"><a href="tel:+390883521416">0883 521416</a><br />Via G. De Nittis, 41 · Barletta</p>
+  </div>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- HERO: il cono è vuoto, la prima pallina cade all'apertura; scorrendo arrivano la seconda,
+         la terza e l'amarena, mentre lo sfondo cambia colore come i gusti. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-stage">
+        <div class="hero-bg" aria-hidden="true"><i class="blob blob--a"></i><i class="blob blob--b"></i><i class="blob blob--c"></i></div>
+
+        <div class="hero-text">
+          <p class="eyebrow" data-hero-in>Gelateria artigianale · Barletta</p>
+          <h1 id="hero-title" class="hero-title" data-hero-in>
+            <span class="hero-title-num">3</span>
+            <span class="hero-title-word">Galletti</span>
+          </h1>
+          <p class="hero-lead" data-hero-in>In via De Nittis, una pallina alla volta. I gusti cambiano ogni giorno: guarda cosa c’è in vetrina, ordina la tua torta gelato, passa a trovarci.</p>
+          <div class="hero-actions" data-hero-in>
+            <a href="#gusti" class="btn btn--ink">I gusti di oggi</a>
+            <a href="#torte" class="btn btn--line">Torte gelato</a>
+          </div>
+          <p class="hero-status" data-hero-in><span class="status" data-open-status><i></i><span>Dalle 07:00 alle 24:00 · mercoledì chiuso</span></span></p>
+        </div>
+
+        <figure class="hero-cone">
+          <svg class="cone-art" viewBox="0 0 400 600" role="img" aria-labelledby="cone-title">
+            <title id="cone-title">Un cono con tre palline di gelato: pistacchio, fragola e cioccolato, con un’amarena in cima</title>
+            <defs>
+              <pattern id="waffle" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <rect width="26" height="26" fill="#e7bd81"/>
+                <path d="M0 0H26M0 0V26" stroke="#c28d4f" stroke-width="3.2"/>
+                <rect x="4" y="4" width="18" height="18" rx="3" fill="#efcb93"/>
+              </pattern>
+              <radialGradient id="shine" cx=".32" cy=".3" r=".5"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+              <clipPath id="cone-clip"><path d="M92 330 200 588 308 330z"/></clipPath>
+            </defs>
+
+            <ellipse class="cone-shadow" cx="200" cy="592" rx="70" ry="7" fill="#3b2219" opacity=".12"/>
+            <g class="cone">
+              <path d="M92 330 200 588 308 330z" fill="url(#waffle)"/>
+              <path d="M92 330 200 588 308 330" fill="none" stroke="#3b2219" stroke-width="5" stroke-linejoin="round"/>
+              <g clip-path="url(#cone-clip)"><path d="M92 330h216v26H92z" fill="#c28d4f" opacity=".35"/></g>
+            </g>
+
+            <!-- Pallina 1: pistacchio -->
+            <g class="scoop scoop--1" data-scoop="1">
+              <path class="scoop-body" d="M78 330c-8-62 44-112 122-112s130 50 122 112c-12 8-24-2-38 6-16 9-26 0-42 4-16 5-26-6-42-2s-28 8-42-2c-14-10-26 2-38-6z" fill="#c6d89a" stroke="#3b2219" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M78 330c-8-62 44-112 122-112s130 50 122 112" fill="url(#shine)"/>
+              <path class="scoop-crumb" d="M140 262l6 4M232 252l5-5M182 290l-4 6M262 296l7 1M116 300l3 6" stroke="#7f9a48" stroke-width="5" stroke-linecap="round"/>
+            </g>
+            <!-- Pallina 2: fragola -->
+            <g class="scoop scoop--2" data-scoop="2">
+              <path class="scoop-body" d="M98 232c-8-56 40-100 102-100s110 44 102 100c-11 7-22-2-34 5-14 8-23 0-37 4-14 4-23-5-37-1-14 3-24 7-37-1-12-9-23 1-34-7z" fill="#f5a9b2" stroke="#3b2219" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M98 232c-8-56 40-100 102-100s110 44 102 100" fill="url(#shine)"/>
+              <path d="M150 178l3 5M224 168l5 2M250 206l3-4M128 208l5 1M196 204l2 5" stroke="#d6455d" stroke-width="5" stroke-linecap="round"/>
+            </g>
+            <!-- Pallina 3: cioccolato -->
+            <g class="scoop scoop--3" data-scoop="3">
+              <path class="scoop-body" d="M118 148c-6-48 34-86 82-86s88 38 82 86c-10 6-19-2-29 4-12 7-20 0-31 3-12 4-20-4-31-1-12 3-20 6-31-1-11-7-20 1-30-5z" fill="#7a4a35" stroke="#3b2219" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M118 148c-6-48 34-86 82-86s88 38 82 86" fill="url(#shine)" opacity=".7"/>
+            </g>
+            <!-- Amarena -->
+            <g class="cherry">
+              <path d="M204 66c2-18 10-30 24-38" fill="none" stroke="#3b2219" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="200" cy="72" r="17" fill="#b8344f" stroke="#3b2219" stroke-width="5"/>
+              <circle cx="194" cy="66" r="4.5" fill="#fff" opacity=".7"/>
+            </g>
+            <!-- Colatine che scendono dalla prima pallina -->
+            <g class="drips" fill="none" stroke-linecap="round">
+              <path pathLength="1" d="M128 336c0 14 2 22 0 32" stroke="#c6d89a" stroke-width="9"/>
+              <path pathLength="1" d="M262 338c0 10 3 18 1 26" stroke="#c6d89a" stroke-width="8"/>
+            </g>
+          </svg>
+          <figcaption class="cone-count" aria-hidden="true">
+            <span data-count="1">Una pallina…</span>
+            <span data-count="2">…due…</span>
+            <span data-count="3">…tre galletti!</span>
+          </figcaption>
+        </figure>
+
+        <svg class="hero-drip" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120V58c60 0 70 40 120 40s48-52 110-52 52 66 120 66 60-44 118-44 50 30 110 30 58-60 122-60 52 74 124 74 58-50 120-50 50 34 112 34 60-40 120-40 54 24 104 24 40-20 60-20H1440V120z"/></svg>
+      </div>
+    </section>
+
+    <!-- Nastro dei gusti: scorre di lato mentre si scende -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <span>Pistacchio</span><i></i><span>Fragola</span><i></i><span>Nocciola</span><i></i><span>Limone</span><i></i><span>Fior di latte</span><i></i><span>Amarena</span><i></i><span>Cioccolato</span><i></i><span>Mandorla</span><i></i>
+        <span>Pistacchio</span><i></i><span>Fragola</span><i></i><span>Nocciola</span><i></i><span>Limone</span><i></i><span>Fior di latte</span><i></i><span>Amarena</span><i></i><span>Cioccolato</span><i></i><span>Mandorla</span><i></i>
+      </div>
+    </div>
+
+    <!-- GUSTI DI OGGI: arrivano da /api/gusti (li aggiorna la gelateria dall'area admin) -->
+    <section class="section gusti" id="gusti" data-tint="#fdf6ec" aria-labelledby="gusti-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">In vetrina</p>
+          <h2 id="gusti-title" class="rise"><span>I gusti di oggi</span></h2>
+          <p class="sec-lead" data-fade>Cambiano ogni giorno, a seconda della frutta e dell’estro. La lista la aggiorna la gelateria: quello che leggi qui è quello che trovi al banco.</p>
+          <p class="gusti-updated" data-gusti-updated aria-live="polite"></p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filtra i gusti" data-fade>
+          <div class="seg" role="radiogroup" aria-label="Categoria">
+            <button type="button" role="radio" aria-checked="true" data-cat="all">Tutti</button>
+            <button type="button" role="radio" aria-checked="false" data-cat="creme">Creme</button>
+            <button type="button" role="radio" aria-checked="false" data-cat="frutta">Frutta</button>
+            <button type="button" role="radio" aria-checked="false" data-cat="speciali">Speciali</button>
+          </div>
+          <div class="toggles">
+            <label class="toggle"><input type="checkbox" data-tag="gf" /><span>Senza glutine</span></label>
+            <label class="toggle"><input type="checkbox" data-tag="vegan" /><span>Vegano</span></label>
+          </div>
+        </div>
+
+        <div class="vetrina" data-vetrina aria-live="polite">
+          <p class="vetrina-loading">Sto guardando in vetrina…</p>
+        </div>
+
+        <aside class="allergeni" data-fade>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v6M12 16.5v.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <p><strong>Allergie o intolleranze?</strong> Le etichette qui sono indicative: l’elenco completo degli allergeni di ogni gusto è al banco. Chiedi pure, ti diciamo tutto prima di servirti.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LA GELATERIA -->
+    <section class="section gelateria" id="gelateria" data-tint="#fde8ea" aria-labelledby="gelateria-title">
+      <div class="wrap gelateria-grid">
+        <figure class="galletti" data-galletti>
+          <svg viewBox="0 0 430 270" role="img" aria-labelledby="galletti-title">
+      <title id="galletti-title">Tre galletti disegnati a mano, uno accanto all’altro, ognuno del colore di un gusto</title>
+      <g class="gallo" transform="translate(6 34)" style="--c:#c6d89a;--d:#98ae62">
+      <path class="gallo-tail" pathLength="1" d="M46 136C14 124 6 88 20 64c8 26 18 42 32 54M44 148C12 150-2 120 4 96c12 22 24 36 42 42M50 126C30 100 30 66 46 46c2 28 8 50 18 66"/>
+      <path class="gallo-body" pathLength="1" d="M40 150c-6-34 18-56 42-52 0-24 10-46 28-46 16 0 24 14 20 32-3 14-10 22-8 38 4 40-22 68-52 68-18 0-28-16-30-40z"/>
+      <path class="gallo-wing" pathLength="1" d="M58 146c10-22 42-20 48 2-14 8-34 10-48-2z"/>
+      <path class="gallo-crest" pathLength="1" d="M98 54c-6-10 2-18 10-12 0-12 14-12 14 0 6-8 16-2 10 10"/>
+      <path class="gallo-beak" pathLength="1" d="M128 70l14 5-13 6"/>
+      <path class="gallo-wattle" pathLength="1" d="M126 84c5 9-1 16-9 12"/>
+      <circle class="gallo-eye" cx="114" cy="68" r="4.5"/>
+      <path class="gallo-legs" pathLength="1" d="M70 190v28m-9 0h18M94 188v30m-9 0h18"/>
+    </g><g class="gallo" transform="translate(145 0)" style="--c:#f5a9b2;--d:#e07686">
+      <path class="gallo-tail" pathLength="1" d="M46 136C14 124 6 88 20 64c8 26 18 42 32 54M44 148C12 150-2 120 4 96c12 22 24 36 42 42M50 126C30 100 30 66 46 46c2 28 8 50 18 66"/>
+      <path class="gallo-body" pathLength="1" d="M40 150c-6-34 18-56 42-52 0-24 10-46 28-46 16 0 24 14 20 32-3 14-10 22-8 38 4 40-22 68-52 68-18 0-28-16-30-40z"/>
+      <path class="gallo-wing" pathLength="1" d="M58 146c10-22 42-20 48 2-14 8-34 10-48-2z"/>
+      <path class="gallo-crest" pathLength="1" d="M98 54c-6-10 2-18 10-12 0-12 14-12 14 0 6-8 16-2 10 10"/>
+      <path class="gallo-beak" pathLength="1" d="M128 70l14 5-13 6"/>
+      <path class="gallo-wattle" pathLength="1" d="M126 84c5 9-1 16-9 12"/>
+      <circle class="gallo-eye" cx="114" cy="68" r="4.5"/>
+      <path class="gallo-legs" pathLength="1" d="M70 190v28m-9 0h18M94 188v30m-9 0h18"/>
+    </g><g class="gallo" transform="translate(284 34)" style="--c:#fbeb9a;--d:#e8cd52">
+      <path class="gallo-tail" pathLength="1" d="M46 136C14 124 6 88 20 64c8 26 18 42 32 54M44 148C12 150-2 120 4 96c12 22 24 36 42 42M50 126C30 100 30 66 46 46c2 28 8 50 18 66"/>
+      <path class="gallo-body" pathLength="1" d="M40 150c-6-34 18-56 42-52 0-24 10-46 28-46 16 0 24 14 20 32-3 14-10 22-8 38 4 40-22 68-52 68-18 0-28-16-30-40z"/>
+      <path class="gallo-wing" pathLength="1" d="M58 146c10-22 42-20 48 2-14 8-34 10-48-2z"/>
+      <path class="gallo-crest" pathLength="1" d="M98 54c-6-10 2-18 10-12 0-12 14-12 14 0 6-8 16-2 10 10"/>
+      <path class="gallo-beak" pathLength="1" d="M128 70l14 5-13 6"/>
+      <path class="gallo-wattle" pathLength="1" d="M126 84c5 9-1 16-9 12"/>
+      <circle class="gallo-eye" cx="114" cy="68" r="4.5"/>
+      <path class="gallo-legs" pathLength="1" d="M70 190v28m-9 0h18M94 188v30m-9 0h18"/>
+    </g>
+      <path class="galletti-ground" pathLength="1" d="M16 256c90-12 310-12 400 0"/>
+    </svg>
+        </figure>
+
+        <div class="gelateria-text">
+          <p class="eyebrow">La gelateria</p>
+          <h2 id="gelateria-title" class="rise"><span>Una gelateria storica,</span> <span><em>in via De Nittis</em></span></h2>
+          <p class="lead" data-fade>I 3 Galletti sono una delle gelaterie artigianali storiche di Barletta. Si viene per il gelato, per la coppetta dopo cena e il cono della domenica, e per la vaschetta da portare a casa.</p>
+          <p data-fade>Al banco trovi le creme di sempre e i gusti alla frutta, più qualche idea della casa che cambia con le stagioni. La panna? Se la vuoi, a parte.</p>
+          <dl class="facts" data-fade>
+            <div><dt>Su Google</dt><dd><strong>4,4</strong> su 5 · 445 recensioni</dd></div>
+            <div><dt>Aperti</dt><dd>Tutti i giorni, mercoledì chiuso</dd></div>
+            <div><dt>Dove</dt><dd>Via G. De Nittis, 41</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="formati" aria-label="Come lo vuoi">
+          <li data-fade>
+            <svg viewBox="0 0 80 100" aria-hidden="true"><path d="M22 46 40 94 58 46z" fill="#e7bd81" stroke="#3b2219" stroke-width="3" stroke-linejoin="round"/><path d="M18 46c-3-17 9-30 22-30s25 13 22 30c-6 3-10-1-15 1-4 2-10 2-14 0-5-2-9 2-15-1z" fill="#f5a9b2" stroke="#3b2219" stroke-width="3" stroke-linejoin="round"/></svg>
+            <h3>Cono</h3><p>Da mangiare passeggiando per il centro.</p>
+          </li>
+          <li data-fade>
+            <svg viewBox="0 0 80 100" aria-hidden="true"><path d="M16 52h48l-6 36H22z" fill="#fff" stroke="#3b2219" stroke-width="3" stroke-linejoin="round"/><path d="M16 52c-1-14 10-24 24-24s25 10 24 24c-5 3-9-1-13 1-5 2-10 1-14 0-5-1-8 2-13 0-3-1-5 1-8-1z" fill="#c6d89a" stroke="#3b2219" stroke-width="3" stroke-linejoin="round"/><path d="M50 30l10-18" stroke="#3b2219" stroke-width="3" stroke-linecap="round"/></svg>
+            <h3>Coppetta</h3><p>Due o tre gusti, il cucchiaino, un tavolino.</p>
+          </li>
+          <li data-fade>
+            <svg viewBox="0 0 80 100" aria-hidden="true"><path d="M12 44h56l-5 40H17z" fill="#fdf6ec" stroke="#3b2219" stroke-width="3" stroke-linejoin="round"/><path d="M8 36h64v9H8z" fill="#fbeb9a" stroke="#3b2219" stroke-width="3" stroke-linejoin="round"/><path d="M26 62h28" stroke="#b8344f" stroke-width="3" stroke-linecap="round"/></svg>
+            <h3>Vaschetta</h3><p>Da portare a casa, per il dopocena con tutta la famiglia.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TORTE GELATO -->
+    <section class="section torte" id="torte" data-tint="#eef3dc" aria-labelledby="torte-title">
+      <div class="wrap torte-grid">
+        <div class="torte-intro">
+          <p class="eyebrow">Su ordinazione</p>
+          <h2 id="torte-title" class="rise"><span>Torte gelato</span> <span><em>per le feste</em></span></h2>
+          <p class="lead" data-fade>Compleanni, cene in famiglia, una domenica qualunque. Scegli la grandezza, dicci i gusti che preferisci: ti richiamiamo noi per definire i dettagli e il prezzo.</p>
+
+          <figure class="cake" data-cake>
+            <svg viewBox="0 0 360 300" role="img" aria-labelledby="cake-title">
+              <title id="cake-title">Una torta gelato a strati: biscotto, crema, fragola e glassa al cioccolato, con tre amarene in cima</title>
+              <ellipse cx="180" cy="270" rx="150" ry="18" fill="#fff" stroke="#3b2219" stroke-width="4"/>
+              <g class="cake-layer" data-layer="1"><path d="M58 250V214h244v36c0 10-54 18-122 18S58 260 58 250z" fill="#c28d4f" stroke="#3b2219" stroke-width="4" stroke-linejoin="round"/></g>
+              <g class="cake-layer" data-layer="2"><path d="M58 214v-40h244v40c0 10-54 16-122 16S58 224 58 214z" fill="#f7e0a3" stroke="#3b2219" stroke-width="4" stroke-linejoin="round"/></g>
+              <g class="cake-layer" data-layer="3"><path d="M58 174v-40h244v40c0 10-54 16-122 16S58 184 58 174z" fill="#f5a9b2" stroke="#3b2219" stroke-width="4" stroke-linejoin="round"/></g>
+              <g class="cake-layer" data-layer="4">
+                <path d="M58 134c0-14 54-26 122-26s122 12 122 26v8c-8 0-8 22-18 22s-8-18-18-18-10 26-22 26-10-22-22-22-8 16-20 16-10-24-22-24-10 30-22 30-10-28-22-28-8 16-18 16-8-20-16-20-10 14-20 14-6-12-14-12z" fill="#7a4a35" stroke="#3b2219" stroke-width="4" stroke-linejoin="round"/>
+                <ellipse cx="180" cy="134" rx="114" ry="20" fill="#8c5843"/>
+              </g>
+              <g class="cake-cherries">
+                <circle cx="130" cy="122" r="13" fill="#b8344f" stroke="#3b2219" stroke-width="4"/>
+                <circle cx="180" cy="114" r="13" fill="#b8344f" stroke="#3b2219" stroke-width="4"/>
+                <circle cx="230" cy="122" r="13" fill="#b8344f" stroke="#3b2219" stroke-width="4"/>
+                <path d="M134 110c2-10 8-16 16-20M184 102c2-10 8-16 16-20M234 110c2-10 8-16 16-20" fill="none" stroke="#3b2219" stroke-width="3" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </figure>
+
+          <ol class="steps" data-fade>
+            <li><b>1</b><span>Mandi la richiesta qui accanto (o chiami).</span></li>
+            <li><b>2</b><span>Ti richiamiamo per gusti, decorazione e prezzo.</span></li>
+            <li><b>3</b><span>Passi a ritirarla in gelateria.</span></li>
+          </ol>
+        </div>
+
+        <div class="torte-form-wrap" data-fade>
+          <form class="cake-form" data-cake-form novalidate>
+            <h3>Richiedi la tua torta</h3>
+            <p class="form-note">Serve almeno <strong>2 giorni</strong> di preavviso. Non è ancora un ordine: lo diventa quando ti richiamiamo e confermiamo insieme.</p>
+
+            <div class="field">
+              <label for="cf-name">Il tuo nome</label>
+              <input id="cf-name" name="name" autocomplete="name" required maxlength="60" />
+              <p class="field-err" data-err="name"></p>
+            </div>
+            <div class="field">
+              <label for="cf-phone">Telefono</label>
+              <input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="20" />
+              <p class="field-err" data-err="phone"></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cf-day">Giorno del ritiro</label>
+                <input id="cf-day" name="pickupDay" type="date" required />
+                <p class="field-err" data-err="pickupDay"></p>
+              </div>
+              <div class="field">
+                <label for="cf-slot">Quando passi</label>
+                <select id="cf-slot" name="pickupSlot" required><option value="" disabled selected>Scegli</option><option value="mattina">Mattina (7–13)</option><option value="pomeriggio">Pomeriggio (13–19)</option><option value="sera">Sera (dopo le 19)</option></select>
+                <p class="field-err" data-err="pickupSlot"></p>
+              </div>
+            </div>
+            <fieldset class="field">
+              <legend>Per quante persone</legend>
+              <div class="chips"><label class="chip-radio"><input type="radio" name="size" value="s" required /><span>6–8 persone</span></label><label class="chip-radio"><input type="radio" name="size" value="m" /><span>10–12 persone</span></label><label class="chip-radio"><input type="radio" name="size" value="l" /><span>15–20 persone</span></label><label class="chip-radio"><input type="radio" name="size" value="x" /><span>Più di 20 (ne parliamo)</span></label></div>
+              <p class="field-err" data-err="size"></p>
+            </fieldset>
+            <div class="field">
+              <label for="cf-flavors">Gusti che preferisci <span class="opt">facoltativo</span></label>
+              <input id="cf-flavors" name="flavors" maxlength="200" placeholder="Es. nocciola e fragola, base biscotto" />
+            </div>
+            <div class="field">
+              <label for="cf-writing">Scritta sulla torta <span class="opt">facoltativo</span></label>
+              <input id="cf-writing" name="writing" maxlength="40" placeholder="Es. Buon compleanno Sara" />
+            </div>
+            <div class="field">
+              <label for="cf-notes">Note <span class="opt">facoltativo</span></label>
+              <textarea id="cf-notes" name="notes" rows="2" maxlength="300" placeholder="Allergie, decorazioni, domande…"></textarea>
+            </div>
+            <div class="hp" aria-hidden="true"><label for="cf-website">Lascia vuoto</label><input id="cf-website" name="website" tabindex="-1" autocomplete="off" /></div>
+            <label class="check">
+              <input type="checkbox" name="privacy" required />
+              <span>Ho letto l’<a href="/demo/tregalletti/privacy.html">informativa privacy</a> e accetto di essere ricontattato per questa richiesta.</span>
+            </label>
+            <p class="field-err" data-err="privacy"></p>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn--berry">Invia la richiesta</button>
+              
+            </div>
+            <p class="form-msg" data-form-msg role="status" aria-live="polite"></p>
+            <p class="form-alt">Preferisci parlarne a voce? <a href="tel:+390883521416">Chiama lo 0883 521416</a></p>
+          </form>
+
+          <div class="cake-done" data-cake-done hidden tabindex="-1">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#c6d89a" stroke="#3b2219" stroke-width="3"/><path d="M19 33l9 9 17-19" fill="none" stroke="#3b2219" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Richiesta ricevuta!</h3>
+            <p>Il tuo codice è <strong data-cake-code></strong>. Ti richiamiamo al più presto per confermare gusti, decorazione e prezzo.</p>
+            <button type="button" class="btn btn--line" data-cake-again>Fai un’altra richiesta</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORARI E DOVE -->
+    <section class="section dove" id="dove" data-tint="#fdf3d0" aria-labelledby="dove-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Orari e dove</p>
+          <h2 id="dove-title" class="rise"><span>Passa a trovarci</span></h2>
+        </header>
+        <div class="dove-grid">
+          <div class="card card--hours" data-fade>
+            <h3>Orari</h3>
+            <p class="status status--lg" data-open-status><i></i><span>Dalle 07:00 alle 24:00 · mercoledì chiuso</span></p>
+            <dl class="hours"><div class="hours-row" data-day="1"><dt>Lunedì</dt><dd>07:00–24:00</dd></div><div class="hours-row" data-day="2"><dt>Martedì</dt><dd>07:00–24:00</dd></div><div class="hours-row is-closed" data-day="3"><dt>Mercoledì</dt><dd>Chiuso</dd></div><div class="hours-row" data-day="4"><dt>Giovedì</dt><dd>07:00–24:00</dd></div><div class="hours-row" data-day="5"><dt>Venerdì</dt><dd>07:00–24:00</dd></div><div class="hours-row" data-day="6"><dt>Sabato</dt><dd>07:00–24:00</dd></div><div class="hours-row" data-day="0"><dt>Domenica</dt><dd>07:00–24:00</dd></div></dl>
+            <p class="small">Nei giorni di festa gli orari possono cambiare: nel dubbio, chiamaci.</p>
+          </div>
+          <div class="card card--where" data-fade>
+            <h3>Dove siamo</h3>
+            <address>
+              Via Giuseppe De Nittis, 41<br />76121 Barletta (BT)
+            </address>
+            <div class="where-actions">
+              <a class="btn btn--ink" href="tel:+390883521416">Chiama lo 0883 521416</a>
+              <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=Gelateria+3+Galletti+Via+Giuseppe+De+Nittis+41+Barletta" target="_blank" rel="noopener">Indicazioni stradali</a>
+            </div>
+            <p class="small">In centro il parcheggio non è sempre facile: se puoi, vieni a piedi. Il gelato poi si mangia meglio passeggiando.</p>
+          </div>
+          <div class="map" data-fade>
+            <button type="button" class="map-load" data-map-load>
+              <svg class="map-art" viewBox="0 0 400 300" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="#f3ead7"/>
+                <path d="M-10 70 410 120M-10 200 410 170M90-10 140 310M260-10 230 310M-10 270 180 310" stroke="#fff" stroke-width="16"/>
+                <path d="M-10 70 410 120M-10 200 410 170M90-10 140 310M260-10 230 310" stroke="#e5d8bc" stroke-width="2" stroke-dasharray="6 8"/>
+                <rect x="280" y="190" width="90" height="70" rx="8" fill="#d9e6be"/>
+                <rect x="20" y="100" width="60" height="80" rx="8" fill="#d9e6be"/>
+                <g transform="translate(176 92)"><path d="M10 34 24 70 38 34z" fill="#e7bd81" stroke="#3b2219" stroke-width="3" stroke-linejoin="round"/><circle cx="24" cy="26" r="17" fill="#f5a9b2" stroke="#3b2219" stroke-width="3"/></g>
+              </svg>
+              <span class="map-cta"><b>Mostra la mappa</b><small>Si apre Google Maps: da quel momento valgono le sue regole sui cookie</small></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">3 Galletti</p>
+        <p>Gelateria artigianale<br />Via G. De Nittis, 41 · 76121 Barletta (BT)</p>
+      </div>
+      <div>
+        <p><a href="tel:+390883521416">0883 521416</a></p>
+        <p>Dalle 07:00 alle 24:00 · mercoledì chiuso</p>
+        <p class="footer-social"></p>
+      </div>
+      <div class="footer-links">
+        <a href="#gusti">Gusti di oggi</a>
+        <a href="#torte">Torte gelato</a>
+        <a href="/demo/tregalletti/privacy.html">Privacy e cookie</a>
+      </div>
+    </div>
+    <p class="wrap footer-legal">© <span data-year>2026</span> Gelateria 3 Galletti · P.IVA [da inserire]</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "Gelateria 3 Galletti",
+  "short_name": "3 Galletti",
+  "icons": [
+    { "src": "/demo/tregalletti/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/demo/tregalletti/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#fdf6ec",
+  "background_color": "#fdf6ec",
+  "display": "browser"
+}

@@ -1,0 +1,152 @@
+{
+ "today": "__TODAY__",
+ "openToday": true,
+ "updatedAt": "__NOW__",
+ "items": [
+  {
+   "id": 1,
+   "name": "Fior di latte",
+   "category": "creme",
+   "color": "fiordilatte",
+   "description": "Latte fresco e panna, il classico",
+   "tags": [
+    "gf"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 2,
+   "name": "Crema",
+   "category": "creme",
+   "color": "crema",
+   "description": "Uova, latte e scorza di limone",
+   "tags": [
+    "gf"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 3,
+   "name": "Cioccolato fondente",
+   "category": "creme",
+   "color": "cioccolato",
+   "description": "Intenso, con cacao al 70%",
+   "tags": [
+    "gf",
+    "lf"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 4,
+   "name": "Nocciola del Piemonte",
+   "category": "creme",
+   "color": "nocciola",
+   "description": "Nocciole tostate in casa",
+   "tags": [
+    "gf",
+    "nuts"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 5,
+   "name": "Pistacchio",
+   "category": "creme",
+   "color": "pistacchio",
+   "description": "Pasta di pistacchio pura",
+   "tags": [
+    "gf",
+    "nuts"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 6,
+   "name": "Limone",
+   "category": "frutta",
+   "color": "limone",
+   "description": "Sorbetto con limoni pugliesi",
+   "tags": [
+    "gf",
+    "vegan",
+    "lf"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 7,
+   "name": "Fragola",
+   "category": "frutta",
+   "color": "fragola",
+   "description": "Sorbetto di fragole fresche",
+   "tags": [
+    "gf",
+    "vegan",
+    "lf"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 8,
+   "name": "Anguria",
+   "category": "frutta",
+   "color": "anguria",
+   "description": "Fresco e leggero",
+   "tags": [
+    "gf",
+    "vegan",
+    "lf"
+   ],
+   "soldOut": true
+  },
+  {
+   "id": 9,
+   "name": "Mandorla",
+   "category": "speciali",
+   "color": "mandorla",
+   "description": "Latte di mandorla, senza latticini",
+   "tags": [
+    "gf",
+    "vegan",
+    "lf",
+    "nuts"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 10,
+   "name": "Amarena",
+   "category": "speciali",
+   "color": "amarena",
+   "description": "Fior di latte con amarene intere",
+   "tags": [
+    "gf"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 11,
+   "name": "Caramello salato",
+   "category": "speciali",
+   "color": "caramello",
+   "description": "Caramello e un pizzico di sale",
+   "tags": [
+    "gf"
+   ],
+   "soldOut": false
+  },
+  {
+   "id": 12,
+   "name": "Liquirizia",
+   "category": "speciali",
+   "color": "liquirizia",
+   "description": "Il gusto del momento",
+   "tags": [
+    "gf",
+    "lf"
+   ],
+   "soldOut": false
+  }
+ ]
+}
