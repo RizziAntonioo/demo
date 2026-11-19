@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data:; frame-src https://maps.google.com https://www.google.com; media-src 'none'; object-src 'none'; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Manzo Gym H24 | Palestra aperta 24 ore su 24 a Barletta</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <script src="/demo/manzogym/demo-mode.js"></script>
+
+  <link rel="preload" href="/demo/manzogym/assets/anton-latin-400-normal-Byf51wtH.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/manzogym/assets/barlow-condensed-latin-700-normal-v1xN8_Wq.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- CSS critico: sfondo nero e pagina nascosta finché non arriva lo stile vero (niente lampo di HTML nudo).
+       Se il JavaScript non parte, la pagina compare comunque dopo 2,5 secondi. -->
+  <style>html{--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark;background:#0a0a0b}body{color:#f4f4f1;opacity:0;background:#0a0a0b;margin:0;animation:0s 2.5s forwards mz-show}@keyframes mz-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
+  <noscript><style>body{opacity:1!important;animation:none!important}</style></noscript>
+  <meta name="description" content="Manzo Gym H24, palestra in via Petrarca 5 a Barletta (zona Patalini): aperta 24 ore su 24, 7 giorni su 7, festivi inclusi. Accesso libero, oltre 100 macchine, docce, personale qualificato. Mensile 80 €, prevendita 13 mesi a 450 €." />
+  <link rel="canonical" href="http://localhost:4800/" />
+  
+  <meta name="theme-color" content="#0a0a0b" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="geo.region" content="IT-BT" />
+  <meta name="geo.placename" content="Barletta" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Manzo Gym H24" />
+  <meta property="og:title" content="Manzo Gym H24 · Barletta, aperta 24/7" />
+  <meta property="og:description" content="La tua palestra, senza limiti. Aperta 24 ore su 24, 7 giorni su 7, festivi inclusi. Prevendita: 13 mesi a 450 €." />
+  <meta property="og:url" content="http://localhost:4800/" />
+  <meta property="og:image" content="http://localhost:4800/images/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Il soffitto della sala con i tubi LED a nido d'ape e le cornici rosse" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/demo/manzogym/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/demo/manzogym/apple-touch-icon.png" />
+  <link rel="manifest" href="/demo/manzogym/site.webmanifest" />
+  <link rel="preload" href="/demo/manzogym/images/soffitto-led.jpg" as="image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ExerciseGym","name":"Manzo Gym H24","url":"http://localhost:4800/","image":"http://localhost:4800/images/og.jpg","slogan":"La tua palestra, senza limiti.","address":{"@type":"PostalAddress","streetAddress":"Via Francesco Petrarca, 5","postalCode":"76121","addressLocality":"Barletta","addressRegion":"BT","addressCountry":"IT"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"sameAs":["https://www.instagram.com/manzogym24/"],"priceRange":"€€","makesOffer":[{"@type":"Offer","name":"Abbonamento Mensile","price":80,"priceCurrency":"EUR"},{"@type":"Offer","name":"Abbonamento Semestrale","price":450,"priceCurrency":"EUR"},{"@type":"Offer","name":"Abbonamento Annuale","price":550,"priceCurrency":"EUR"}],"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Aperto 24 ore su 24","value":true},{"@type":"LocationFeatureSpecification","name":"Docce","value":true},{"@type":"LocationFeatureSpecification","name":"Personale qualificato in sala","value":true},{"@type":"LocationFeatureSpecification","name":"Programmi personalizzati","value":true}]}</script>
+  <script type="module" crossorigin src="/demo/manzogym/assets/main-Bi-kjkz3.js"></script>
+  <link rel="modulepreload" crossorigin href="/demo/manzogym/assets/latin-700-BUtFEnQD.js">
+  <link rel="modulepreload" crossorigin href="/demo/manzogym/assets/settings-Bp47rJJJ.js">
+  <link rel="stylesheet" crossorigin href="/demo/manzogym/assets/latin-700-CbmefANy.css">
+  <link rel="stylesheet" crossorigin href="/demo/manzogym/assets/main-q0_E-y-a.css">
+</head>
+<body>
+  <a href="#main" class="skip">Salta al contenuto</a>
+
+  <!-- Avviso dall'admin (es. "Chiusi per manutenzione dalle 3 alle 5"): compare solo se attivo -->
+  <div class="notice" data-notice hidden><p data-notice-text></p></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Manzo Gym H24, torna su">
+      <svg class="brand-mark" viewBox="0 0 64 56" aria-hidden="true"><use href="#bull" /></svg>
+      <span class="brand-word">Manzo<b>Gym</b><i>H24</i></span>
+    </a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#perche">Perché Manzo</a>
+      <a href="#abbonamenti">Abbonamenti</a>
+      <a href="#corsi">Corsi</a>
+      <a href="#sala">La sala</a>
+      <a href="#dove">Dove siamo</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#iscriviti" class="btn btn--red btn--sm">Iscriviti</a>
+      <button type="button" class="burger" aria-label="Apri il menù di navigazione" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Navigazione mobile">
+      <a href="#perche"><i>01</i>Perché Manzo</a>
+      <a href="#abbonamenti"><i>02</i>Abbonamenti</a>
+      <a href="#corsi"><i>03</i>Sala corsi</a>
+      <a href="#sala"><i>04</i>La sala e i macchinari</a>
+      <a href="#iscriviti"><i>05</i>Iscriviti</a>
+      <a href="#dove"><i>06</i>Dove siamo</a>
+    </nav>
+    <p class="mobile-nav-foot">Via Francesco Petrarca, 5 · Barletta<br />Zona Patalini</p>
+  </div>
+
+  <!-- Logo provvisorio: testa di toro geometrica ispirata al loro marchio. Da sostituire con il file vettoriale originale. -->
+  <svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="bull" viewBox="0 0 64 56">
+      <path fill="currentColor" d="M2 2c2 9 7 15 15 17l4 9 4 22 7 5 7-5 4-22 4-9c8-2 13-8 15-17-5 6-11 9-18 9l-6 5h-12l-6-5C13 11 7 8 2 2zm19 24 7 3-1 4-6-3zm22 0-1 4-6 3-1-4z"/>
+    </symbol>
+  </svg>
+
+  <main id="main">
+    <!-- HERO: foto vera del corridoio della sala (statica, scurita da un gradiente),
+         l'indicatore "Aperti ora" con l'orologio in tempo reale e il quadrante delle 24 ore. -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="/demo/manzogym/images/soffitto-led.jpg" alt="" width="784" height="1080" fetchpriority="high" decoding="async" />
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-content wrap">
+        <p class="kicker"><span class="kicker-bar"></span>Barletta · Via Petrarca 5</p>
+        <h1 class="hero-title" id="hero-title">
+          <span class="h-247" aria-hidden="true"><span>24</span><em>/</em><span>7</span></span>
+          <span class="h-name">Manzo Gym H24</span>
+          <span class="sr">: palestra aperta 24 ore su 24, 7 giorni su 7 a Barletta</span>
+        </h1>
+        <p class="hero-claim">La tua palestra, <mark>senza limiti</mark>. Entri quando vuoi: all'alba, a mezzanotte, la domenica, a Natale. Senza prenotare.</p>
+
+        <div class="live" data-live>
+          <div class="live-ring" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <circle class="ring-track" cx="60" cy="60" r="52" />
+              <circle class="ring-lit" cx="60" cy="60" r="52" pathLength="100" />
+              <g class="ring-ticks"></g>
+              <g class="ring-hand" data-ring-hand><circle cx="60" cy="8" r="6" /></g>
+            </svg>
+            <span class="ring-label"><b>24</b>ore</span>
+          </div>
+          <div class="live-text">
+            <p class="live-state"><span class="live-dot"></span><strong data-live-state>Aperti ora</strong></p>
+            <p class="live-clock">A Barletta sono le <time data-clock>--:--</time></p>
+            <p class="live-sub" data-live-sub>Prossima chiusura: <b>mai</b>.</p>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#abbonamenti" class="btn btn--yellow">Vedi gli abbonamenti</a>
+          <a href="#iscriviti" class="btn btn--line">Iscriviti su WhatsApp</a>
+        </div>
+      </div>
+
+      <ul class="hero-stats wrap" aria-label="I numeri della palestra">
+        <li><b data-count="24">24</b><span>ore al giorno</span></li>
+        <li><b data-count="7">7</b><span>giorni su 7</span></li>
+        <li><b data-count="365">365</b><span>giorni l'anno</span></li>
+        <li><b data-count="100" data-plus>100+</b><span>macchine</span></li>
+      </ul>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>H24 · 7 su 7</span><span>Festivi inclusi</span><span>Accesso libero</span><span>Oltre 100 macchine</span><span>Docce incluse</span><span>Programmi personalizzati</span>
+        <span>H24 · 7 su 7</span><span>Festivi inclusi</span><span>Accesso libero</span><span>Oltre 100 macchine</span><span>Docce incluse</span><span>Programmi personalizzati</span>
+      </div>
+    </div>
+
+    <!-- PERCHÉ MANZO: i 6 punti della locandina -->
+    <section class="section why" id="perche" aria-labelledby="why-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="sec-num">01</p>
+          <h2 id="why-title">Perché <span class="red">Manzo</span></h2>
+          <p class="sec-lead">Tutto quello che conta, compreso nell'abbonamento. Nessuna fascia oraria, nessuna app per prenotare il posto.</p>
+        </header>
+        <ol class="why-grid">
+          <li class="why-card reveal">
+            <span class="hexi" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="14"/><path d="M24 14v10l7 5"/></svg></span>
+            <h3>H24, 7 giorni su 7</h3><p>Aperti sempre, <b>festivi inclusi</b>. Ti alleni quando hai tempo tu, non quando apre la palestra.</p>
+          </li>
+          <li class="why-card reveal">
+            <span class="hexi" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="12" y="22" width="24" height="16" rx="2"/><path d="M17 22v-5a7 7 0 0 1 14 0"/></svg></span>
+            <h3>Accesso libero</h3><p><b>Senza prenotazione</b> e senza fasce orarie. Arrivi, entri, ti alleni.</p>
+          </li>
+          <li class="why-card reveal">
+            <span class="hexi" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="15" r="6"/><path d="M12 40c0-8 5-13 12-13s12 5 12 13"/></svg></span>
+            <h3>Personale qualificato</h3><p>Istruttori <b>in sala</b> per correggerti la tecnica e farti partire col piede giusto.</p>
+          </li>
+          <li class="why-card reveal">
+            <span class="hexi" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="13" y="9" width="22" height="30" rx="2"/><path d="M18 18h12M18 24h12M18 30h7"/></svg></span>
+            <h3>Programmi personalizzati</h3><p>Una scheda costruita su di te e sul tuo obiettivo, <b>inclusa</b> nell'abbonamento.</p>
+          </li>
+          <li class="why-card reveal">
+            <span class="hexi" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M14 18a10 10 0 0 1 20 0z"/><path d="M18 24v3M24 24v5M30 24v3M21 31v3M27 31v3"/></svg></span>
+            <h3>Docce incluse</h3><p>Allenamento prima del lavoro? Esci pronto. Le docce sono <b>comprese</b>.</p>
+          </li>
+          <li class="why-card reveal">
+            <span class="hexi" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 24h4M36 24h4M12 17v14M36 17v14M16 20v8M32 20v8M16 24h16"/></svg></span>
+            <h3>Oltre 100 macchine</h3><p>Isotoniche, pesi liberi e cardio: <b>più di 100 postazioni</b>, niente fila per la panca.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PREVENDITA: la locandina, rifatta in grande. I numeri arrivano dalle impostazioni (data-presale-*). -->
+    <section class="presale" id="prevendita" aria-labelledby="presale-title" data-presale>
+      <div class="presale-bg" aria-hidden="true"><img src="/demo/manzogym/images/led-rosso.jpg" alt="" width="784" height="440" loading="lazy" decoding="async" /></div>
+      <div class="wrap presale-in reveal">
+        <p class="presale-tag">Prevendita attiva</p>
+        <h2 id="presale-title" class="presale-title"><span data-presale-title>12 mesi + 1</span></h2>
+        <p class="presale-months"><span data-presale-months>13</span> mesi totali</p>
+        <p class="presale-price">a soli <b data-presale-price>450 €</b></p>
+        <p class="presale-save">Risparmio di <b data-presale-save>180 €</b> rispetto al listino ordinario</p>
+        <p class="presale-until" data-presale-until hidden></p>
+        <a href="#iscriviti" class="btn btn--yellow" data-pick="prevendita">Blocca il prezzo su WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- ABBONAMENTI + CALCOLATORE -->
+    <section class="section plans" id="abbonamenti" aria-labelledby="plans-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="sec-num">02</p>
+          <h2 id="plans-title">Abbonamenti</h2>
+          <p class="sec-lead">Listino ordinario all'apertura. Più mesi prendi, meno paghi al mese.</p>
+        </header>
+        <div class="plan-grid" data-plans><article class="plan plan--hot" data-plan="prevendita">
+      <span class="plan-flag">Prevendita</span>
+      <h3 class="plan-name">12 mesi + 1</h3>
+      <p class="plan-sub">13 mesi totali</p>
+      <p class="plan-price"><b>450 €</b></p>
+      <p class="plan-month"><b>34,62 €</b> al mese</p>
+      <p class="plan-save">Risparmi 180 € sul listino</p>
+      <p class="plan-rate">oppure 4 rate da 112,50 €</p>
+      
+      <a class="btn btn--yellow plan-cta" href="#iscriviti" data-pick="prevendita">Blocca il prezzo</a>
+    </article><article class="plan" data-plan="mensile">
+      <h3 class="plan-name">Mensile</h3>
+      <p class="plan-sub">1 mese</p>
+      <p class="plan-price"><b>80 €</b></p>
+      <p class="plan-month"><b>80,00 €</b> al mese</p>
+      <p class="plan-rate">senza vincoli</p>
+      <a class="btn btn--line plan-cta" href="#iscriviti" data-pick="mensile">Scegli</a>
+    </article><article class="plan" data-plan="semestrale">
+      <h3 class="plan-name">Semestrale</h3>
+      <p class="plan-sub">6 mesi</p>
+      <p class="plan-price"><b>450 €</b></p>
+      <p class="plan-month"><b>75,00 €</b> al mese</p>
+      <p class="plan-rate">oppure 4 rate da 112,50 €</p>
+      <a class="btn btn--line plan-cta" href="#iscriviti" data-pick="semestrale">Scegli</a>
+    </article><article class="plan" data-plan="annuale">
+      <h3 class="plan-name">Annuale</h3>
+      <p class="plan-sub">12 mesi</p>
+      <p class="plan-price"><b>550 €</b></p>
+      <p class="plan-month"><b>45,83 €</b> al mese</p>
+      <p class="plan-rate">oppure 4 rate da 137,50 €</p>
+      <a class="btn btn--line plan-cta" href="#iscriviti" data-pick="annuale">Scegli</a>
+    </article></div>
+
+        <div class="calc reveal" data-calc>
+          <div class="calc-head">
+            <h3>Quanto ti costa al mese?</h3>
+            <label for="calc-months">Ti alleni per <output data-calc-out for="calc-months">12 mesi</output></label>
+            <input id="calc-months" type="range" min="1" max="13" value="12" step="1" data-calc-range />
+            <div class="calc-scale" aria-hidden="true"><span>1</span><span>6</span><span>12</span><span>13</span></div>
+          </div>
+          <div class="calc-bars" data-calc-bars aria-live="polite"></div>
+          <p class="calc-best" data-calc-best></p>
+        </div>
+
+        <div class="pay reveal">
+          <div class="pay-badges" aria-hidden="true"><span class="pay-k">Klarna</span><span class="pay-s">scalapay</span></div>
+          <div>
+            <h3>Paghi anche a rate</h3>
+            <p>Con <b>Klarna</b> e <b>Scalapay</b>, fino a <b>4 rate</b>. Esempio: la prevendita da 450 € diventa <b data-pay-example>4 rate da 112,50 €</b>.</p>
+            <p class="fine">Rate soggette all'approvazione di Klarna o Scalapay. Chiedi in reception i dettagli.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SALA CORSI -->
+    <section class="section courses" id="corsi" aria-labelledby="courses-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="sec-num">03</p>
+          <h2 id="courses-title">Sala <span class="red">corsi</span></h2>
+          <p class="sec-lead">La sala corsi è <mark>in fase di avvio</mark>: stiamo selezionando gli istruttori. Scrivici quale ti interessa e ti avvisiamo appena parte.</p>
+        </header>
+        <ul class="course-grid" data-courses><li class="course course--avvio">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 14h20a6 6 0 0 1 6 6v6a8 8 0 0 1-8 8H18a6 6 0 0 1-6-6V16a2 2 0 0 1 2-2z M12 24h10 M30 14v-2a4 4 0 0 0-8 0v2"/></svg>
+      <h3>Fitbox</h3>
+      <p class="course-status">In fase di avvio</p>
+      
+    </li><li class="course course--avvio">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="12" r="4"/><path d="M8 36h32 M14 36l6-12 10 4 6-10"/></svg>
+      <h3>Pilates</h3>
+      <p class="course-status">In fase di avvio</p>
+      
+    </li><li class="course course--avvio">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 20v8 M38 20v8 M14 16v16 M34 16v16 M14 24h20"/></svg>
+      <h3>Funzionale</h3>
+      <p class="course-status">In fase di avvio</p>
+      
+    </li><li class="course course--avvio">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4v40 M24 14l-8 8 4 10 M24 22l8 4"/><circle cx="16" cy="12" r="3"/></svg>
+      <h3>Pole Dance</h3>
+      <p class="course-status">In fase di avvio</p>
+      
+    </li><li class="course course--avvio">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 36V12l18-4v24"/><circle cx="14" cy="36" r="4"/><circle cx="32" cy="32" r="4"/></svg>
+      <h3>Ballo</h3>
+      <p class="course-status">In fase di avvio</p>
+      
+    </li></ul>
+        <p class="courses-cta reveal"><a href="#iscriviti" class="btn btn--line" data-pick-goal="Solo corsi">Avvisami quando partono</a></p>
+      </div>
+    </section>
+
+    <!-- LA SALA E I MACCHINARI: cosa c'è in sala (categorie) + galleria dei fotogrammi Instagram -->
+    <section class="section gallery" id="sala" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="sec-num">04</p>
+          <h2 id="gallery-title">La sala e <span class="red">i macchinari</span></h2>
+          <p class="sec-lead">Oltre 100 macchine <b>Panatta</b>, pesi liberi e cardio in una sala nuova, ampia e pulita, con il pavimento in gomma. Ogni gruppo muscolare ha le sue postazioni: niente attese.</p>
+        </header>
+
+        <ul class="kit reveal" aria-label="Le zone della sala">
+          <li><b>Petto</b><span>Spinte e aperture, su macchina e su panca</span></li>
+          <li><b>Dorso</b><span>Trazioni e rematori, ai cavi e su macchina</span></li>
+          <li><b>Gambe e glutei</b><span>Spinte, piegate ed estensioni</span></li>
+          <li><b>Spalle e braccia</b><span>Distensioni, alzate, bicipiti e tricipiti</span></li>
+          <li><b>Pesi liberi</b><span>Manubri, bilancieri e panche</span></li>
+          <li><b>Cardio</b><span>Per scaldarti o per il fiato</span></li>
+        </ul>
+
+        <div class="g-grid">
+          <button type="button" class="g-item g-item--tall" data-full="/demo/manzogym/images/sala-macchine.jpg" data-cap="Macchine isotoniche nella sala attrezzi">
+            <img src="/demo/manzogym/images/sala-macchine.jpg" alt="Macchine isotoniche verdi nella sala attrezzi" width="444" height="1200" loading="lazy" decoding="async" /><span>Isotoniche</span>
+          </button>
+          <button type="button" class="g-item" data-full="/demo/manzogym/images/sala-pesi.jpg" data-cap="Postazioni per i pesi e panche regolabili">
+            <img src="/demo/manzogym/images/sala-pesi.jpg" alt="Postazioni con telai per i pesi e panche rosse nella sala" width="387" height="450" loading="lazy" decoding="async" /><span>Pesi e panche</span>
+          </button>
+          <button type="button" class="g-item" data-full="/demo/manzogym/images/panca.jpg" data-cap="Una panca in primo piano e le macchine della sala">
+            <img src="/demo/manzogym/images/panca.jpg" alt="Una panca nera in primo piano e le macchine della sala attrezzi" width="784" height="930" loading="lazy" decoding="async" /><span>Sala attrezzi</span>
+          </button>
+          <button type="button" class="g-item g-item--tall-d" data-full="/demo/manzogym/images/soffitto-led.jpg" data-cap="Spazi ampi, soffitti alti e pavimento in gomma">
+            <img src="/demo/manzogym/images/soffitto-led.jpg" alt="Un'area ampia della palestra con il pavimento in gomma scuro" width="784" height="1080" loading="lazy" decoding="async" /><span>Spazi ampi</span>
+          </button>
+          <button type="button" class="g-item g-item--wide" data-full="/demo/manzogym/images/reception.jpg" data-cap="La reception all'ingresso">
+            <img src="/demo/manzogym/images/reception.jpg" alt="La reception con le pareti in marmo e la scritta Manzo Gym H24 Reception" width="784" height="1200" loading="lazy" decoding="async" /><span>Reception</span>
+          </button>
+        </div>
+        <p class="g-note">Foto provvisorie, tratte dai video del profilo Instagram. Tocca una foto per vederla grande.</p>
+      </div>
+      <dialog class="lightbox" data-lightbox aria-label="Foto ingrandita">
+        <img src="" alt="" data-lb-img />
+        <p data-lb-cap></p>
+        <button type="button" class="lb-close" data-lb-close aria-label="Chiudi">×</button>
+      </dialog>
+    </section>
+
+
+    <!-- ISCRIZIONE: il messaggio WhatsApp si compone da solo con il piano scelto. Il sito non salva nulla. -->
+    <section class="section signup" id="iscriviti" aria-labelledby="signup-title">
+      <div class="wrap signup-in">
+        <header class="sec-head reveal">
+          <p class="sec-num">05</p>
+          <h2 id="signup-title">Iscriviti</h2>
+          <p class="sec-lead">Scegli il piano, due domande veloci e ti si apre WhatsApp con il messaggio già scritto. Ti rispondiamo noi per completare l'iscrizione.</p>
+        </header>
+        <form class="signup-form reveal" data-signup novalidate>
+          <fieldset><legend>Piano</legend><div class="chips" data-plan-chips><label class="chip"><input type="radio" name="plan" value="prevendita" checked /><span>Prevendita 12 mesi + 1 · 450 €</span></label><label class="chip"><input type="radio" name="plan" value="mensile" /><span>Mensile · 80 €</span></label><label class="chip"><input type="radio" name="plan" value="semestrale" /><span>Semestrale · 450 €</span></label><label class="chip"><input type="radio" name="plan" value="annuale" /><span>Annuale · 550 €</span></label><label class="chip"><input type="radio" name="plan" value="info" /><span>Devo ancora decidere</span></label></div></fieldset>
+          <fieldset><legend>Il tuo obiettivo</legend><div class="chips"><label class="chip chip--sm"><input type="radio" name="goal" value="Tonificare" checked /><span>Tonificare</span></label><label class="chip chip--sm"><input type="radio" name="goal" value="Dimagrire" /><span>Dimagrire</span></label><label class="chip chip--sm"><input type="radio" name="goal" value="Massa muscolare" /><span>Massa muscolare</span></label><label class="chip chip--sm"><input type="radio" name="goal" value="Forza" /><span>Forza</span></label><label class="chip chip--sm"><input type="radio" name="goal" value="Rimettermi in forma" /><span>Rimettermi in forma</span></label><label class="chip chip--sm"><input type="radio" name="goal" value="Solo corsi" /><span>Solo corsi</span></label></div></fieldset>
+          <fieldset><legend>Quando ti alleni di solito</legend><div class="chips"><label class="chip chip--sm"><input type="radio" name="when" value="Mattina presto" checked /><span>Mattina presto</span></label><label class="chip chip--sm"><input type="radio" name="when" value="In pausa pranzo" /><span>In pausa pranzo</span></label><label class="chip chip--sm"><input type="radio" name="when" value="Pomeriggio" /><span>Pomeriggio</span></label><label class="chip chip--sm"><input type="radio" name="when" value="Sera" /><span>Sera</span></label><label class="chip chip--sm"><input type="radio" name="when" value="Notte fonda" /><span>Notte fonda</span></label><label class="chip chip--sm"><input type="radio" name="when" value="Cambia sempre" /><span>Cambia sempre</span></label></div></fieldset>
+          <div class="field">
+            <label for="s-name">Come ti chiami <small>facoltativo</small></label>
+            <input id="s-name" name="name" maxlength="40" autocomplete="given-name" placeholder="Es. Marco" />
+          </div>
+          <label class="check"><input type="checkbox" name="courses" /> <span>Voglio sapere quando partono i corsi</span></label>
+        </form>
+        <div class="wa reveal">
+          <p class="wa-label">Anteprima del messaggio</p>
+          <div class="wa-bubble"><p data-wa-preview></p></div>
+          <a class="btn btn--wa" data-wa-send href="#" target="_blank" rel="noopener">Apri WhatsApp</a>
+          <div class="wa-missing" data-wa-missing hidden>
+            <p><span class="ph">Numero WhatsApp da inserire</span> Nella demo il numero non c'è ancora: intanto puoi copiare il messaggio e mandarlo su Instagram.</p>
+            <div class="wa-alt">
+              <button type="button" class="btn btn--line btn--sm" data-wa-copy>Copia il messaggio</button>
+              <a class="btn btn--line btn--sm" href="https://ig.me/m/manzogym24" target="_blank" rel="noopener">Scrivici su Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOVE SIAMO -->
+    <section class="section where" id="dove" aria-labelledby="where-title">
+      <div class="wrap where-in">
+        <header class="sec-head reveal">
+          <p class="sec-num">06</p>
+          <h2 id="where-title">Dove siamo</h2>
+        </header>
+        <div class="where-card reveal">
+          <address>
+            <strong>Via Francesco Petrarca, 5</strong>
+            76121 Barletta (BT)<br />
+            Zona Patalini · Accanto alla Chiesa del Crocifisso
+          </address>
+          <p class="where-open"><span class="live-dot"></span> Aperti 24 ore su 24, tutti i giorni</p>
+          <div class="where-cta">
+            <a href="https://www.google.com/maps/search/?api=1&query=Via+Francesco+Petrarca+5+Barletta" class="btn btn--yellow btn--sm" target="_blank" rel="noopener">Portami lì</a>
+          </div>
+          <ul class="contacts"><li><span>Telefono</span><span class="ph">numero da inserire</span></li><li><span>WhatsApp</span><span class="ph">numero WhatsApp da inserire</span></li><li><span>Email</span><span class="ph">email da inserire</span></li><li><span>Instagram</span><a href="https://www.instagram.com/manzogym24/" target="_blank" rel="noopener">@manzogym24</a></li><li><span>Facebook</span><a href="https://www.facebook.com/search/top?q=Manzo%20H24%20Gym" target="_blank" rel="noopener">Manzo H24 Gym</a></li></ul>
+        </div>
+        <div class="map reveal" data-map>
+          <button type="button" class="map-load" data-map-load>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>Mostra la mappa</span>
+            <small>Si carica Google Maps solo se lo chiedi tu (niente cookie prima).</small>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-in">
+      <div class="foot-brand">
+        <svg class="brand-mark" viewBox="0 0 64 56" aria-hidden="true"><use href="#bull" /></svg>
+        <p><b>Manzo Gym H24</b><br />La tua palestra, senza limiti.</p>
+      </div>
+      <p class="foot-addr">Via Francesco Petrarca, 5 · 76121 Barletta (BT)<br />Aperti H24, 7 giorni su 7, festivi inclusi</p>
+      <p class="foot-social"><a href="https://www.instagram.com/manzogym24/" target="_blank" rel="noopener">Instagram @manzogym24</a><a href="https://www.facebook.com/search/top?q=Manzo%20H24%20Gym" target="_blank" rel="noopener">Facebook</a></p>
+      <p class="foot-legal"><a href="/demo/manzogym/privacy.html">Privacy e cookie</a> · <span class="ph">P.IVA da inserire</span></p>
+    </div>
+  </footer>
+</body>
+</html>
