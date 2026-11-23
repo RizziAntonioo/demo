@@ -2,49 +2,48 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; media-src 'none'; object-src 'none'; worker-src 'none'; manifest-src 'self'; base-uri 'self'; form-action 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; media-src 'none'; object-src 'none'; worker-src 'none'; manifest-src 'self'; base-uri 'self'; form-action 'none'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <!-- CSS critico (anti-FOUC): fondo blu dal primo istante e pagina nascosta finché stile e script non sono pronti.
        main.js aggiunge la classe "ready" a <html> e la pagina compare; se qualcosa non arrivasse, compare comunque dopo 3 s.
        Niente JavaScript in linea: la CSP non lo permette. -->
   <style>html{background:#182b3a}body{color:#f4f0e8;opacity:0;background:#182b3a;margin:0;animation:0s 3s forwards km-show}@keyframes km-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
   <noscript><style>body{opacity:1!important;animation:none!important}</style></noscript>
-  <title>Kemare | Fish bar a Barletta: panini di mare, fritti, crudi e poke</title>
+  <title>Kemare | Fish bar a Barletta e Trani: poke, sushi, panini di mare e fritti</title>
   <meta name="robots" content="noindex, nofollow" />
   <script src="/demo/kemare/demo-mode.js"></script>
 
   <link rel="preload" href="/demo/kemare/assets/fraunces-latin-full-normal-CFFu7zhK.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/demo/kemare/assets/hanken-grotesk-latin-wght-normal-CaVRRdDk.woff2" as="font" type="font/woff2" crossorigin>
-  <meta name="description" content="Kemare, il fish bar pugliese in via Cavour 76 a Barletta: panini di mare, fritti, crudi, ostriche e poke. Da asporto, al banco o a domicilio. Orari, menù e contatti." />
+  <meta name="description" content="Kemare, il fish bar pugliese a Barletta (via Cavour 76) e a Trani (via Bovio 161): poke da comporre, sushi e uramaki, panini di mare, fritti e crudi. Da asporto, al banco o a domicilio. Menù, orari e contatti." />
   <link rel="canonical" href="http://localhost:4000/" />
   
   <meta name="theme-color" content="#182b3a" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="geo.region" content="IT-BT" />
-  <meta name="geo.placename" content="Barletta" />
-  <meta name="geo.position" content="41.3192112;16.2859325" />
+  <meta name="geo.placename" content="Barletta, Trani" />
 
   <meta property="og:type" content="restaurant.restaurant" />
   <meta property="og:locale" content="it_IT" />
   <meta property="og:site_name" content="Kemare" />
-  <meta property="og:title" content="Kemare · Il fish bar pugliese a Barletta" />
-  <meta property="og:description" content="Panini di mare, fritti, crudi, ostriche e poke in via Cavour 76. Da asporto, al banco o a domicilio." />
+  <meta property="og:title" content="Kemare · Il fish bar pugliese a Barletta e Trani" />
+  <meta property="og:description" content="Poke, sushi, panini di mare, fritti e crudi. Via Cavour 76 a Barletta e via Bovio 161 a Trani. Da asporto, al banco o a domicilio." />
   <meta property="og:url" content="http://localhost:4000/" />
   <meta property="og:image" content="http://localhost:4000/images/og.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Kemare, il fish bar pugliese a Barletta" />
+  <meta property="og:image:alt" content="Kemare, il fish bar pugliese a Barletta e Trani" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Kemare · Il fish bar pugliese a Barletta" />
-  <meta name="twitter:description" content="Panini di mare, fritti, crudi, ostriche e poke in via Cavour 76." />
+  <meta name="twitter:title" content="Kemare · Il fish bar pugliese a Barletta e Trani" />
+  <meta name="twitter:description" content="Poke, sushi, panini di mare, fritti e crudi a Barletta e a Trani." />
   <meta name="twitter:image" content="http://localhost:4000/images/og.jpg" />
 
   <link rel="icon" href="/demo/kemare/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="/demo/kemare/site.webmanifest" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"http://localhost:4000/#locale","name":"Kemare, il fish bar pugliese","alternateName":"Kemare","description":"Fish bar a Barletta: panini di mare, fritti, crudi, ostriche e poke, da asporto o al banco.","url":"http://localhost:4000/","image":"http://localhost:4000/images/og.jpg","telephone":"+390883893824","priceRange":"€€","servesCuisine":["Pesce","Street food di mare","Poke"],"address":{"@type":"PostalAddress","streetAddress":"Via Cavour, 76","postalCode":"76121","addressLocality":"Barletta","addressRegion":"BT","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":41.3192112,"longitude":16.2859325},"hasMap":"https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20bar%20Pugliese%2C%20Via%20Cavour%2076%2C%20Barletta","hasMenu":"http://localhost:4000/#menu","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"11:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"18:30","closes":"23:45"}],"sameAs":["https://www.instagram.com/kemare_fishbar/","https://www.facebook.com/Kemare-100431668656041"]}</script>
-  <script type="module" crossorigin src="/demo/kemare/assets/main-PctRlcM_.js"></script>
-  <link rel="modulepreload" crossorigin href="/demo/kemare/assets/main-CXShXH83.js">
-  <link rel="stylesheet" crossorigin href="/demo/kemare/assets/main-CJRZ5cOo.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"http://localhost:4000/#org","name":"Kemare, il fish bar pugliese","alternateName":"Kemare","url":"http://localhost:4000/","logo":"http://localhost:4000/favicon.svg","sameAs":["https://www.instagram.com/kemare_fishbar/","https://www.facebook.com/Kemare-100431668656041"],"subOrganization":[{"@id":"http://localhost:4000/barletta/#restaurant"},{"@id":"http://localhost:4000/trani/#restaurant"}]},{"@type":"Restaurant","@id":"http://localhost:4000/#restaurant-barletta","name":"Kemare Barletta","alternateName":"Kemare il Fish Bar Pugliese","description":"Fish bar a Barletta: poke, sushi e uramaki, panini di mare, fritti e crudi. Da asporto, al banco o a domicilio.","url":"http://localhost:4000/","image":"http://localhost:4000/images/og.jpg","telephone":"+390883893824","priceRange":"€€","servesCuisine":["Pesce","Poke","Sushi","Street food di mare"],"address":{"@type":"PostalAddress","streetAddress":"Via Cavour, 76","postalCode":"76121","addressLocality":"Barletta","addressRegion":"BT","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":41.3192486,"longitude":16.2858548},"hasMap":"https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20Bar%20Pugliese%2C%20Via%20Cavour%2076%2C%2076121%20Barletta","hasMenu":"http://localhost:4000/#menu","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"11:30","closes":"14:45"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"11:30","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"18:30","closes":"23:45"}],"parentOrganization":{"@id":"http://localhost:4000/#org"},"sameAs":["https://www.instagram.com/kemare_fishbar/","https://www.facebook.com/Kemare-100431668656041"]},{"@type":"Restaurant","@id":"http://localhost:4000/#restaurant-trani","name":"Kemare Trani","alternateName":"Kemare •il Fish Bar Pugliese• TRANI","description":"Fish bar a Trani: poke, sushi e uramaki, panini di mare, fritti e crudi. Da asporto, al banco o a domicilio.","url":"http://localhost:4000/","image":"http://localhost:4000/images/og.jpg","telephone":"+390883882830","priceRange":"€€","servesCuisine":["Pesce","Poke","Sushi","Street food di mare"],"address":{"@type":"PostalAddress","streetAddress":"Via Giovanni Bovio, 161","postalCode":"76125","addressLocality":"Trani","addressRegion":"BT","addressCountry":"IT"},"hasMap":"https://www.google.com/maps/search/?api=1&query=Kemare%20%E2%80%A2il%20Fish%20Bar%20Pugliese%E2%80%A2%20TRANI%2C%20Via%20Giovanni%20Bovio%20161%2C%2076125%20Trani","hasMenu":"http://localhost:4000/#menu","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:30","closes":"14:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"18:45","closes":"23:15"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"18:30","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"18:30","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"18:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"11:30","closes":"14:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"18:30","closes":"23:30"}],"parentOrganization":{"@id":"http://localhost:4000/#org"},"sameAs":["https://www.instagram.com/kemare_fishbar/","https://www.facebook.com/Kemare-100431668656041"]}]}</script>
+  <script type="module" crossorigin src="/demo/kemare/assets/main-3dE5NXDg.js"></script>
+  <link rel="modulepreload" crossorigin href="/demo/kemare/assets/main-CIJQcKMT.js">
+  <link rel="stylesheet" crossorigin href="/demo/kemare/assets/main-C0qNbal-.css">
   <link rel="stylesheet" crossorigin href="/demo/kemare/assets/main-BUt-tFEB.css">
 </head>
 <body>
@@ -55,9 +54,9 @@
     <a href="#top" class="brand" aria-label="Kemare, torna all'inizio"><svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg><span>Kemare</span></a>
     <nav class="nav" aria-label="Navigazione principale">
       <a href="#menu">Menù</a>
+      <a href="#poke">Poke</a>
       <a href="#come" class="nav-wide">Come funziona</a>
-      <a href="#contatti">Orari<span class="nav-wide"> e contatti</span></a>
-      <a href="tel:+390883893824" class="nav-call">Chiama</a>
+      <a href="#contatti" class="nav-call">Sedi<span class="nav-wide"> e orari</span></a>
     </nav>
   </header>
 
@@ -67,23 +66,23 @@
       <div class="hero-sticky">
         <div class="hero-half hero-half--l"><div class="hero-face">
           <p class="hero-kicker"><svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg><span>Il fish bar pugliese</span></p>
-          <h1 class="hero-word" aria-label="Kemare, il fish bar pugliese a Barletta"><span class="ch">K</span><span class="ch">e</span><span class="ch">m</span><span class="ch">a</span><span class="ch">r</span><span class="ch">e</span></h1>
+          <h1 class="hero-word" aria-label="Kemare, il fish bar pugliese a Barletta e Trani"><span class="ch">K</span><span class="ch">e</span><span class="ch">m</span><span class="ch">a</span><span class="ch">r</span><span class="ch">e</span></h1>
           <svg class="hero-wave" viewBox="0 0 600 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" vector-effect="non-scaling-stroke" d="M4 12 q37 -14 74 0 t74 0 t74 0 t74 0 t74 0 t74 0 t74 0 t74 0"/></svg>
-          <p class="hero-foot hero-foot--l">Via Cavour 76<br />Barletta</p>
+          <p class="hero-foot hero-foot--l">Barletta · Via Cavour 76<br />Trani · Via Giovanni Bovio 161</p>
           <p class="hero-foot hero-foot--r">Scorri</p>
         </div></div>
         <div class="hero-half hero-half--r" aria-hidden="true"><div class="hero-face">
           <p class="hero-kicker"><svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg><span>Il fish bar pugliese</span></p>
           <div class="hero-word"><span class="ch">K</span><span class="ch">e</span><span class="ch">m</span><span class="ch">a</span><span class="ch">r</span><span class="ch">e</span></div>
           <svg class="hero-wave" viewBox="0 0 600 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" vector-effect="non-scaling-stroke" d="M4 12 q37 -14 74 0 t74 0 t74 0 t74 0 t74 0 t74 0 t74 0 t74 0"/></svg>
-          <p class="hero-foot hero-foot--l">Via Cavour 76<br />Barletta</p>
+          <p class="hero-foot hero-foot--l">Barletta · Via Cavour 76<br />Trani · Via Giovanni Bovio 161</p>
           <p class="hero-foot hero-foot--r">Scorri</p>
         </div></div>
         <div class="hero-reveal">
           <div class="hero-reveal-inner">
-          <p class="eyebrow">Barletta · Via Cavour 76</p>
-          <p class="statement">Panini di mare, fritti, <em>crudi</em> e poke.</p>
-          <p class="lede">Si ordina al banco e si porta via. Oppure ci si ferma: un calice, due ostriche, e il resto può aspettare.</p>
+          <p class="eyebrow">Barletta · Trani</p>
+          <p class="statement">Poke, sushi, panini di mare e <em>fritti</em>.</p>
+          <p class="lede">Si ordina al banco e si porta via. Oppure ci si ferma: un calice, due crudi, e il resto può aspettare. In via Cavour a Barletta e in via Bovio a Trani.</p>
           <a href="#menu" class="link-arrow">Guarda il menù</a>
           </div>
         </div>
@@ -94,129 +93,379 @@
     <section class="menu" id="menu" aria-labelledby="menu-title">
       <header class="menu-top">
         <h2 class="display" id="menu-title"><span class="rise"><span>Il menù</span></span></h2>
-        <p class="menu-top-note" data-fade>Il menù può cambiare: per i piatti del giorno e i prezzi chiedi al banco, oppure <a href="tel:+390883893824">chiama</a>.</p>
+        <p class="menu-top-note" data-fade>Piatti e prezzi possono cambiare da una sede all'altra: per le novità del giorno chiedi al banco, oppure <a href="#contatti">chiama la tua sede</a>.</p>
+        <nav class="menu-index" aria-label="Sezioni del menù"><a href="#menu-panini">Panini e pinse</a><a href="#menu-poke">Poke e burrito</a><a href="#menu-sushi">Sushi</a><a href="#menu-crudi">Crudi, carpacci e tartare</a><a href="#menu-fritti">Fritti e stuzzichini</a><a href="#menu-dolci">Dolci e da bere</a><a href="#poke" class="is-accent">Componi la poke</a></nav>
       </header>
       <div class="menu-split">
         <div class="menu-visual" aria-hidden="true">
           <div class="menu-panel menu-panel--0" data-panel="0">
-            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Panini di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M52 112 Q52 62 120 62 Q188 62 188 112 Z"/><path pathLength="1" d="M46 128 q12.5 -10 25 0 t25 0 t25 0 t25 0 t25 0 t25 0"/><path pathLength="1" d="M54 144 H186 Q186 168 164 168 H76 Q54 168 54 144 Z"/><path pathLength="1" d="M96 84 l6 -3"/><path pathLength="1" d="M124 78 l6 2"/><path pathLength="1" d="M150 90 l5 -4"/><path pathLength="1" d="M24 204 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
-            <p class="menu-panel-count"><span>01</span> / 05</p>
-            <p class="menu-panel-name">Panini</p>
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Panini e pinse di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M52 112 Q52 62 120 62 Q188 62 188 112 Z"/><path pathLength="1" d="M46 128 q12.5 -10 25 0 t25 0 t25 0 t25 0 t25 0 t25 0"/><path pathLength="1" d="M54 144 H186 Q186 168 164 168 H76 Q54 168 54 144 Z"/><path pathLength="1" d="M96 84 l6 -3"/><path pathLength="1" d="M124 78 l6 2"/><path pathLength="1" d="M150 90 l5 -4"/><path pathLength="1" d="M24 204 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <p class="menu-panel-count"><span>01</span> / 06</p>
+            <p class="menu-panel-name">Panini e pinse</p>
           </div>
           <div class="menu-panel menu-panel--1" data-panel="1">
-            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Fritti di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M70 96 L120 206 L170 96"/><path pathLength="1" d="M70 96 Q120 116 170 96"/><circle pathLength="1" cx="96" cy="78" r="17"/><circle pathLength="1" cx="96" cy="78" r="7"/><circle pathLength="1" cx="136" cy="64" r="20"/><circle pathLength="1" cx="136" cy="64" r="9"/><circle pathLength="1" cx="156" cy="92" r="12"/><circle pathLength="1" cx="156" cy="92" r="4.5"/><path pathLength="1" d="M98 150 l44 -18"/><path pathLength="1" d="M106 170 l28 -11"/></svg></span></div>
-            <p class="menu-panel-count"><span>02</span> / 05</p>
-            <p class="menu-panel-name">Fritti</p>
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Poke e burrito di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M40 116 H200 Q200 186 120 186 Q40 186 40 116 Z"/><path pathLength="1" d="M58 116 Q74 88 92 116"/><path pathLength="1" d="M92 116 Q112 80 134 116"/><path pathLength="1" d="M134 116 Q154 92 180 116"/><path pathLength="1" d="M96 40 L150 108"/><path pathLength="1" d="M116 36 L164 104"/><path pathLength="1" d="M92 204 H148"/></svg></span></div>
+            <p class="menu-panel-count"><span>02</span> / 06</p>
+            <p class="menu-panel-name">Poke e burrito</p>
           </div>
           <div class="menu-panel menu-panel--2" data-panel="2">
-            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Crudi e ostriche di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M50 124 Q44 62 118 54 Q196 58 192 126 Q186 178 120 182 Q56 178 50 124 Z"/><path pathLength="1" d="M74 124 Q70 84 120 78 Q170 82 168 126 Q164 158 120 160 Q78 158 74 124 Z"/><path pathLength="1" d="M92 112 Q112 96 138 104"/><path pathLength="1" d="M100 136 Q122 146 148 132"/><circle pathLength="1" cx="126" cy="121" r="7"/><path pathLength="1" d="M24 214 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
-            <p class="menu-panel-count"><span>03</span> / 05</p>
-            <p class="menu-panel-name">Crudi e ostriche</p>
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Sushi di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M56 92 Q56 66 120 66 Q184 66 184 92 V148 Q184 174 120 174 Q56 174 56 148 Z"/><path pathLength="1" d="M56 92 Q56 118 120 118 Q184 118 184 92"/><path pathLength="1" d="M82 92 Q82 78 120 78 Q158 78 158 92 Q158 106 120 106 Q82 106 82 92 Z"/><circle pathLength="1" cx="110" cy="92" r="6"/><path pathLength="1" d="M126 88 l12 5"/><path pathLength="1" d="M34 206 L206 180"/><path pathLength="1" d="M38 220 L208 196"/></svg></span></div>
+            <p class="menu-panel-count"><span>03</span> / 06</p>
+            <p class="menu-panel-name">Sushi</p>
           </div>
           <div class="menu-panel menu-panel--0" data-panel="3">
-            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Dalla cucina di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M48 120 Q104 62 176 120 Q104 178 48 120 Z"/><path pathLength="1" d="M176 120 L204 96 V144 Z"/><circle pathLength="1" cx="78" cy="113" r="3.5"/><path pathLength="1" d="M100 96 Q110 120 100 144"/><path pathLength="1" d="M120 88 l-20 64"/><path pathLength="1" d="M144 92 l-20 56"/><path pathLength="1" d="M166 104 l-12 34"/><path pathLength="1" d="M24 206 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
-            <p class="menu-panel-count"><span>04</span> / 05</p>
-            <p class="menu-panel-name">Dalla cucina</p>
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Crudi, carpacci e tartare di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M50 124 Q44 62 118 54 Q196 58 192 126 Q186 178 120 182 Q56 178 50 124 Z"/><path pathLength="1" d="M74 124 Q70 84 120 78 Q170 82 168 126 Q164 158 120 160 Q78 158 74 124 Z"/><path pathLength="1" d="M92 112 Q112 96 138 104"/><path pathLength="1" d="M100 136 Q122 146 148 132"/><circle pathLength="1" cx="126" cy="121" r="7"/><path pathLength="1" d="M24 214 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <p class="menu-panel-count"><span>04</span> / 06</p>
+            <p class="menu-panel-name">Crudi, carpacci e tartare</p>
           </div>
           <div class="menu-panel menu-panel--1" data-panel="4">
-            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Poke di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M40 116 H200 Q200 186 120 186 Q40 186 40 116 Z"/><path pathLength="1" d="M58 116 Q74 88 92 116"/><path pathLength="1" d="M92 116 Q112 80 134 116"/><path pathLength="1" d="M134 116 Q154 92 180 116"/><path pathLength="1" d="M96 40 L150 108"/><path pathLength="1" d="M116 36 L164 104"/><path pathLength="1" d="M92 204 H148"/></svg></span></div>
-            <p class="menu-panel-count"><span>05</span> / 05</p>
-            <p class="menu-panel-name">Poke</p>
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Fritti e stuzzichini di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M70 96 L120 206 L170 96"/><path pathLength="1" d="M70 96 Q120 116 170 96"/><circle pathLength="1" cx="96" cy="78" r="17"/><circle pathLength="1" cx="96" cy="78" r="7"/><circle pathLength="1" cx="136" cy="64" r="20"/><circle pathLength="1" cx="136" cy="64" r="9"/><circle pathLength="1" cx="156" cy="92" r="12"/><circle pathLength="1" cx="156" cy="92" r="4.5"/><path pathLength="1" d="M98 150 l44 -18"/><path pathLength="1" d="M106 170 l28 -11"/></svg></span></div>
+            <p class="menu-panel-count"><span>05</span> / 06</p>
+            <p class="menu-panel-name">Fritti e stuzzichini</p>
+          </div>
+          <div class="menu-panel menu-panel--2" data-panel="5">
+            <div class="menu-panel-media"><span class="slot-art" role="img" aria-label="Dolci e da bere di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M30 156 H210"/><path pathLength="1" d="M48 156 V204"/><path pathLength="1" d="M192 156 V204"/><path pathLength="1" d="M84 84 H124 Q124 122 104 122 Q84 122 84 84 Z"/><path pathLength="1" d="M104 122 V156"/><path pathLength="1" d="M90 156 H118"/><path pathLength="1" d="M88 100 Q104 108 120 100"/><path pathLength="1" d="M140 148 Q140 132 164 132 Q188 132 188 148 Q188 156 164 156 Q140 156 140 148 Z"/><path pathLength="1" d="M152 144 Q164 138 176 144"/><path pathLength="1" d="M24 222 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <p class="menu-panel-count"><span>06</span> / 06</p>
+            <p class="menu-panel-name">Dolci e da bere</p>
           </div></div>
         <div class="menu-lists">
           <article class="menu-cat" id="menu-panini" data-cat="0">
-            <div class="menu-cat-media menu-panel--0"><span class="slot-art" role="img" aria-label="Panini di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M52 112 Q52 62 120 62 Q188 62 188 112 Z"/><path pathLength="1" d="M46 128 q12.5 -10 25 0 t25 0 t25 0 t25 0 t25 0 t25 0"/><path pathLength="1" d="M54 144 H186 Q186 168 164 168 H76 Q54 168 54 144 Z"/><path pathLength="1" d="M96 84 l6 -3"/><path pathLength="1" d="M124 78 l6 2"/><path pathLength="1" d="M150 90 l5 -4"/><path pathLength="1" d="M24 204 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <div class="menu-cat-media menu-panel--0"><span class="slot-art" role="img" aria-label="Panini e pinse di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M52 112 Q52 62 120 62 Q188 62 188 112 Z"/><path pathLength="1" d="M46 128 q12.5 -10 25 0 t25 0 t25 0 t25 0 t25 0 t25 0"/><path pathLength="1" d="M54 144 H186 Q186 168 164 168 H76 Q54 168 54 144 Z"/><path pathLength="1" d="M96 84 l6 -3"/><path pathLength="1" d="M124 78 l6 2"/><path pathLength="1" d="M150 90 l5 -4"/><path pathLength="1" d="M24 204 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
             <header class="menu-cat-head">
               <p class="menu-cat-count">01</p>
-              <h3 class="menu-cat-title">Panini</h3>
-              <p class="menu-cat-note">Pane bianco, al nero di seppia o rosa alla barbabietola.</p>
+              <h3 class="menu-cat-title">Panini e pinse</h3>
+              <p class="menu-cat-note">Panini di mare farciti al momento e pinse condite all’uscita.</p>
             </header>
-            <ul class="dishes">
-              <li class="dish"><span class="dish-name">Polpo fritto</span><span class="dish-desc">Pane bianco, rape alla barlettana, mozzarella di bufala</span></li>
-              <li class="dish"><span class="dish-name">Cotoletta di pesce spada</span><span class="dish-desc">Pane rosa alla barbabietola, insalata, melanzane grigliate, mozzarella di bufala, salsa cocktail</span></li>
-              <li class="dish"><span class="dish-name">Tonno scottato</span><span class="dish-desc">Pane al nero di seppia, pesto di basilico senza aglio, mozzarella di bufala DOP, pomodorino infornato</span></li>
-              <li class="dish"><span class="dish-name">Gamberi rossi</span><span class="dish-desc">Pane bianco, olio evo, sale affumicato, insalata, melanzane grigliate, stracciatella affumicata</span></li>
-              <li class="dish"><span class="dish-name">Scampi</span><span class="dish-desc">Pane bianco, olio evo, sale affumicato, insalata, zucchine fritte, crema salata alla polpa di ricci</span></li>
-              <li class="dish"><span class="dish-name">Tartar di salmone</span><span class="dish-desc">Pane bianco, misticanza, stracciatella, zucchine fritte, mandorle</span></li>
-              <li class="dish"><span class="dish-name">Tartar di tonno</span><span class="dish-desc">Pane al nero di seppia, stracciatella, pomodorino infornato, cipolla caramellata, insalata</span></li>
-              <li class="dish"><span class="dish-name">Tartar di pesce spada</span><span class="dish-desc">Pane rosa alla barbabietola, insalata, cetriolo, mozzarella di bufala, pistacchio</span></li>
-              <li class="dish"><span class="dish-name">Gamberoni al ghiaccio</span><span class="dish-desc">Pane rosa alla barbabietola, stracciatella, insalata, ketchup di datterino giallo, pancetta</span></li>
-              <li class="dish"><span class="dish-name">Aragosta al vapore</span><span class="dish-desc">Pane bianco, maionese, erba cipollina, sedano, pepe, chips di patate</span></li>
-            </ul>
+            
+            
+            <section class="dish-group" aria-label="Panini di mare">
+              <h4 class="dish-group-title">Panini di mare</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Panino Tartar di Salmone</span><span class="dish-price">11 €</span><span class="dish-desc">Tartar di salmone, zucchine, stracciatella, insalata, mandorle</span></li>
+                <li class="dish"><span class="dish-name">Panino Tartar di Tonno</span><span class="dish-price">11 €</span><span class="dish-desc">Tartar di tonno, stracciatella, pomodorini confit, cipolla rossa caramellata, insalata</span></li>
+                <li class="dish"><span class="dish-name">Panino Big Bang</span><span class="dish-price">12 €</span><span class="dish-desc">Tartar di gamberi crudi, salsa al passion fruit, insalata, stracciatella, pistacchio, chips di carote</span></li>
+                <li class="dish"><span class="dish-name">Panino Polpo Grigliato</span><span class="dish-price">12 €</span><span class="dish-desc">Polpo grigliato, stracciatella, insalata, pomodorini confit, polvere di tarallo</span></li>
+                <li class="dish"><span class="dish-name">Menù 2 panini di pesce</span><span class="dish-price">22 €</span><span class="dish-desc">Due panini a scelta tra i quattro qui sopra</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Pinse">
+              <h4 class="dish-group-title">Pinse</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Pinsa polpo lesso</span><span class="dish-price">14 €</span><span class="dish-desc">Focaccia bianca con tentacoli di polpo lesso, peperoni grigliati, mozzarella, glassa di aceto balsamico</span></li>
+                <li class="dish"><span class="dish-name">Pinsa carpaccio di tonno</span><span class="dish-price">14 €</span><span class="dish-desc">Focaccia bianca con carpaccio di tonno, cipolla caramellata, mozzarella, capperi, pomodorini confit</span></li>
+                <li class="dish"><span class="dish-name">Pinsa carpaccio di salmone</span><span class="dish-price">14 €</span><span class="dish-desc">Focaccia bianca con carpaccio di salmone, stracciatella, salsa tartara, chips di carote</span></li>
+              </ul>
+            </section>
           </article>
-          <article class="menu-cat" id="menu-fritti" data-cat="1">
-            <div class="menu-cat-media menu-panel--1"><span class="slot-art" role="img" aria-label="Fritti di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M70 96 L120 206 L170 96"/><path pathLength="1" d="M70 96 Q120 116 170 96"/><circle pathLength="1" cx="96" cy="78" r="17"/><circle pathLength="1" cx="96" cy="78" r="7"/><circle pathLength="1" cx="136" cy="64" r="20"/><circle pathLength="1" cx="136" cy="64" r="9"/><circle pathLength="1" cx="156" cy="92" r="12"/><circle pathLength="1" cx="156" cy="92" r="4.5"/><path pathLength="1" d="M98 150 l44 -18"/><path pathLength="1" d="M106 170 l28 -11"/></svg></span></div>
+          <article class="menu-cat" id="menu-poke" data-cat="1">
+            <div class="menu-cat-media menu-panel--1"><span class="slot-art" role="img" aria-label="Poke e burrito di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M40 116 H200 Q200 186 120 186 Q40 186 40 116 Z"/><path pathLength="1" d="M58 116 Q74 88 92 116"/><path pathLength="1" d="M92 116 Q112 80 134 116"/><path pathLength="1" d="M134 116 Q154 92 180 116"/><path pathLength="1" d="M96 40 L150 108"/><path pathLength="1" d="M116 36 L164 104"/><path pathLength="1" d="M92 204 H148"/></svg></span></div>
             <header class="menu-cat-head">
               <p class="menu-cat-count">02</p>
-              <h3 class="menu-cat-title">Fritti</h3>
-              <p class="menu-cat-note">Nel cartoccio, da mangiare subito.</p>
+              <h3 class="menu-cat-title">Poke e burrito</h3>
+              <p class="menu-cat-note">La poke si compone come vuoi tu: base, proteine, greens, salse e topping.</p>
             </header>
-            <ul class="dishes">
-              <li class="dish"><span class="dish-name">Frittura mista</span><span class="dish-desc">Gamberi, totani, polpo e tonno</span></li>
-              <li class="dish"><span class="dish-name">Anelli di totano</span></li>
-              <li class="dish"><span class="dish-name">Pepite di baccalà</span></li>
-              <li class="dish"><span class="dish-name">Gamberi in laccio di patate</span><span class="dish-desc">Cinque pezzi</span></li>
-              <li class="dish"><span class="dish-name">Cozze fritte sgusciate</span></li>
-              <li class="dish"><span class="dish-name">Polpette di polpo e patate</span></li>
-              <li class="dish"><span class="dish-name">Frittelle</span><span class="dish-desc">Con tartar di gambero, oppure salmone o tonno e mozzarella di bufala DOP</span></li>
-              <li class="dish"><span class="dish-name">Chips di patate</span></li>
-            </ul>
+            <a class="btn menu-poke-btn" href="#poke">Componi la tua poke</a>
+            
+            <section class="dish-group" aria-label="Poke">
+              <h4 class="dish-group-title">Poke</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Poke base 75 cl</span><span class="dish-price">11 €</span><span class="dish-desc">Una base, fino a 2 proteine, 4 greens, 2 salse e un topping</span></li>
+                <li class="dish"><span class="dish-name">Poke large 130 cl</span><span class="dish-price">16 €</span><span class="dish-desc">Una base, fino a 2 proteine, 4 greens, 2 salse e un topping</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Burrito sushi">
+              <h4 class="dish-group-title">Burrito sushi</h4>
+              <p class="dish-group-note">Due pezzi uguali, con soia colorata e riso sushi. 10 € l’uno.</p>
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Salmon spicy</span><span class="dish-price">10 €</span><span class="dish-desc">Salmone crudo, avocado, salsa spicy, zucchine fritte, insalata</span></li>
+                <li class="dish"><span class="dish-name">Ebi samba</span><span class="dish-price">10 €</span><span class="dish-desc">Gambero cotto, chips di patata dolce, insalata, mango, salsa cocktail, maionese</span></li>
+                <li class="dish"><span class="dish-name">Crunchy</span><span class="dish-price">10 €</span><span class="dish-desc">Gambero in tempura, senape al miele, teriyaki, cetriolo, carote, crispy onion</span></li>
+                <li class="dish"><span class="dish-name">Chicken</span><span class="dish-price">10 €</span><span class="dish-desc">Pollo fritto, mais, insalata, maionese, salsa yogurt, cipolla caramellata</span></li>
+                <li class="dish"><span class="dish-name">Manzo lover</span><span class="dish-price">10 €</span><span class="dish-desc">Pulled beef, maionese, cipolla rossa in agrodolce, insalata, pomodorini confit</span></li>
+                <li class="dish"><span class="dish-name">Sake</span><span class="dish-price">10 €</span><span class="dish-desc">Salmone crudo, avocado, Philadelphia, insalata, teriyaki</span></li>
+                <li class="dish"><span class="dish-name">Tuna spicy</span><span class="dish-price">10 €</span><span class="dish-desc">Tonno pinna gialla crudo, insalata, maionese al wasabi, cetriolo, cavolo viola</span></li>
+                <li class="dish"><span class="dish-name">Baccalà</span><span class="dish-price">10 €</span><span class="dish-desc">Baccalà fritto, insalata, salsa agrodolce thai, crispy onion</span></li>
+                <li class="dish"><span class="dish-name">Salmon bbq</span><span class="dish-price">10 €</span><span class="dish-desc">Salmone cotto, insalata, zucchine fritte, Philadelphia, teriyaki, mandorle</span></li>
+              </ul>
+            </section>
           </article>
-          <article class="menu-cat" id="menu-crudi" data-cat="2">
-            <div class="menu-cat-media menu-panel--2"><span class="slot-art" role="img" aria-label="Crudi e ostriche di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M50 124 Q44 62 118 54 Q196 58 192 126 Q186 178 120 182 Q56 178 50 124 Z"/><path pathLength="1" d="M74 124 Q70 84 120 78 Q170 82 168 126 Q164 158 120 160 Q78 158 74 124 Z"/><path pathLength="1" d="M92 112 Q112 96 138 104"/><path pathLength="1" d="M100 136 Q122 146 148 132"/><circle pathLength="1" cx="126" cy="121" r="7"/><path pathLength="1" d="M24 214 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+          <article class="menu-cat" id="menu-sushi" data-cat="2">
+            <div class="menu-cat-media menu-panel--2"><span class="slot-art" role="img" aria-label="Sushi di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M56 92 Q56 66 120 66 Q184 66 184 92 V148 Q184 174 120 174 Q56 174 56 148 Z"/><path pathLength="1" d="M56 92 Q56 118 120 118 Q184 118 184 92"/><path pathLength="1" d="M82 92 Q82 78 120 78 Q158 78 158 92 Q158 106 120 106 Q82 106 82 92 Z"/><circle pathLength="1" cx="110" cy="92" r="6"/><path pathLength="1" d="M126 88 l12 5"/><path pathLength="1" d="M34 206 L206 180"/><path pathLength="1" d="M38 220 L208 196"/></svg></span></div>
             <header class="menu-cat-head">
               <p class="menu-cat-count">03</p>
-              <h3 class="menu-cat-title">Crudi e ostriche</h3>
-              <p class="menu-cat-note">Carpacci, tartare e ostriche, anche per l’aperitivo.</p>
+              <h3 class="menu-cat-title">Sushi</h3>
+              <p class="menu-cat-note">Uramaki da 4 o da 8 pezzi, roll fritti, sushi gio e piatti misti.</p>
             </header>
-            <ul class="dishes">
-              <li class="dish"><span class="dish-name">Gran misto</span></li>
-              <li class="dish"><span class="dish-name">Tris sfilettato</span><span class="dish-desc">Salmone, tonno e spigola</span></li>
-              <li class="dish"><span class="dish-name">Carpaccio di scampi e gamberi rossi</span></li>
-              <li class="dish"><span class="dish-name">Carpaccio di tonno</span></li>
-              <li class="dish"><span class="dish-name">Carpaccio di spigola</span></li>
-              <li class="dish"><span class="dish-name">Carpaccio di salmone al mojito</span></li>
-              <li class="dish"><span class="dish-name">Tartar di gamberi rossi</span></li>
-              <li class="dish"><span class="dish-name">Tartar di tonno</span></li>
-              <li class="dish"><span class="dish-name">Tartar di salmone</span></li>
-              <li class="dish"><span class="dish-name">Scampi</span></li>
-              <li class="dish"><span class="dish-name">Gamberi rossi</span></li>
-              <li class="dish"><span class="dish-name">Crostini di mare misti</span><span class="dish-desc">Quattro pezzi</span></li>
-              <li class="dish"><span class="dish-name">Ostriche</span><span class="dish-desc">Crisalda, San Michele, della Sardegna</span></li>
-            </ul>
+            
+            
+            <section class="dish-group" aria-label="Uramaki">
+              <h4 class="dish-group-title">Uramaki</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Kemare</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;14 €</span><span class="dish-desc">Gambero rosso, stracciatella, pomodoro confit, avocado</span></li>
+                <li class="dish"><span class="dish-name">King</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Gambero fritto, Philadelphia, fuori salmone scottato, salsa teriyaki, kadaifi croccante</span></li>
+                <li class="dish"><span class="dish-name">Masako</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Gambero fritto, avocado, maionese, fuori salmone scottato, tobiko, mandorle fritte</span></li>
+                <li class="dish"><span class="dish-name">Salmon red</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;14 €</span><span class="dish-desc">Salmone, avocado, fuori gamberi rossi e pistacchio</span></li>
+                <li class="dish"><span class="dish-name">Exotic</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;14 €</span><span class="dish-desc">Mango, avocado, cetriolo, fuori scampi, olio evo, sale</span></li>
+                <li class="dish"><span class="dish-name">Samba</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;14 €</span><span class="dish-desc">Salmone grigliato, avocado, mango, maionese, fuori salmone e tonno, olio evo, scorza di limone, palline di mais croccanti</span></li>
+                <li class="dish"><span class="dish-name">Ostuni</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;14 €</span><span class="dish-desc">Salmone, avocado, fuori scampi e riccio</span></li>
+                <li class="dish"><span class="dish-name">Hot e cold salmon</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Salmone all’interno, fuori carpaccio di salmone scottato e salsa teriyaki</span></li>
+                <li class="dish"><span class="dish-name">Hot e cold tuna</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Tonno all’interno, fuori carpaccio di tonno scottato e salsa teriyaki</span></li>
+                <li class="dish"><span class="dish-name">Truffle</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Tartar di pesce, avocado, fuori salmone, olio al tartufo, semi di papavero</span></li>
+                <li class="dish"><span class="dish-name">Ebi fresh</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7 €</span><span class="dish-desc">Cetriolo, Philadelphia, fuori gambero crudo, buccia di limone, olio al sesamo</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Roll fritti">
+              <h4 class="dish-group-title">Roll fritti</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Sweet salmon</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Salmone grigliato, fuori Philadelphia e soia teriyaki</span></li>
+                <li class="dish"><span class="dish-name">Salmon red</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13,50 €</span><span class="dish-desc">Salmone, avocado, fuori tartar di gambero rosso, pistacchio</span></li>
+                <li class="dish"><span class="dish-name">Pink ebi</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Gambero crudo, fuori salsa cocktail, erba cipollina</span></li>
+                <li class="dish"><span class="dish-name">California</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Polpa di astice, avocado, maionese, tobiko</span></li>
+                <li class="dish"><span class="dish-name">Tuna spicy</span><span class="dish-price"><span class="dish-size">4 pz</span>&nbsp;7,50 €<span class="sep"> · </span><span class="dish-size">8 pz</span>&nbsp;13 €</span><span class="dish-desc">Tartar di tonno, salsa piccante, cetriolo</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Sushi gio · 2 pezzi">
+              <h4 class="dish-group-title">Sushi gio · 2 pezzi</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">A. Salmone, Philadelphia e tobiko</span><span class="dish-price">7 €</span></li>
+                <li class="dish"><span class="dish-name">B. Salmone, gambero rosso, pistacchio</span><span class="dish-price">7 €</span></li>
+                <li class="dish"><span class="dish-name">C. Tonno, scampi, lime</span><span class="dish-price">7 €</span></li>
+                <li class="dish"><span class="dish-name">D. Salmone, tartar di salmone, olio al tartufo</span><span class="dish-price">7 €</span></li>
+                <li class="dish"><span class="dish-name">E. Salmone scottato, stracciatella, pistacchio</span><span class="dish-price">7 €</span></li>
+                <li class="dish"><span class="dish-name">F. Salmone, tartar di gambero rosso, riccio</span><span class="dish-price">7 €</span></li>
+                <li class="dish"><span class="dish-name">G. Tonno, tartar di tonno, olio al tartufo</span><span class="dish-price">7 €</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Piatti misti">
+              <h4 class="dish-group-title">Piatti misti</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Nigiri mix · 6 pezzi</span><span class="dish-price">12 €</span></li>
+                <li class="dish"><span class="dish-name">Uramix · 16 pezzi</span><span class="dish-price">25 €</span><span class="dish-desc">4 con salmone, 4 con tonno, 4 con gambero fritto, 4 fritti con polpa di granchio</span></li>
+                <li class="dish"><span class="dish-name">Osaka · 28 pezzi</span><span class="dish-price">35 €</span><span class="dish-desc">12 uramaki salmone e tonno, 4 roll fritti, 4 nigiri misti, 8 sashimi</span></li>
+              </ul>
+            </section>
           </article>
-          <article class="menu-cat" id="menu-cucina" data-cat="3">
-            <div class="menu-cat-media menu-panel--0"><span class="slot-art" role="img" aria-label="Dalla cucina di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M48 120 Q104 62 176 120 Q104 178 48 120 Z"/><path pathLength="1" d="M176 120 L204 96 V144 Z"/><circle pathLength="1" cx="78" cy="113" r="3.5"/><path pathLength="1" d="M100 96 Q110 120 100 144"/><path pathLength="1" d="M120 88 l-20 64"/><path pathLength="1" d="M144 92 l-20 56"/><path pathLength="1" d="M166 104 l-12 34"/><path pathLength="1" d="M24 206 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+          <article class="menu-cat" id="menu-crudi" data-cat="3">
+            <div class="menu-cat-media menu-panel--0"><span class="slot-art" role="img" aria-label="Crudi, carpacci e tartare di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M50 124 Q44 62 118 54 Q196 58 192 126 Q186 178 120 182 Q56 178 50 124 Z"/><path pathLength="1" d="M74 124 Q70 84 120 78 Q170 82 168 126 Q164 158 120 160 Q78 158 74 124 Z"/><path pathLength="1" d="M92 112 Q112 96 138 104"/><path pathLength="1" d="M100 136 Q122 146 148 132"/><circle pathLength="1" cx="126" cy="121" r="7"/><path pathLength="1" d="M24 214 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
             <header class="menu-cat-head">
               <p class="menu-cat-count">04</p>
-              <h3 class="menu-cat-title">Dalla cucina</h3>
-              <p class="menu-cat-note">Griglia, pinsa, tacos e friselle.</p>
+              <h3 class="menu-cat-title">Crudi, carpacci e tartare</h3>
+              <p class="menu-cat-note">Pesce crudo tagliato al momento.</p>
             </header>
-            <ul class="dishes">
-              <li class="dish"><span class="dish-name">Polpo grigliato</span></li>
-              <li class="dish"><span class="dish-name">Bistecca di tonno alla griglia</span></li>
-              <li class="dish"><span class="dish-name">Gamberoni grigliati “alla Cialdella”</span></li>
-              <li class="dish"><span class="dish-name">Salmone in panko</span></li>
-              <li class="dish"><span class="dish-name">Pinsa</span><span class="dish-desc">Pesce spada, polpo lesso o tartar di tonno</span></li>
-              <li class="dish"><span class="dish-name">Tacos</span><span class="dish-desc">Gamberetti lessi, salmone scottato o tonno fritto</span></li>
-              <li class="dish"><span class="dish-name">Frisella</span><span class="dish-desc">Con tartar di salmone o di tonno</span></li>
-            </ul>
+            
+            
+            <section class="dish-group" aria-label="Crudi">
+              <h4 class="dish-group-title">Crudi</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Misto taglio sashimi · 10 pezzi</span><span class="dish-price">19 €</span><span class="dish-desc">Salmone 3, tonno 3, gamberi rossi 2, scampi 2</span></li>
+                <li class="dish"><span class="dish-name">Scampi · 4 pezzi</span><span class="dish-price">12 €</span></li>
+                <li class="dish"><span class="dish-name">Gamberi rossi · 4 pezzi</span><span class="dish-price">12 €</span></li>
+                <li class="dish"><span class="dish-name">Salmone taglio sashimi · 4 pezzi</span><span class="dish-price">8 €</span></li>
+                <li class="dish"><span class="dish-name">Tonno taglio sashimi · 4 pezzi</span><span class="dish-price">8 €</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Carpacci">
+              <h4 class="dish-group-title">Carpacci</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Battuto di scampi</span><span class="dish-price">13 €</span><span class="dish-desc">Sale affumicato, lime, olio evo, pepe nero</span></li>
+                <li class="dish"><span class="dish-name">Carpaccio di salmone al mojito</span><span class="dish-price">10 €</span><span class="dish-desc">Olio evo, glassa al limone, zucchero di canna</span></li>
+                <li class="dish"><span class="dish-name">Carpaccio di tonno</span><span class="dish-price">10 €</span><span class="dish-desc">Pomodorino semidry, fiore del cappero, cipolla in agrodolce</span></li>
+                <li class="dish"><span class="dish-name">Carpaccio misto</span><span class="dish-price">10 €</span><span class="dish-desc">Salsa ponzu (soia agli agrumi), erba cipollina, sesamo</span></li>
+                <li class="dish"><span class="dish-name">Tataki di salmone · 6 pezzi</span><span class="dish-price">12 €</span><span class="dish-desc">Scottato, con teriyaki e mandorle</span></li>
+                <li class="dish"><span class="dish-name">Tataki di tonno · 6 pezzi</span><span class="dish-price">12 €</span><span class="dish-desc">Scottato, con teriyaki e pistacchio</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Tartare">
+              <h4 class="dish-group-title">Tartare</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Tartare di gamberi rossi</span><span class="dish-price">16 €</span><span class="dish-desc">Avocado, stracciatella, pomodorini, pistacchi</span></li>
+                <li class="dish"><span class="dish-name">Tartare di tonno</span><span class="dish-price">13 €</span><span class="dish-desc">Stracciatella, cetriolo, pistacchio</span></li>
+                <li class="dish"><span class="dish-name">Tartare di gamberi</span><span class="dish-price">13 €</span><span class="dish-desc">Sale affumicato, lime, salsa esotica</span></li>
+                <li class="dish"><span class="dish-name">Tartare di salmone</span><span class="dish-price">12 €</span><span class="dish-desc">Mango, avocado, zenzero, mandorle, guacamole</span></li>
+              </ul>
+            </section>
           </article>
-          <article class="menu-cat" id="menu-poke" data-cat="4">
-            <div class="menu-cat-media menu-panel--1"><span class="slot-art" role="img" aria-label="Poke di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M40 116 H200 Q200 186 120 186 Q40 186 40 116 Z"/><path pathLength="1" d="M58 116 Q74 88 92 116"/><path pathLength="1" d="M92 116 Q112 80 134 116"/><path pathLength="1" d="M134 116 Q154 92 180 116"/><path pathLength="1" d="M96 40 L150 108"/><path pathLength="1" d="M116 36 L164 104"/><path pathLength="1" d="M92 204 H148"/></svg></span></div>
+          <article class="menu-cat" id="menu-fritti" data-cat="4">
+            <div class="menu-cat-media menu-panel--1"><span class="slot-art" role="img" aria-label="Fritti e stuzzichini di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M70 96 L120 206 L170 96"/><path pathLength="1" d="M70 96 Q120 116 170 96"/><circle pathLength="1" cx="96" cy="78" r="17"/><circle pathLength="1" cx="96" cy="78" r="7"/><circle pathLength="1" cx="136" cy="64" r="20"/><circle pathLength="1" cx="136" cy="64" r="9"/><circle pathLength="1" cx="156" cy="92" r="12"/><circle pathLength="1" cx="156" cy="92" r="4.5"/><path pathLength="1" d="M98 150 l44 -18"/><path pathLength="1" d="M106 170 l28 -11"/></svg></span></div>
             <header class="menu-cat-head">
               <p class="menu-cat-count">05</p>
-              <h3 class="menu-cat-title">Poke</h3>
-              <p class="menu-cat-note">Si compone al banco, come piace a te.</p>
+              <h3 class="menu-cat-title">Fritti e stuzzichini</h3>
+              <p class="menu-cat-note">Fritture nel cartoccio, frittelle calde, gyoza e gua bao.</p>
             </header>
-            <ul class="dishes">
-              <li class="dish"><span class="dish-name">La tua poke</span><span class="dish-desc">Scegli la base, le proteine, le verdure, le salse e il topping</span></li>
-            </ul>
+            
+            
+            <section class="dish-group" aria-label="Fritture">
+              <h4 class="dish-group-title">Fritture</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Frittura mista · 300 g</span><span class="dish-price">14 €</span><span class="dish-desc">Gamberi, totani, polpo, tonno, baccalà</span></li>
+                <li class="dish"><span class="dish-name">Pepite di baccalà · 6 pezzi</span><span class="dish-price">12 €</span></li>
+                <li class="dish"><span class="dish-name">Anelli di totano · 15 pezzi</span><span class="dish-price">12 €</span></li>
+                <li class="dish"><span class="dish-name">Gamberi al cocco · 4 pezzi</span><span class="dish-price">10,50 €</span><span class="dish-desc">In tempura, con una panatura leggera al cocco</span></li>
+                <li class="dish"><span class="dish-name">Gamberi in tempura · 4 pezzi</span><span class="dish-price">10,50 €</span></li>
+                <li class="dish"><span class="dish-name">Polpette di polpo e patate · 4 pezzi</span><span class="dish-price">7,50 €</span></li>
+                <li class="dish"><span class="dish-name">Pepite di salmone e Philadelphia · 5 pezzi</span><span class="dish-price">7 €</span></li>
+                <li class="dish"><span class="dish-name">Chips di patate</span><span class="dish-price">4,50 €</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Frittelle">
+              <h4 class="dish-group-title">Frittelle</h4>
+              <p class="dish-group-note">Frittella calda farcita.</p>
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Tartare di salmone e mozzarella</span><span class="dish-price">3,50 €</span></li>
+                <li class="dish"><span class="dish-name">Tartare di tonno e mozzarella</span><span class="dish-price">3,50 €</span></li>
+                <li class="dish"><span class="dish-name">Tartare di gambero e mozzarella</span><span class="dish-price">3,50 €</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Gyoza · 4 pezzi">
+              <h4 class="dish-group-title">Gyoza · 4 pezzi</h4>
+              <p class="dish-group-note">Ravioli giapponesi, al vapore o fritti.</p>
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Gyoza di mare</span><span class="dish-price">10 €</span><span class="dish-desc">Al vapore o fritti</span></li>
+                <li class="dish"><span class="dish-name">Gyoza di pollo</span><span class="dish-price">10 €</span><span class="dish-desc">Al vapore o fritti</span></li>
+                <li class="dish"><span class="dish-name">Gyoza di verdure</span><span class="dish-price">10 €</span><span class="dish-desc">Al vapore o fritti</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Starters">
+              <h4 class="dish-group-title">Starters</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Gua bao gambero</span><span class="dish-price">4,50 €</span><span class="dish-desc">Gambero, mozzarella, guacamole · un pezzo</span></li>
+                <li class="dish"><span class="dish-name">Gua bao tonno</span><span class="dish-price">4,50 €</span><span class="dish-desc">Tonno, stracciatella, tartufo · un pezzo</span></li>
+                <li class="dish"><span class="dish-name">Gua bao salmone</span><span class="dish-price">4,50 €</span><span class="dish-desc">Salmone, salsa cocktail, mandorle · un pezzo</span></li>
+                <li class="dish"><span class="dish-name">Gua bao pulled pork</span><span class="dish-price">4,50 €</span><span class="dish-desc">Pulled pork, salsa bbq · un pezzo</span></li>
+                <li class="dish"><span class="dish-name">Crostini di mare misti · 4 pezzi</span><span class="dish-price">9,50 €</span></li>
+                <li class="dish"><span class="dish-name">Alghe wakame</span><span class="dish-price">4,50 €</span></li>
+                <li class="dish"><span class="dish-name">Edamame</span><span class="dish-price">4,50 €</span></li>
+                <li class="dish"><span class="dish-name">Tarallini pugliesi</span><span class="dish-price">2,50 €</span></li>
+              </ul>
+            </section>
+          </article>
+          <article class="menu-cat" id="menu-dolci" data-cat="5">
+            <div class="menu-cat-media menu-panel--2"><span class="slot-art" role="img" aria-label="Dolci e da bere di Kemare"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M30 156 H210"/><path pathLength="1" d="M48 156 V204"/><path pathLength="1" d="M192 156 V204"/><path pathLength="1" d="M84 84 H124 Q124 122 104 122 Q84 122 84 84 Z"/><path pathLength="1" d="M104 122 V156"/><path pathLength="1" d="M90 156 H118"/><path pathLength="1" d="M88 100 Q104 108 120 100"/><path pathLength="1" d="M140 148 Q140 132 164 132 Q188 132 188 148 Q188 156 164 156 Q140 156 140 148 Z"/><path pathLength="1" d="M152 144 Q164 138 176 144"/><path pathLength="1" d="M24 222 q16 -9 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/></svg></span></div>
+            <header class="menu-cat-head">
+              <p class="menu-cat-count">06</p>
+              <h3 class="menu-cat-title">Dolci e da bere</h3>
+              <p class="menu-cat-note">Mochi, birre artigianali del Salento e vini pugliesi.</p>
+            </header>
+            
+            
+            <section class="dish-group" aria-label="Dolci">
+              <h4 class="dish-group-title">Dolci</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Mochi latte di cocco e cioccolato · 2 pezzi</span><span class="dish-price">4 €</span><span class="dish-desc">Dolcetti gelato giapponesi</span></li>
+                <li class="dish"><span class="dish-name">Mochi mandorle e caramello · 2 pezzi</span><span class="dish-price">4 €</span><span class="dish-desc">Dolcetti gelato giapponesi</span></li>
+              </ul>
+            </section>
+            <section class="dish-group" aria-label="Da bere">
+              <h4 class="dish-group-title">Da bere</h4>
+              
+              <ul class="dishes">
+                <li class="dish"><span class="dish-name">Bibite in lattina 33 cl</span><span class="dish-price">3 €</span><span class="dish-desc">Coca-Cola, Coca-Cola Zero, Fanta</span></li>
+                <li class="dish"><span class="dish-name">Acqua naturale o frizzante</span><span class="dish-price"><span class="dish-size">50 cl</span>&nbsp;1 €<span class="sep"> · </span><span class="dish-size">1 l</span>&nbsp;2,50 €</span></li>
+                <li class="dish"><span class="dish-name">Birre 33 cl</span><span class="dish-price">4 €</span><span class="dish-desc">Peroni Gran Riserva rossa o doppio malto; Agricola ambrata o chiara, artigianale del Salento</span></li>
+                <li class="dish"><span class="dish-name">Vini bianchi</span><span class="dish-price">da 12 €</span><span class="dish-desc">Chardonnay (anche 37,5 cl), Fiano Roycello e Pietrabianca BIO di Tormaresca; Timo Vermentino di San Marzano; Prosecco Amaluna</span></li>
+                <li class="dish"><span class="dish-name">Vini rosati e rossi</span><span class="dish-price">da 18 €</span><span class="dish-desc">Calafuria di Tormaresca, Pungirosa di Rivera, Neprica di Tormaresca</span></li>
+              </ul>
+            </section>
           </article></div>
       </div>
     </section>
 
-    <!-- 3. COME FUNZIONA: una maschera ovale (come quella del logo) si apre dal centro e porta alla sezione blu -->
+    <!-- 3. COMPONI LA TUA POKE: stesse scelte e stessi limiti del locale; il riepilogo parte su WhatsApp verso la sede scelta -->
+    <section class="poke" id="poke" aria-labelledby="poke-title">
+      <header class="poke-top">
+        <p class="eyebrow">Da ritirare in sede</p>
+        <h2 class="display display--light" id="poke-title"><span class="rise"><span>Componi la tua poke</span></span></h2>
+        <p class="poke-lede">Scegli sede e taglia, poi base, proteine, greens, salse e topping. Il totale si aggiorna mentre scegli; alla fine il riepilogo parte su WhatsApp e la sede ti conferma l'ordine.</p>
+      </header>
+      <noscript><p class="poke-lede">Per comporre la poke qui serve JavaScript. Puoi ordinarla anche per telefono: i numeri sono nella sezione «Sedi e orari».</p></noscript>
+      
+      <form class="pk" data-poke novalidate>
+        <fieldset class="pk-group pk-group--first" data-group="sede" data-min="1" data-max="1" data-title="La sede">
+          <legend><span class="pk-title">Dove la ritiri</span> <span class="pk-rule">scegli la sede</span></legend>
+          <div class="pk-cards">
+            <label class="pk-card"><input type="radio" name="sede" value="barletta" checked /><span><strong>Barletta</strong>Via Cavour, 76<small class="pk-open" data-open-status="barletta" hidden><i aria-hidden="true"></i><span></span></small></span></label>
+            <label class="pk-card"><input type="radio" name="sede" value="trani" /><span><strong>Trani</strong>Via Giovanni Bovio, 161<small class="pk-open" data-open-status="trani" hidden><i aria-hidden="true"></i><span></span></small></span></label>
+          </div>
+        </fieldset>
+        <fieldset class="pk-group" data-group="taglia" data-min="1" data-max="1" data-title="La taglia">
+          <legend><span class="pk-title">La taglia</span> <span class="pk-rule">scegline 1</span></legend>
+          <div class="pk-cards">
+            <label class="pk-card"><input type="radio" name="taglia" value="base" data-price="11" data-label="Poke base 75 cl" checked /><span><strong>Poke base</strong>75 cl · 11 €</span></label>
+            <label class="pk-card"><input type="radio" name="taglia" value="large" data-price="16" data-label="Poke large 130 cl" /><span><strong>Poke large</strong>130 cl · 16 €</span></label>
+          </div>
+        </fieldset>
+        
+        <fieldset class="pk-group" data-group="base" data-min="1" data-max="1" data-title="La base">
+          <legend><span class="pk-title">La base</span> <span class="pk-rule">scegline 1</span> <span class="pk-count" data-count aria-live="polite">0/1</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="radio" name="base" value="Riso per sushi" data-price="0" /><span>Riso per sushi</span></label><label class="chip"><input type="radio" name="base" value="Riso venere integrale" data-price="0" /><span>Riso venere integrale</span></label><label class="chip"><input type="radio" name="base" value="Insalata" data-price="0" /><span>Insalata</span></label><label class="chip"><input type="radio" name="base" value="Quinoa" data-price="1" /><span>Quinoa <em>+1,00 €</em></span></label><label class="chip"><input type="radio" name="base" value="Metà riso sushi e metà riso venere" data-price="0" /><span>Metà riso sushi e metà riso venere</span></label><label class="chip"><input type="radio" name="base" value="Metà insalata e metà riso sushi" data-price="0" /><span>Metà insalata e metà riso sushi</span></label><label class="chip"><input type="radio" name="base" value="Metà riso venere e metà insalata" data-price="0" /><span>Metà riso venere e metà insalata</span></label></div>
+        </fieldset>
+        <fieldset class="pk-group" data-group="proteine" data-min="1" data-max="2" data-title="Le proteine">
+          <legend><span class="pk-title">Le proteine</span> <span class="pk-rule">da 1 a 2</span> <span class="pk-count" data-count aria-live="polite">0/2</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="checkbox" name="proteine" value="Salmone tartare" data-price="0" /><span>Salmone tartare</span></label><label class="chip"><input type="checkbox" name="proteine" value="Tonno tartare" data-price="0" /><span>Tonno tartare</span></label><label class="chip"><input type="checkbox" name="proteine" value="Gamberi crudi tartare" data-price="0.5" /><span>Gamberi crudi tartare <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Gamberetti lessi" data-price="0" /><span>Gamberetti lessi</span></label><label class="chip"><input type="checkbox" name="proteine" value="Polpo lesso" data-price="0.5" /><span>Polpo lesso <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Tagliata di pollo al vapore" data-price="0" /><span>Tagliata di pollo al vapore</span></label><label class="chip"><input type="checkbox" name="proteine" value="Tagliata di pollo con salsa teriyaki" data-price="0" /><span>Tagliata di pollo con salsa teriyaki</span></label><label class="chip"><input type="checkbox" name="proteine" value="Pollo fritto" data-price="0" /><span>Pollo fritto</span></label><label class="chip"><input type="checkbox" name="proteine" value="Tofu fritto" data-price="0" /><span>Tofu fritto</span></label><label class="chip"><input type="checkbox" name="proteine" value="Tofu al naturale" data-price="0" /><span>Tofu al naturale</span></label><label class="chip"><input type="checkbox" name="proteine" value="Polpa di granchio" data-price="0" /><span>Polpa di granchio</span></label><label class="chip"><input type="checkbox" name="proteine" value="Salmone grigliato" data-price="0" /><span>Salmone grigliato</span></label><label class="chip"><input type="checkbox" name="proteine" value="Salmone fritto" data-price="0" /><span>Salmone fritto</span></label><label class="chip"><input type="checkbox" name="proteine" value="Salmone scottato" data-price="0.5" /><span>Salmone scottato <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Tonno fritto" data-price="0" /><span>Tonno fritto</span></label><label class="chip"><input type="checkbox" name="proteine" value="Tonno scottato" data-price="0.5" /><span>Tonno scottato <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Polpa di astice lesso" data-price="0.5" /><span>Polpa di astice lesso <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Stracciatella" data-price="0.5" /><span>Stracciatella <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Mozzarella" data-price="0" /><span>Mozzarella</span></label><label class="chip"><input type="checkbox" name="proteine" value="Feta" data-price="0" /><span>Feta</span></label><label class="chip"><input type="checkbox" name="proteine" value="Baccalà fritto" data-price="0.5" /><span>Baccalà fritto <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Totani fritti · 4 pezzi" data-price="1" /><span>Totani fritti · 4 pezzi <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Pulled pork" data-price="1" /><span>Pulled pork <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Gamberi fritti · 2 pezzi" data-price="2" /><span>Gamberi fritti · 2 pezzi <em>+2,00 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Scampi interi · 2 pezzi" data-price="2" /><span>Scampi interi · 2 pezzi <em>+2,00 €</em></span></label><label class="chip"><input type="checkbox" name="proteine" value="Gamberi rossi interi · 2 pezzi" data-price="2" /><span>Gamberi rossi interi · 2 pezzi <em>+2,00 €</em></span></label><label class="chip chip--none"><input data-none type="checkbox" name="proteine" value="Senza proteine" data-price="0" /><span>Senza proteine</span></label></div>
+        </fieldset>
+        <fieldset class="pk-group" data-group="greens" data-min="1" data-max="4" data-title="I greens">
+          <legend><span class="pk-title">I greens</span> <span class="pk-rule">da 1 a 4</span> <span class="pk-count" data-count aria-live="polite">0/4</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="checkbox" name="greens" value="Cetrioli" data-price="0" /><span>Cetrioli</span></label><label class="chip"><input type="checkbox" name="greens" value="Carote" data-price="0" /><span>Carote</span></label><label class="chip"><input type="checkbox" name="greens" value="Carote lesse" data-price="0" /><span>Carote lesse</span></label><label class="chip"><input type="checkbox" name="greens" value="Cavolo rosso" data-price="0" /><span>Cavolo rosso</span></label><label class="chip"><input type="checkbox" name="greens" value="Pomodorini" data-price="0" /><span>Pomodorini</span></label><label class="chip"><input type="checkbox" name="greens" value="Pomodorini confit" data-price="0" /><span>Pomodorini confit</span></label><label class="chip"><input type="checkbox" name="greens" value="Mais" data-price="0" /><span>Mais</span></label><label class="chip"><input type="checkbox" name="greens" value="Cipolla rossa in agrodolce" data-price="0" /><span>Cipolla rossa in agrodolce</span></label><label class="chip"><input type="checkbox" name="greens" value="Ananas" data-price="0" /><span>Ananas</span></label><label class="chip"><input type="checkbox" name="greens" value="Mela verde" data-price="0" /><span>Mela verde</span></label><label class="chip"><input type="checkbox" name="greens" value="Olive nere" data-price="0" /><span>Olive nere</span></label><label class="chip"><input type="checkbox" name="greens" value="Sedano" data-price="0" /><span>Sedano</span></label><label class="chip"><input type="checkbox" name="greens" value="Ravanelli" data-price="0" /><span>Ravanelli</span></label><label class="chip"><input type="checkbox" name="greens" value="Zenzero marinato" data-price="0" /><span>Zenzero marinato</span></label><label class="chip"><input type="checkbox" name="greens" value="Melanzane grigliate" data-price="0" /><span>Melanzane grigliate</span></label><label class="chip"><input type="checkbox" name="greens" value="Piselli al vapore" data-price="0" /><span>Piselli al vapore</span></label><label class="chip"><input type="checkbox" name="greens" value="Peperoni" data-price="0" /><span>Peperoni</span></label><label class="chip"><input type="checkbox" name="greens" value="Funghi champignon" data-price="0" /><span>Funghi champignon</span></label><label class="chip"><input type="checkbox" name="greens" value="Patate lesse" data-price="0" /><span>Patate lesse</span></label><label class="chip"><input type="checkbox" name="greens" value="Ceci lessi" data-price="0" /><span>Ceci lessi</span></label><label class="chip"><input type="checkbox" name="greens" value="Mango" data-price="0.5" /><span>Mango <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="greens" value="Edamame" data-price="0.5" /><span>Edamame <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="greens" value="Wakame" data-price="0.5" /><span>Wakame <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="greens" value="Zucchine fritte" data-price="0.5" /><span>Zucchine fritte <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="greens" value="Olive verdi" data-price="0.5" /><span>Olive verdi <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="greens" value="Avocado" data-price="1" /><span>Avocado <em>+1,00 €</em></span></label><label class="chip chip--none"><input data-none type="checkbox" name="greens" value="Senza greens" data-price="0" /><span>Senza greens</span></label></div>
+        </fieldset>
+        <fieldset class="pk-group" data-group="salse" data-min="1" data-max="2" data-title="Le salse">
+          <legend><span class="pk-title">Le salse</span> <span class="pk-rule">da 1 a 2</span> <span class="pk-count" data-count aria-live="polite">0/2</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="checkbox" name="salse" value="Salsa Kemare · ananas e cocco" data-price="0" /><span>Salsa Kemare · ananas e cocco</span></label><label class="chip"><input type="checkbox" name="salse" value="Marinatura al mojito · lime e menta" data-price="0" /><span>Marinatura al mojito · lime e menta</span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa al passion fruit" data-price="0" /><span>Salsa al passion fruit</span></label><label class="chip"><input type="checkbox" name="salse" value="Soia teriyaki" data-price="0" /><span>Soia teriyaki</span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa di soia" data-price="0" /><span>Salsa di soia</span></label><label class="chip"><input type="checkbox" name="salse" value="Ponzu · soia agli agrumi" data-price="0" /><span>Ponzu · soia agli agrumi</span></label><label class="chip"><input type="checkbox" name="salse" value="Maionese" data-price="0" /><span>Maionese</span></label><label class="chip"><input type="checkbox" name="salse" value="Maionese al wasabi · senza uova" data-price="0" /><span>Maionese al wasabi · senza uova</span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa yogurt" data-price="0" /><span>Salsa yogurt</span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa piccante" data-price="0" /><span>Salsa piccante</span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa cocktail" data-price="0" /><span>Salsa cocktail</span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa agrodolce thai" data-price="0" /><span>Salsa agrodolce thai</span></label><label class="chip"><input type="checkbox" name="salse" value="Senape al miele" data-price="0" /><span>Senape al miele</span></label><label class="chip"><input type="checkbox" name="salse" value="Ketchup di datterino giallo" data-price="0" /><span>Ketchup di datterino giallo</span></label><label class="chip"><input type="checkbox" name="salse" value="Glassa di aceto balsamico" data-price="0" /><span>Glassa di aceto balsamico</span></label><label class="chip"><input type="checkbox" name="salse" value="Glassa al limone" data-price="0" /><span>Glassa al limone</span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa cheddar" data-price="0" /><span>Salsa cheddar</span></label><label class="chip"><input type="checkbox" name="salse" value="Olio extravergine di oliva" data-price="0" /><span>Olio extravergine di oliva</span></label><label class="chip"><input type="checkbox" name="salse" value="Guacamole" data-price="0.5" /><span>Guacamole <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa BBQ" data-price="0.5" /><span>Salsa BBQ <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="salse" value="Salsa tartara" data-price="0.5" /><span>Salsa tartara <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="salse" value="Soia senza glutine" data-price="0.5" /><span>Soia senza glutine <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="salse" value="Fiocchi di Philadelphia" data-price="1" /><span>Fiocchi di Philadelphia <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="salse" value="Philadelphia senza lattosio" data-price="1" /><span>Philadelphia senza lattosio <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="salse" value="Olio al tartufo" data-price="1" /><span>Olio al tartufo <em>+1,00 €</em></span></label><label class="chip chip--none"><input data-none type="checkbox" name="salse" value="Senza salse" data-price="0" /><span>Senza salse</span></label></div>
+        </fieldset>
+        <fieldset class="pk-group" data-group="topping" data-min="1" data-max="1" data-title="Il topping">
+          <legend><span class="pk-title">Il topping</span> <span class="pk-rule">scegline 1</span> <span class="pk-count" data-count aria-live="polite">0/1</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="radio" name="topping" value="Sesamo" data-price="0" /><span>Sesamo</span></label><label class="chip"><input type="radio" name="topping" value="Erba cipollina" data-price="0" /><span>Erba cipollina</span></label><label class="chip"><input type="radio" name="topping" value="Piselli al wasabi" data-price="0" /><span>Piselli al wasabi</span></label><label class="chip"><input type="radio" name="topping" value="Palline di mais" data-price="0" /><span>Palline di mais</span></label><label class="chip"><input type="radio" name="topping" value="Polvere di tarallo" data-price="0" /><span>Polvere di tarallo</span></label><label class="chip"><input type="radio" name="topping" value="Kadaifi · filini di pastella fritta" data-price="0" /><span>Kadaifi · filini di pastella fritta</span></label><label class="chip"><input type="radio" name="topping" value="Polvere di alga nori" data-price="0" /><span>Polvere di alga nori</span></label><label class="chip"><input type="radio" name="topping" value="Tacos sbriciolati" data-price="0" /><span>Tacos sbriciolati</span></label><label class="chip"><input type="radio" name="topping" value="Tobiko" data-price="0" /><span>Tobiko</span></label><label class="chip"><input type="radio" name="topping" value="Crispy onion" data-price="0" /><span>Crispy onion</span></label><label class="chip"><input type="radio" name="topping" value="Arachidi" data-price="0" /><span>Arachidi</span></label><label class="chip"><input type="radio" name="topping" value="Mandorle" data-price="0.5" /><span>Mandorle <em>+0,50 €</em></span></label><label class="chip"><input type="radio" name="topping" value="Pistacchio" data-price="0.5" /><span>Pistacchio <em>+0,50 €</em></span></label><label class="chip"><input type="radio" name="topping" value="Anacardi" data-price="0.5" /><span>Anacardi <em>+0,50 €</em></span></label><label class="chip"><input type="radio" name="topping" value="Chips di carote" data-price="0.5" /><span>Chips di carote <em>+0,50 €</em></span></label><label class="chip chip--none"><input data-none type="radio" name="topping" value="Senza topping" data-price="0" /><span>Senza topping</span></label></div>
+        </fieldset>
+        <details class="pk-extras">
+          <summary>Vuoi aggiungere qualcosa? <span>Extra a pagamento, facoltativi</span></summary>
+          
+        <fieldset class="pk-group pk-group--extra" data-group="x-proteine" data-min="0" data-max="5" data-title="Proteine extra">
+          <legend><span class="pk-title">Proteine extra</span> <span class="pk-rule">facoltativo, fino a 5</span> <span class="pk-count" data-count aria-live="polite">0/5</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="checkbox" name="x-proteine" value="Salmone tartare" data-price="1" /><span>Salmone tartare <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Tonno tartare" data-price="1" /><span>Tonno tartare <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Gamberi crudi tartare" data-price="1" /><span>Gamberi crudi tartare <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Gamberetti lessi" data-price="1" /><span>Gamberetti lessi <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Polpo lesso" data-price="1.5" /><span>Polpo lesso <em>+1,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Tagliata di pollo al vapore" data-price="1" /><span>Tagliata di pollo al vapore <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Tagliata di pollo con salsa teriyaki" data-price="1" /><span>Tagliata di pollo con salsa teriyaki <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Pollo fritto" data-price="1" /><span>Pollo fritto <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Tofu fritto" data-price="1" /><span>Tofu fritto <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Tofu al naturale" data-price="1" /><span>Tofu al naturale <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Polpa di granchio" data-price="1" /><span>Polpa di granchio <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Salmone grigliato" data-price="1" /><span>Salmone grigliato <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Salmone fritto" data-price="1" /><span>Salmone fritto <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Salmone scottato" data-price="1" /><span>Salmone scottato <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Tonno fritto" data-price="1" /><span>Tonno fritto <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Tonno scottato" data-price="1" /><span>Tonno scottato <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Polpa di astice lesso" data-price="1.5" /><span>Polpa di astice lesso <em>+1,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Stracciatella" data-price="1.5" /><span>Stracciatella <em>+1,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Mozzarella" data-price="1" /><span>Mozzarella <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Feta" data-price="1" /><span>Feta <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Baccalà fritto" data-price="1.5" /><span>Baccalà fritto <em>+1,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Totani fritti · 4 pezzi" data-price="2" /><span>Totani fritti · 4 pezzi <em>+2,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Pulled pork" data-price="2" /><span>Pulled pork <em>+2,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Gamberi fritti · 2 pezzi" data-price="3" /><span>Gamberi fritti · 2 pezzi <em>+3,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Scampi interi · 2 pezzi" data-price="3" /><span>Scampi interi · 2 pezzi <em>+3,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-proteine" value="Gamberi rossi interi · 2 pezzi" data-price="3" /><span>Gamberi rossi interi · 2 pezzi <em>+3,00 €</em></span></label></div>
+        </fieldset>
+        <fieldset class="pk-group pk-group--extra" data-group="x-greens" data-min="0" data-max="5" data-title="Greens extra">
+          <legend><span class="pk-title">Greens extra</span> <span class="pk-rule">facoltativo, fino a 5</span> <span class="pk-count" data-count aria-live="polite">0/5</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="checkbox" name="x-greens" value="Cetrioli" data-price="0.5" /><span>Cetrioli <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Carote" data-price="0.5" /><span>Carote <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Carote lesse" data-price="0.5" /><span>Carote lesse <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Cavolo rosso" data-price="0.5" /><span>Cavolo rosso <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Pomodorini" data-price="0.5" /><span>Pomodorini <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Pomodorini confit" data-price="0.5" /><span>Pomodorini confit <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Mais" data-price="0.5" /><span>Mais <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Cipolla rossa in agrodolce" data-price="0.5" /><span>Cipolla rossa in agrodolce <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Ananas" data-price="0.5" /><span>Ananas <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Mela verde" data-price="0.5" /><span>Mela verde <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Olive nere" data-price="0.5" /><span>Olive nere <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Sedano" data-price="0.5" /><span>Sedano <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Ravanelli" data-price="0.5" /><span>Ravanelli <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Zenzero marinato" data-price="0.5" /><span>Zenzero marinato <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Melanzane grigliate" data-price="0.5" /><span>Melanzane grigliate <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Piselli al vapore" data-price="0.5" /><span>Piselli al vapore <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Peperoni" data-price="0.5" /><span>Peperoni <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Funghi champignon" data-price="0.5" /><span>Funghi champignon <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Patate lesse" data-price="0.5" /><span>Patate lesse <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Ceci lessi" data-price="0.5" /><span>Ceci lessi <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Mango" data-price="1" /><span>Mango <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Edamame" data-price="1" /><span>Edamame <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Wakame" data-price="1" /><span>Wakame <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Zucchine fritte" data-price="1" /><span>Zucchine fritte <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Olive verdi" data-price="1" /><span>Olive verdi <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-greens" value="Avocado" data-price="1.5" /><span>Avocado <em>+1,50 €</em></span></label></div>
+        </fieldset>
+        <fieldset class="pk-group pk-group--extra" data-group="x-salse" data-min="0" data-max="5" data-title="Salse extra">
+          <legend><span class="pk-title">Salse extra</span> <span class="pk-rule">facoltativo, fino a 5</span> <span class="pk-count" data-count aria-live="polite">0/5</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="checkbox" name="x-salse" value="Salsa Kemare · ananas e cocco" data-price="0.5" /><span>Salsa Kemare · ananas e cocco <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Marinatura al mojito · lime e menta" data-price="0.5" /><span>Marinatura al mojito · lime e menta <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Salsa al passion fruit" data-price="0.5" /><span>Salsa al passion fruit <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Soia teriyaki" data-price="0.5" /><span>Soia teriyaki <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Salsa di soia" data-price="0.5" /><span>Salsa di soia <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Ponzu · soia agli agrumi" data-price="0.5" /><span>Ponzu · soia agli agrumi <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Maionese" data-price="0.5" /><span>Maionese <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Maionese al wasabi · senza uova" data-price="0.5" /><span>Maionese al wasabi · senza uova <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Salsa yogurt" data-price="0.5" /><span>Salsa yogurt <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Salsa piccante" data-price="0.5" /><span>Salsa piccante <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Salsa cocktail" data-price="0.5" /><span>Salsa cocktail <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Salsa agrodolce thai" data-price="0.5" /><span>Salsa agrodolce thai <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Senape al miele" data-price="0.5" /><span>Senape al miele <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Ketchup di datterino giallo" data-price="0.5" /><span>Ketchup di datterino giallo <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Glassa di aceto balsamico" data-price="0.5" /><span>Glassa di aceto balsamico <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Olio extravergine di oliva" data-price="0.5" /><span>Olio extravergine di oliva <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Guacamole" data-price="1" /><span>Guacamole <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Salsa BBQ" data-price="1" /><span>Salsa BBQ <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Fiocchi di Philadelphia" data-price="1.5" /><span>Fiocchi di Philadelphia <em>+1,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Philadelphia senza lattosio" data-price="1.5" /><span>Philadelphia senza lattosio <em>+1,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-salse" value="Olio al tartufo" data-price="1.5" /><span>Olio al tartufo <em>+1,50 €</em></span></label></div>
+        </fieldset>
+        <fieldset class="pk-group pk-group--extra" data-group="x-topping" data-min="0" data-max="5" data-title="Topping extra">
+          <legend><span class="pk-title">Topping extra</span> <span class="pk-rule">facoltativo, fino a 5</span> <span class="pk-count" data-count aria-live="polite">0/5</span></legend>
+          <div class="pk-chips"><label class="chip"><input type="checkbox" name="x-topping" value="Sesamo" data-price="0.5" /><span>Sesamo <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Erba cipollina" data-price="0.5" /><span>Erba cipollina <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Piselli al wasabi" data-price="0.5" /><span>Piselli al wasabi <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Palline di mais" data-price="0.5" /><span>Palline di mais <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Polvere di tarallo" data-price="0.5" /><span>Polvere di tarallo <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Kadaifi · filini di pastella fritta" data-price="0.5" /><span>Kadaifi · filini di pastella fritta <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Polvere di alga nori" data-price="0.5" /><span>Polvere di alga nori <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Tacos sbriciolati" data-price="0.5" /><span>Tacos sbriciolati <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Tobiko" data-price="0.5" /><span>Tobiko <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Crispy onion" data-price="0.5" /><span>Crispy onion <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Arachidi" data-price="0.5" /><span>Arachidi <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Mandorle" data-price="0.5" /><span>Mandorle <em>+0,50 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Pistacchio" data-price="1" /><span>Pistacchio <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Anacardi" data-price="1" /><span>Anacardi <em>+1,00 €</em></span></label><label class="chip"><input type="checkbox" name="x-topping" value="Chips di carote" data-price="1" /><span>Chips di carote <em>+1,00 €</em></span></label></div>
+        </fieldset>
+        </details>
+        <fieldset class="pk-group pk-who" data-group="ritiro">
+          <legend><span class="pk-title">Ritiro</span> <span class="pk-rule" data-pickup-note>orari della sede scelta</span></legend>
+          <div class="pk-fields">
+            <label class="field"><span>Quante</span><select name="qty"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+            <label class="field"><span>Quando</span><select name="pickup" data-pickup required></select></label>
+            <label class="field field--wide"><span>Nome per il ritiro</span><input name="nome" type="text" maxlength="40" autocomplete="given-name" required /></label>
+            <label class="field field--wide"><span>Note <small>(facoltative: allergie, richieste)</small></span><textarea name="note" rows="2" maxlength="300"></textarea></label>
+          </div>
+        </fieldset>
+        <div class="pk-bar">
+          <p class="pk-total"><span>Totale</span> <strong data-total>11 €</strong></p>
+          <p class="pk-missing" data-missing aria-live="polite"></p>
+          <button class="btn btn--light pk-send" type="submit" data-send>Ordina su WhatsApp</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- 4. COME FUNZIONA: una maschera ovale (come quella del logo) si apre dal centro e porta alla sezione blu -->
     <section class="come" aria-labelledby="come-title">
       <div class="oval">
         <div class="oval-sticky">
@@ -234,31 +483,31 @@
             <li class="way" data-fade>
               <span class="way-n">01</span>
               <h3>Da asporto</h3>
-              <p>Ordini al banco, oppure chiami prima e passi a ritirare.</p>
+              <p>Ordini al banco, oppure chiami o scrivi su WhatsApp alla tua sede e passi a ritirare.</p>
             </li>
             <li class="way" data-fade>
               <span class="way-n">02</span>
               <h3>Al banco</h3>
-              <p>Pochi posti, dentro e fuori. Per un panino al volo o per un aperitivo con un calice e qualche ostrica.</p>
+              <p>Per un panino al volo o per un aperitivo con un calice e qualche crudo. A Trani c'è anche una saletta interna, rinnovata a ottobre.</p>
             </li>
             <li class="way" data-fade>
               <span class="way-n">03</span>
               <h3>A domicilio</h3>
-              <!-- DA VERIFICARE: piattaforme citate sul vecchio sito nel 2022 -->
-              <p>A casa con Deliveroo, Just Eat, Glovo e Foodat.</p>
+              <p>A casa con Deliveroo, a Barletta e a Trani.</p>
             </li>
           </ol>
-          <a href="tel:+390883893824" class="btn btn--light" data-fade>Chiama 0883 893824</a>
+          <a href="#poke" class="btn btn--light" data-fade>Componi la tua poke</a>
         </div>
       </div>
     </section>
 
-    <!-- 4. VOCI: i voti pubblici e la citazione del Gambero Rosso (DA VERIFICARE e aggiornare, vedi config.js) -->
+    <!-- 5. VOCI: i voti Google delle due sedi e la citazione del Gambero Rosso (DA AGGIORNARE nel tempo, vedi config.js) -->
     <section class="voci" aria-labelledby="voci-title">
       <h2 class="eyebrow" id="voci-title" data-fade>Chi c'è stato</h2>
       <div class="voci-grid">
-        <p class="voce" data-fade><span class="voce-n">4,4</span><span class="voce-l">su 5 su Google<br />389 recensioni</span></p>
-        <p class="voce" data-fade><span class="voce-n">4,9</span><span class="voce-l">su 5 su TripAdvisor<br />8 recensioni</span></p>
+        
+        <p class="voce" data-fade><span class="voce-n">4,4</span><span class="voce-l">su 5 su Google a Barletta<br />391 recensioni</span></p>
+        <p class="voce" data-fade><span class="voce-n">4,7</span><span class="voce-l">su 5 su Google a Trani<br />55 recensioni</span></p>
         <figure class="voce voce--quote" data-fade>
           <blockquote>«Fish bar principalmente da asporto dove i must sono fritti e panini ben imbottiti.»</blockquote>
           <figcaption><a href="https://www.gamberorosso.it/notizie/ristoranti/dove-mangiare-a-barletta-i-migliori-locali/" target="_blank" rel="noopener">Gambero Rosso</a>, «Dove mangiare a Barletta», giugno 2023</figcaption>
@@ -267,12 +516,22 @@
       <p class="voci-note" data-fade>Voti rilevati a novembre 2026.</p>
     </section>
 
-    <!-- 5. ORARI E CONTATTI: le due metà arrivano sfalsate e si riallineano, come una pagina che si richiude -->
-    <section class="contatti" id="contatti" aria-label="Orari e contatti">
+    <!-- 6. SEDI E ORARI: una sede per metà. Le due metà arrivano sfalsate e si riallineano, come una pagina che si richiude -->
+    <section class="contatti" id="contatti" aria-label="Le sedi: orari e contatti">
+      
       <div class="contatti-half contatti-half--l">
-        <div class="contatti-box">
-          <h2 class="display display--light"><span class="rise"><span>Orari</span></span></h2>
-          <p class="status" data-open-status hidden><i aria-hidden="true"></i><span></span></p>
+        <div class="contatti-box"><article class="sede" id="sede-barletta" aria-labelledby="sede-barletta-title">
+          <p class="eyebrow sede-kicker">Kemare</p>
+          <h3 class="display sede-city" id="sede-barletta-title"><span class="rise"><span>Barletta</span></span></h3>
+          <p class="status" data-open-status="barletta" hidden><i aria-hidden="true"></i><span></span></p>
+          <address class="where"><a href="https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20Bar%20Pugliese%2C%20Via%20Cavour%2076%2C%2076121%20Barletta" target="_blank" rel="noopener">Via Cavour, 76<br />76121 Barletta (BT)</a></address>
+          <a class="phone" href="tel:+390883893824">0883 893824</a>
+          <div class="actions">
+            <a class="btn" href="tel:+390883893824">Chiama</a>
+            <a class="btn btn--line" href="https://wa.me/393289616708?text=Ciao%20Kemare%20Barletta!%20Vorrei%20ordinare%20da%20asporto%3A%20" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20Bar%20Pugliese%2C%20Via%20Cavour%2076%2C%2076121%20Barletta" target="_blank" rel="noopener">Indicazioni</a>
+          </div>
+          <h4 class="sede-sub">Orari</h4>
           <dl class="hours">
             <div class="hours-row is-closed" data-day="1"><dt>Lunedì</dt><dd>Chiuso</dd></div>
             <div class="hours-row" data-day="2"><dt>Martedì</dt><dd>11:30–14:45<span class="sep"> · </span>18:30–23:30</dd></div>
@@ -282,26 +541,45 @@
             <div class="hours-row" data-day="6"><dt>Sabato</dt><dd>11:30–15:00<span class="sep"> · </span>18:30–23:45</dd></div>
             <div class="hours-row" data-day="0"><dt>Domenica</dt><dd>11:30–15:00<span class="sep"> · </span>18:30–23:30</dd></div>
           </dl>
-        </div>
+          <p class="sede-note">La prima sede, in centro: si ordina al banco, pochi posti dentro e fuori. Su Google 4,4 su 5 (391 recensioni).</p>
+          <div class="map">
+            <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20Bar%20Pugliese%2C%20Via%20Cavour%2076%2C%2076121%20Barletta" target="_blank" rel="noopener" data-map-src="https://www.google.com/maps?output=embed&z=16&q=Kemare%20il%20Fish%20Bar%20Pugliese%2C%20Via%20Cavour%2076%2C%2076121%20Barletta" data-map-title="Mappa di Kemare Barletta">
+              <svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg><span>Mostra la mappa</span>
+            </a>
+            <p class="map-note">La mappa è di Google: si carica solo se la apri.</p>
+          </div>
+        </article></div>
       </div>
       <div class="contatti-half contatti-half--r">
-        <div class="contatti-box">
-          <h2 class="display"><span class="rise"><span>Dove siamo</span></span></h2>
-          <address class="where" data-fade>
-            <a href="https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20bar%20Pugliese%2C%20Via%20Cavour%2076%2C%20Barletta" target="_blank" rel="noopener">Via Cavour, 76<br />76121 Barletta (BT)</a>
-          </address>
-          <a class="phone" href="tel:+390883893824" data-fade>0883 893824</a>
-          <div class="actions" data-fade>
-            <a class="btn" href="tel:+390883893824">Chiama</a>
-            <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=Kemare%20il%20Fish%20bar%20Pugliese%2C%20Via%20Cavour%2076%2C%20Barletta" target="_blank" rel="noopener">Indicazioni</a>
-            
+        <div class="contatti-box"><article class="sede" id="sede-trani" aria-labelledby="sede-trani-title">
+          <p class="eyebrow sede-kicker">Kemare</p>
+          <h3 class="display sede-city" id="sede-trani-title"><span class="rise"><span>Trani</span></span></h3>
+          <p class="status" data-open-status="trani" hidden><i aria-hidden="true"></i><span></span></p>
+          <address class="where"><a href="https://www.google.com/maps/search/?api=1&query=Kemare%20%E2%80%A2il%20Fish%20Bar%20Pugliese%E2%80%A2%20TRANI%2C%20Via%20Giovanni%20Bovio%20161%2C%2076125%20Trani" target="_blank" rel="noopener">Via Giovanni Bovio, 161<br />76125 Trani (BT)</a></address>
+          <a class="phone" href="tel:+390883882830">0883 882830</a>
+          <div class="actions">
+            <a class="btn" href="tel:+390883882830">Chiama</a>
+            <a class="btn btn--line" href="https://wa.me/393283519193?text=Ciao%20Kemare%20Trani!%20Vorrei%20ordinare%20da%20asporto%3A%20" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=Kemare%20%E2%80%A2il%20Fish%20Bar%20Pugliese%E2%80%A2%20TRANI%2C%20Via%20Giovanni%20Bovio%20161%2C%2076125%20Trani" target="_blank" rel="noopener">Indicazioni</a>
           </div>
-          <p class="socials" data-fade>
-            <a href="https://www.instagram.com/kemare_fishbar/" target="_blank" rel="noopener">Instagram <span>@kemare_fishbar</span></a>
-            <a href="https://www.facebook.com/Kemare-100431668656041" target="_blank" rel="noopener">Facebook</a>
-          </p>
-          <div class="where-media" data-clip><span class="slot-art" role="img" aria-label="L'ingresso di Kemare in via Cavour"><svg class="ink-art" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path pathLength="1" d="M48 196 V88 H192 V196"/><path pathLength="1" d="M40 88 H200"/><path pathLength="1" d="M48 88 Q72 112 96 88 Q120 112 144 88 Q168 112 192 88"/><path pathLength="1" d="M100 196 V136 H140 V196"/><path pathLength="1" d="M64 136 H86 V168 H64 Z"/><path pathLength="1" d="M154 136 H176 V168 H154 Z"/><path pathLength="1" d="M32 196 H208"/></svg></span></div>
-        </div>
+          <h4 class="sede-sub">Orari</h4>
+          <dl class="hours">
+            <div class="hours-row is-closed" data-day="1"><dt>Lunedì</dt><dd>Chiuso</dd></div>
+            <div class="hours-row" data-day="2"><dt>Martedì</dt><dd>18:30–23:00</dd></div>
+            <div class="hours-row" data-day="3"><dt>Mercoledì</dt><dd>18:30–23:00</dd></div>
+            <div class="hours-row" data-day="4"><dt>Giovedì</dt><dd>18:30–23:30</dd></div>
+            <div class="hours-row" data-day="5"><dt>Venerdì</dt><dd>18:30–23:30</dd></div>
+            <div class="hours-row" data-day="6"><dt>Sabato</dt><dd>11:30–14:30<span class="sep"> · </span>18:30–23:30</dd></div>
+            <div class="hours-row" data-day="0"><dt>Domenica</dt><dd>11:30–14:30<span class="sep"> · </span>18:45–23:15</dd></div>
+          </dl>
+          <p class="sede-note">Da ottobre con una saletta interna rinnovata. Su Google 4,7 su 5 (55 recensioni).</p>
+          <div class="map">
+            <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Kemare%20%E2%80%A2il%20Fish%20Bar%20Pugliese%E2%80%A2%20TRANI%2C%20Via%20Giovanni%20Bovio%20161%2C%2076125%20Trani" target="_blank" rel="noopener" data-map-src="https://www.google.com/maps?output=embed&z=16&q=Kemare%20%E2%80%A2il%20Fish%20Bar%20Pugliese%E2%80%A2%20TRANI%2C%20Via%20Giovanni%20Bovio%20161%2C%2076125%20Trani" data-map-title="Mappa di Kemare Trani">
+              <svg class="fish" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 16 Q34 1 58 16 Q34 31 14 16 Z"/><path d="M14 16 L3 7 M14 16 L3 25"/><circle cx="46" cy="13.5" r="1.4"/></svg><span>Mostra la mappa</span>
+            </a>
+            <p class="map-note">La mappa è di Google: si carica solo se la apri.</p>
+          </div>
+        </article></div>
       </div>
     </section>
   </main>
@@ -309,10 +587,13 @@
   <footer class="site-footer">
     <p class="footer-word" aria-hidden="true"><span class="rise"><span>Kemare</span></span></p>
     <div class="footer-row">
-      <p>© 2026 Kemare · Il fish bar pugliese<br />Via Cavour, 76, 76121 Barletta (BT)</p>
+      <p><a href="/barletta/">Kemare Barletta</a><br />Via Cavour, 76, 76121 Barletta (BT)<br /><a href="tel:+390883893824">0883 893824</a></p><p><a href="/trani/">Kemare Trani</a><br />Via Giovanni Bovio, 161, 76125 Trani (BT)<br /><a href="tel:+390883882830">0883 882830</a></p>
+      <p><a href="https://www.instagram.com/kemare_fishbar/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/Kemare-100431668656041" target="_blank" rel="noopener">Facebook</a><br /><a href="/demo/kemare/privacy.html">Privacy e cookie</a></p>
+    </div>
+    <div class="footer-row footer-row--small">
+      <p>© 2026 Kemare · Il fish bar pugliese a Barletta e Trani</p>
       <!-- DA VERIFICARE: ragione sociale e partita IVA (config.js → legal). Per legge vanno indicate nel sito. -->
-      <p></p>
-      <p><a href="/demo/kemare/privacy.html">Privacy e cookie</a><br /><a href="#top">Torna su</a></p>
+      
     </div>
   </footer>
 </body>

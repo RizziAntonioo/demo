@@ -1,1 +1,0 @@
-import"./main-CXShXH83.js";document.documentElement.classList.add(`ready`);

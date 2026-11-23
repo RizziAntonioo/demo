@@ -1,0 +1,1 @@
+import"./main-CIJQcKMT.js";document.documentElement.classList.add(`ready`);
