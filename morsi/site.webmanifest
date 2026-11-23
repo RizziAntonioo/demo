@@ -1,0 +1,9 @@
+{
+  "name": "Morsí – Schiacciateria",
+  "short_name": "Morsí",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0d0d0d",
+  "theme_color": "#0d0d0d",
+  "icons": [{ "src": "/demo/morsi/favicon.svg", "type": "image/svg+xml", "sizes": "any" }]
+}

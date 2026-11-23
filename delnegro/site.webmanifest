@@ -1,0 +1,8 @@
+{
+  "name": "Delnegro Pasticceria",
+  "short_name": "Delnegro",
+  "icons": [{ "src": "/demo/delnegro/favicon.svg", "sizes": "any", "type": "image/svg+xml" }],
+  "theme_color": "#fffaf1",
+  "background_color": "#fffaf1",
+  "display": "browser"
+}

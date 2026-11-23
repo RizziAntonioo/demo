@@ -1,0 +1,1 @@
+import"./wght-By2j_R8U.js";document.documentElement.classList.add(`ready`);

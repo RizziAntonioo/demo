@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data:; frame-src https://maps.google.com https://www.google.com; media-src 'none'; object-src 'none'; worker-src 'self' blob:; manifest-src 'self'; base-uri 'self'; form-action 'self'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Menù · Morsí Schiacciateria Barletta | Schiacciate toscane, fritti, birre e vini</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <script src="/demo/morsi/demo-mode.js"></script>
+
+  <link rel="preload" href="/demo/morsi/assets/barlow-condensed-latin-600-italic--kVCEDSl.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/demo/morsi/assets/barlow-latin-400-normal-qiz4-Cze.woff2" as="font" type="font/woff2" crossorigin>
+  <style>html{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;background:#f1ebe1}body{color:#161412;opacity:0;background:#f1ebe1;margin:0;animation:0s 2.5s forwards morsi-show}@keyframes morsi-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
+  <noscript><style>body{opacity:1!important;animation:none!important}</style></noscript>
+  
+  <meta name="theme-color" content="#0d0d0d" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="geo.region" content="IT-BT" />
+  <meta name="geo.placename" content="Barletta" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Morsí – Schiacciateria" />
+  <meta property="og:image" content="http://localhost:5400/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/demo/morsi/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/demo/morsi/site.webmanifest" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Morsí – Schiacciateria","alternateName":["Morsí","Morsì Schiacciateria"],"description":"Un angolo di Toscana a Barletta: la vera schiacciata toscana, con impasto fatto in casa e farcita al momento, e taglieri XXL di salumi e formaggi. In Via Cavour 83 a Barletta.","url":"http://localhost:5400/","image":"http://localhost:5400/og.jpg","logo":"http://localhost:5400/favicon.svg","telephone":"+39 351 837 6461","address":{"@type":"PostalAddress","streetAddress":"Via Cavour, 83","postalCode":"76121","addressLocality":"Barletta","addressRegion":"BT","addressCountry":"IT"},"servesCuisine":["Schiacciata toscana","Taglieri","Italiana"],"priceRange":"€10–20","hasMenu":"http://localhost:5400/menu","acceptsReservations":true,"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"19:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"19:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"19:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"19:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"19:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"19:30","closes":"23:30"}],"sameAs":["https://www.instagram.com/morsi_schiacciateria/","https://deliveroo.it/it/menu/bari/barletta/morsi-via-cavour-83"]}</script>
+  <meta name="description" content="Il menù di Morsí a Barletta con i prezzi: 22 schiacciate toscane da € 8,50, antipasti, fritti, birre, vini e bevande. Filtra le vegetariane e le piccanti e ordina d’asporto su WhatsApp." />
+  <link rel="canonical" href="http://localhost:5400/menu" />
+  <meta property="og:title" content="Menù · Morsí Schiacciateria" />
+  <meta property="og:description" content="Schiacciate toscane farcite al momento, fritti, birre e vini. Ordina d’asporto su WhatsApp." />
+  <meta property="og:url" content="http://localhost:5400/menu" />
+  <script type="module" crossorigin src="/demo/morsi/assets/menu-moYo7AoD.js"></script>
+  <link rel="modulepreload" crossorigin href="/demo/morsi/assets/latin-400-Dhu_hVqG.js">
+  <link rel="modulepreload" crossorigin href="/demo/morsi/assets/ui-CJbOaKpQ.js">
+  <link rel="modulepreload" crossorigin href="/demo/morsi/assets/common-lNuSGdVp.js">
+  <link rel="stylesheet" crossorigin href="/demo/morsi/assets/latin-400-DKB6Spnc.css">
+  <link rel="stylesheet" crossorigin href="/demo/morsi/assets/ui-C0n5cOGf.css">
+  <link rel="stylesheet" crossorigin href="/demo/morsi/assets/common-ZcPC_xx8.css">
+</head>
+<body data-page="menu" class="page-menu">
+  <a href="#main" class="skip">Salta al contenuto</a>
+  <svg width="0" height="0" class="sprite" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 8h14l-1 13H6L5 8zm4 0V6a3 3 0 0 1 6 0v2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+  </svg>
+  <div class="notice" data-notice hidden><p class="wrap" data-notice-text></p></div>
+  <header class="site-header">
+    <div class="wrap header-in">
+      <a href="/demo/morsi/" class="brand" aria-label="Morsí – Schiacciateria, home"><svg class="logo " viewBox="0 0 1024 1024" aria-hidden="true">
+    <defs>
+      <path id="lg0t" d="M182 540A330 330 0 0 1 842 540"/>
+      <path id="lg0b" d="M118 500A394 394 0 0 0 906 500"/>
+    </defs>
+    <circle cx="512" cy="512" r="508" fill="#0d0d0d"/>
+    <g fill="#fff" font-family="'Barlow Condensed', 'Arial Narrow', 'Helvetica Neue Condensed', sans-serif">
+      <text font-size="96" font-weight="500" letter-spacing="6"><textPath href="#lg0t" startOffset="50%" text-anchor="middle">SCHIACCIATERIA</textPath></text>
+      <text font-size="80" font-weight="500" letter-spacing="5"><textPath href="#lg0b" startOffset="50%" text-anchor="middle">FOOD - DRINK - MORE</textPath></text>
+      <text x="512" y="628" text-anchor="middle" font-size="318" font-style="italic" font-weight="500" textLength="760" lengthAdjust="spacingAndGlyphs">MORSÍ</text>
+    </g>
+  </svg><span class="brand-word" aria-hidden="true">Morsí<small>Schiacciateria</small></span></a>
+      <nav class="nav" aria-label="Navigazione principale"><a href="/demo/morsi/menu" aria-current="page">Menù</a><a href="/demo/morsi/taglieri-e-feste">Taglieri e feste</a><a href="/demo/morsi/chi-siamo">Chi siamo</a><a href="/demo/morsi/dove-siamo">Dove siamo</a></nav>
+      <a href="/demo/morsi/prenota" class="btn btn--wood btn--sm header-cta">Prenota</a>
+      <button type="button" class="burger" aria-label="Apri il menù" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Navigazione mobile"><a href="/demo/morsi/">Home</a><a href="/demo/morsi/menu" aria-current="page">Menù</a><a href="/demo/morsi/taglieri-e-feste">Taglieri e feste</a><a href="/demo/morsi/chi-siamo">Chi siamo</a><a href="/demo/morsi/dove-siamo">Dove siamo</a><a href="/demo/morsi/prenota">Prenota un tavolo</a></nav>
+    <p class="mobile-nav-foot">Via Cavour, 83 – 76121 Barletta (BT)<br /><a href="tel:+393518376461">351 837 6461</a></p>
+  </div>
+  <main id="main">
+    <section class="page-hero page-hero--dark" aria-labelledby="page-title">
+      <div class="wrap page-hero-grid">
+        <div>
+          <p class="kicker kicker--wood">Farcite al momento</p>
+          <h1 id="page-title" class="page-title">Il menù</h1>
+          <p class="lead">22 schiacciate toscane, antipasti, fritti e da bere. Premi <b class="plus-inline" aria-hidden="true">+</b> per comporre un ordine d’asporto e mandarcelo su WhatsApp.</p>
+        </div>
+        <div class="page-hero-photo bite bite--sm"><img class="photo r-4-5 " src="/demo/morsi/images/foto/marmo-800.webp" srcset="/demo/morsi/images/foto/marmo-480.webp 480w, /demo/morsi/images/foto/marmo-800.webp 800w, /demo/morsi/images/foto/marmo-1200.webp 1200w" sizes="(max-width: 900px) 40vw, 300px" alt="Schiacciata con pomodori secchi e rucola sul piatto nero in marmo" width="1200" height="1500" loading="lazy" decoding="async" /></div>
+      </div>
+    </section>
+
+    <!-- In evidenza: la schiacciata del mese (dall'admin) -->
+    <section class="wrap month-strip" aria-label="Schiacciata del mese" data-special>
+      <div class="special special--month special--inline" data-monthly><p class="kicker kicker--wood">La novità</p>
+    <h3 class="special-name">Pistacchiosa 2</h3>
+    <p class="special-desc">Mortadella al tartufo, stracciatella fresca, crema di pistacchio di Bronte e un filo di olio evo al tartufo.</p>
+    <p class="special-price special-price--ask">Chiedila in sala</p></div>
+    </section>
+
+    <!-- Barra fissa: categorie + filtri + cerca -->
+    <div class="menu-bar">
+      <div class="wrap menu-bar-in">
+        <nav class="mindex" aria-label="Categorie del menù"><a href="#schiacciate" data-cat="schiacciate">Schiacciate</a><a href="#antipasti" data-cat="antipasti">Antipasti</a><a href="#fritti" data-cat="fritti">Fritti</a><a href="#birre" data-cat="birre">Birre</a><a href="#vini" data-cat="vini">Vini</a><a href="#bevande" data-cat="bevande">Bevande</a></nav>
+        <div class="menu-tools">
+          <div class="ftags" role="group" aria-label="Filtra il menù"><button type="button" class="ftag" aria-pressed="true" data-tag="">Tutto</button><button type="button" class="ftag ftag--veg" aria-pressed="false" data-tag="veg">Vegetariane</button><button type="button" class="ftag ftag--piccante" aria-pressed="false" data-tag="piccante">Piccanti</button></div>
+          <label class="mtool"><span class="sr">Cerca nel menù</span>
+            <input type="search" data-search placeholder="Cerca: nduja, burrata…" autocomplete="off" enterkeyhint="search" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section--tight" aria-label="Menù">
+      <div class="wrap menu-wrap">
+        <p class="filter-note" role="status"><span data-filter-note></span> <button type="button" class="link-btn" data-filter-reset hidden>Togli i filtri</button></p>
+        <div data-menu><div class="mgroup" id="mangiare" data-group="mangiare"><h2 class="mgroup-title">Da mangiare</h2><section class="msec msec--schiacciate" id="schiacciate" aria-labelledby="h-schiacciate">
+        <header class="msec-head"><h3 id="h-schiacciate">Schiacciate</h3><p>Impasto nostro, farcite al momento</p></header>
+        <ul class="mlist"><li class="mrow" data-slug="morsi" data-tags="" data-q="morsi capocollo di martina franca, burrata, funghi misti, rucola">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Morsí</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 11</span></p>
+        <p class="mrow-desc">Capocollo di Martina Franca, burrata, funghi misti, rucola</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="morsi" aria-label="Aggiungi Morsí all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="cinghialosa" data-tags="" data-q="la cinghialosa pesto di olive, mortadella di cinghiale, cipolla caramellata, pecorino, glassa balsamica e rucola">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">La Cinghialosa</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 12</span></p>
+        <p class="mrow-desc">Pesto di olive, mortadella di cinghiale, cipolla caramellata, pecorino, glassa balsamica e rucola</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="cinghialosa" aria-label="Aggiungi La Cinghialosa all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="pistacchiosa" data-tags="" data-q="pistacchiosa mortadella, pesto di pistacchio, stracciatella, olio al limone">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Pistacchiosa</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        <p class="mrow-desc">Mortadella, pesto di pistacchio, stracciatella, olio al limone</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="pistacchiosa" aria-label="Aggiungi Pistacchiosa all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="maremma" data-tags="" data-q="maremma finocchiona igp, crema cacio e pepe, pomodori secchi">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Maremma</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        <p class="mrow-desc">Finocchiona IGP, crema cacio e pepe, pomodori secchi</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="maremma" aria-label="Aggiungi Maremma all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="tricolore" data-tags="" data-q="tricolore stracciatella, pomodori al forno, capocollo e pesto di basilico fresco">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Tricolore</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 11,50</span></p>
+        <p class="mrow-desc">Stracciatella, pomodori al forno, capocollo e pesto di basilico fresco</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="tricolore" aria-label="Aggiungi Tricolore all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="cuor-d-ariccia" data-tags="" data-q="cuor d’ariccia porchetta di ariccia, crema di porcini, patate arrosto">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Cuor d’Ariccia</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 10</span></p>
+        <p class="mrow-desc">Porchetta di Ariccia, crema di porcini, patate arrosto</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="cuor-d-ariccia" aria-label="Aggiungi Cuor d’Ariccia all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="terrona" data-tags="piccante" data-q="terrona cotto alla brace alle erbe, friarielli, mozzarella e crema piccante calabrese">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Terrona</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 11</span></p>
+        <p class="mrow-desc">Cotto alla brace alle erbe, friarielli, mozzarella e crema piccante calabrese</p>
+        <p class="mrow-tags"><i class="tag tag--piccante">Piccante</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="terrona" aria-label="Aggiungi Terrona all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="tirolese" data-tags="" data-q="la tirolese speck, burrata, pomodori semi dry, basilico">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">La Tirolese</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 10</span></p>
+        <p class="mrow-desc">Speck, burrata, pomodori semi dry, basilico</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="tirolese" aria-label="Aggiungi La Tirolese all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="maialosa" data-tags="piccante" data-q="maialosa porchetta di ariccia, melanzane grigliate, nduja, rucola">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Maialosa</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        <p class="mrow-desc">Porchetta di Ariccia, melanzane grigliate, nduja, rucola</p>
+        <p class="mrow-tags"><i class="tag tag--piccante">Piccante</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="maialosa" aria-label="Aggiungi Maialosa all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="contadina" data-tags="veg" data-q="contadina zucchine grigliate, melanzane grigliate, crema di porcini, pecorino">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Contadina</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 8,50</span></p>
+        <p class="mrow-desc">Zucchine grigliate, melanzane grigliate, crema di porcini, pecorino</p>
+        <p class="mrow-tags"><i class="tag tag--veg">Vegetariana</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="contadina" aria-label="Aggiungi Contadina all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="ciociara" data-tags="" data-q="la ciociara guanciale, crema cacio e pepe, pomodori semi dry, carciofi">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">La Ciociara</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 10</span></p>
+        <p class="mrow-desc">Guanciale, crema cacio e pepe, pomodori semi dry, carciofi</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="ciociara" aria-label="Aggiungi La Ciociara all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="abruzzese" data-tags="" data-q="abruzzese ventricina, mozzarella, pomodori semi dry, basilico">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Abruzzese</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        <p class="mrow-desc">Ventricina, mozzarella, pomodori semi dry, basilico</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="abruzzese" aria-label="Aggiungi Abruzzese all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="fior-di-crudo" data-tags="" data-q="fior di crudo prosciutto crudo, pesto rosso, mozzarella, misticanza">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Fior di crudo</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        <p class="mrow-desc">Prosciutto crudo, pesto rosso, mozzarella, misticanza</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="fior-di-crudo" aria-label="Aggiungi Fior di crudo all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="rustichella" data-tags="" data-q="rustichella cotto alla brace alle erbe, fior di latte, zucchine grigliate, olio all’arancia e misticanza">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Rustichella</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 11</span></p>
+        <p class="mrow-desc">Cotto alla brace alle erbe, fior di latte, zucchine grigliate, olio all’arancia e misticanza</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="rustichella" aria-label="Aggiungi Rustichella all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="toscana" data-tags="" data-q="la toscana finocchiona, crema al tartufo, pecorino, zucchine grigliate">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">La Toscana</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 10</span></p>
+        <p class="mrow-desc">Finocchiona, crema al tartufo, pecorino, zucchine grigliate</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="toscana" aria-label="Aggiungi La Toscana all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="cantabrica" data-tags="" data-q="cantabrica acciughe, bufala, pomodori secchi, rucola">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Cantabrica</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 11</span></p>
+        <p class="mrow-desc">Acciughe, bufala, pomodori secchi, rucola</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="cantabrica" aria-label="Aggiungi Cantabrica all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="norvegese" data-tags="" data-q="norvegese salmone affumicato, zucchine grigliate, stracciatella, misticanza, olio al limone">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Norvegese</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 14</span></p>
+        <p class="mrow-desc">Salmone affumicato, zucchine grigliate, stracciatella, misticanza, olio al limone</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="norvegese" aria-label="Aggiungi Norvegese all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="arrabbiata" data-tags="piccante" data-q="l’arrabbiata ventricina, crema piccante, mozzarella, rucola">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">L’Arrabbiata</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 8,50</span></p>
+        <p class="mrow-desc">Ventricina, crema piccante, mozzarella, rucola</p>
+        <p class="mrow-tags"><i class="tag tag--piccante">Piccante</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="arrabbiata" aria-label="Aggiungi L’Arrabbiata all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="tartufona" data-tags="" data-q="tartufona speck, crema al tartufo, melanzane grigliate, pomodori secchi">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Tartufona</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 10</span></p>
+        <p class="mrow-desc">Speck, crema al tartufo, melanzane grigliate, pomodori secchi</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="tartufona" aria-label="Aggiungi Tartufona all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="calabrese" data-tags="piccante" data-q="calabrese zucchine grigliate, stracciatella, nduja, misticanza">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Calabrese</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        <p class="mrow-desc">Zucchine grigliate, stracciatella, nduja, misticanza</p>
+        <p class="mrow-tags"><i class="tag tag--piccante">Piccante</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="calabrese" aria-label="Aggiungi Calabrese all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="carciofona" data-tags="" data-q="carciofona prosciutto crudo, carciofi arrosto, crema di carciofi e scaglie di pecorino">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Carciofona</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 11</span></p>
+        <p class="mrow-desc">Prosciutto crudo, carciofi arrosto, crema di carciofi e scaglie di pecorino</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="carciofona" aria-label="Aggiungi Carciofona all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="fior-di-verdure" data-tags="veg" data-q="fior di verdure zucchine grigliate, melanzane grigliate, carciofi arrosto, cipolla caramellata, olio al rosmarino">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Fior di verdure</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        <p class="mrow-desc">Zucchine grigliate, melanzane grigliate, carciofi arrosto, cipolla caramellata, olio al rosmarino</p>
+        <p class="mrow-tags"><i class="tag tag--veg">Vegetariana</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="fior-di-verdure" aria-label="Aggiungi Fior di verdure all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li></ul>
+      </section><section class="msec msec--antipasti" id="antipasti" aria-labelledby="h-antipasti">
+        <header class="msec-head"><h3 id="h-antipasti">Antipasti</h3></header>
+        <ul class="mlist"><li class="mrow" data-slug="patate-americane" data-tags="veg" data-q="patate americane patate americane dolci fritte">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Patate americane</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 7</span></p>
+        <p class="mrow-desc">Patate americane dolci fritte</p>
+        <p class="mrow-tags"><i class="tag tag--veg">Vegetariana</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="patate-americane" aria-label="Aggiungi Patate americane all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="patate-al-forno" data-tags="veg" data-q="patate al forno ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Patate al forno</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 4</span></p>
+        
+        <p class="mrow-tags"><i class="tag tag--veg">Vegetariana</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="patate-al-forno" aria-label="Aggiungi Patate al forno all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="bruschette" data-tags="veg" data-q="bruschette ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Bruschette</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 4</span></p>
+        
+        <p class="mrow-tags"><i class="tag tag--veg">Vegetariana</i></p>
+        
+      </div>
+      <button type="button" class="add" data-add="bruschette" aria-label="Aggiungi Bruschette all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li></ul>
+      </section><section class="msec msec--fritti" id="fritti" aria-labelledby="h-fritti">
+        <header class="msec-head"><h3 id="h-fritti">Fritti</h3></header>
+        <ul class="mlist"><li class="mrow" data-slug="meteoritos" data-tags="" data-q="meteoritos filetti di pollo panati e speziati (5 pezzi)">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Meteoritos</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 8</span></p>
+        <p class="mrow-desc">Filetti di pollo panati e speziati (5 pezzi)</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="meteoritos" aria-label="Aggiungi Meteoritos all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="gamberi-corn-flakes" data-tags="" data-q="gamberi corn flakes 8 pezzi">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Gamberi corn flakes</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        <p class="mrow-desc">8 pezzi</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="gamberi-corn-flakes" aria-label="Aggiungi Gamberi corn flakes all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="fiori-di-zucca" data-tags="" data-q="fiori di zucca fiori di zucca pastellati, farciti con mozzarella e alici">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Fiori di zucca</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 6</span></p>
+        <p class="mrow-desc">Fiori di zucca pastellati, farciti con mozzarella e alici</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="fiori-di-zucca" aria-label="Aggiungi Fiori di zucca all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="dippers" data-tags="" data-q="dippers ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Dippers</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 4,50</span></p>
+        
+        
+        
+      </div>
+      <button type="button" class="add" data-add="dippers" aria-label="Aggiungi Dippers all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="baccala-in-pastella" data-tags="" data-q="baccala in pastella ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Baccalà in pastella</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 9</span></p>
+        
+        
+        
+      </div>
+      <button type="button" class="add" data-add="baccala-in-pastella" aria-label="Aggiungi Baccalà in pastella all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li></ul>
+      </section></div><div class="mgroup" id="bere" data-group="bere"><h2 class="mgroup-title">Da bere</h2><section class="msec msec--birre" id="birre" aria-labelledby="h-birre">
+        <header class="msec-head"><h3 id="h-birre">Birre</h3></header>
+        <ul class="mlist"><li class="mrow" data-slug="viola-rossa" data-tags="" data-q="viola rossa 0,75 l red ale, 6,6% vol.">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Viola rossa 0,75 l</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 15</span></p>
+        <p class="mrow-desc">Red ale, 6,6% vol.</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="viola-rossa" aria-label="Aggiungi Viola rossa 0,75 l all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="viola-bionda" data-tags="" data-q="viola bionda 0,75 l lager, 5,6% vol.">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Viola bionda 0,75 l</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 15</span></p>
+        <p class="mrow-desc">Lager, 5,6% vol.</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="viola-bionda" aria-label="Aggiungi Viola bionda 0,75 l all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="paulaner-weisse" data-tags="" data-q="paulaner weisse 0,50 l in vetro">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Paulaner Weisse 0,50 l</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 5,50</span></p>
+        <p class="mrow-desc">In vetro</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="paulaner-weisse" aria-label="Aggiungi Paulaner Weisse 0,50 l all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="corona-extra" data-tags="" data-q="corona extra ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Corona Extra</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 4,50</span></p>
+        
+        
+        
+      </div>
+      <button type="button" class="add" data-add="corona-extra" aria-label="Aggiungi Corona Extra all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="raffo" data-tags="" data-q="raffo ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Raffo</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 3</span></p>
+        
+        
+        
+      </div>
+      <button type="button" class="add" data-add="raffo" aria-label="Aggiungi Raffo all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li></ul>
+      </section><section class="msec msec--vini" id="vini" aria-labelledby="h-vini">
+        <header class="msec-head"><h3 id="h-vini">Vini</h3></header>
+        <ul class="mlist"><li class="mrow" data-slug="calafuria" data-tags="" data-q="calafuria bottiglia 75 cl">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Calafuria</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 22</span></p>
+        <p class="mrow-desc">Bottiglia 75 cl</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="calafuria" aria-label="Aggiungi Calafuria all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="tramari" data-tags="" data-q="tramari bottiglia 75 cl">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Tramari</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 18</span></p>
+        <p class="mrow-desc">Bottiglia 75 cl</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="tramari" aria-label="Aggiungi Tramari all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="nero-di-troia-rivera" data-tags="" data-q="nero di troia cantina rivera">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Nero di Troia</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 18</span></p>
+        <p class="mrow-desc">Cantina Rivera</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="nero-di-troia-rivera" aria-label="Aggiungi Nero di Troia all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="primitivo-rivera" data-tags="" data-q="primitivo cantina rivera">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Primitivo</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 18</span></p>
+        <p class="mrow-desc">Cantina Rivera</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="primitivo-rivera" aria-label="Aggiungi Primitivo all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="primitivo-di-manduria" data-tags="" data-q="primitivo di manduria cantina cantolio">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Primitivo di Manduria</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 20</span></p>
+        <p class="mrow-desc">Cantina Cantolio</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="primitivo-di-manduria" aria-label="Aggiungi Primitivo di Manduria all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="susumaniello" data-tags="" data-q="susumaniello rosso ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Susumaniello rosso</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 20</span></p>
+        
+        
+        
+      </div>
+      <button type="button" class="add" data-add="susumaniello" aria-label="Aggiungi Susumaniello rosso all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li></ul>
+      </section><section class="msec msec--bevande" id="bevande" aria-labelledby="h-bevande">
+        <header class="msec-head"><h3 id="h-bevande">Bevande</h3></header>
+        <ul class="mlist"><li class="mrow" data-slug="acqua-naturale" data-tags="" data-q="acqua naturale 1 l ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Acqua naturale 1 l</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 2</span></p>
+        
+        
+        
+      </div>
+      <button type="button" class="add" data-add="acqua-naturale" aria-label="Aggiungi Acqua naturale 1 l all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="acqua-frizzante" data-tags="" data-q="acqua frizzante 1 l ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Acqua frizzante 1 l</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 2</span></p>
+        
+        
+        
+      </div>
+      <button type="button" class="add" data-add="acqua-frizzante" aria-label="Aggiungi Acqua frizzante 1 l all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="coca-cola" data-tags="" data-q="coca-cola 33 cl lattina">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Coca-Cola 33 cl</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 2</span></p>
+        <p class="mrow-desc">Lattina</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="coca-cola" aria-label="Aggiungi Coca-Cola 33 cl all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="coca-cola-zero" data-tags="" data-q="coca-cola zero 33 cl lattina">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Coca-Cola Zero 33 cl</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 2</span></p>
+        <p class="mrow-desc">Lattina</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="coca-cola-zero" aria-label="Aggiungi Coca-Cola Zero 33 cl all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="fanta" data-tags="" data-q="fanta 33 cl lattina">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Fanta 33 cl</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 2</span></p>
+        <p class="mrow-desc">Lattina</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="fanta" aria-label="Aggiungi Fanta 33 cl all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="te-limone" data-tags="" data-q="te al limone 33 cl lattina">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Tè al limone 33 cl</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 2,50</span></p>
+        <p class="mrow-desc">Lattina</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="te-limone" aria-label="Aggiungi Tè al limone 33 cl all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="te-pesca" data-tags="" data-q="te alla pesca 33 cl lattina">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Tè alla pesca 33 cl</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 2,50</span></p>
+        <p class="mrow-desc">Lattina</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="te-pesca" aria-label="Aggiungi Tè alla pesca 33 cl all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="chinotto-lurisia" data-tags="" data-q="chinotto lurisia 33 cl vetro">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Chinotto Lurisia 33 cl</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 3</span></p>
+        <p class="mrow-desc">Vetro</p>
+        
+        
+      </div>
+      <button type="button" class="add" data-add="chinotto-lurisia" aria-label="Aggiungi Chinotto Lurisia 33 cl all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li><li class="mrow" data-slug="limonata-lurisia" data-tags="" data-q="limonata lurisia ">
+      <div class="mrow-main">
+        <p class="mrow-head"><span class="mrow-name">Limonata Lurisia</span><span class="mrow-dots" aria-hidden="true"></span><span class="mrow-price">€ 3</span></p>
+        
+        
+        
+      </div>
+      <button type="button" class="add" data-add="limonata-lurisia" aria-label="Aggiungi Limonata Lurisia all’ordine d’asporto"><span aria-hidden="true">+</span></button>
+    </li></ul>
+      </section></div></div>
+
+        <div class="menu-foot" id="ordina">
+          <div class="order-how">
+            <h2>Ordina d’asporto</h2>
+            <ol>
+              <li>Premi <b>+</b> accanto alle schiacciate che vuoi.</li>
+              <li>Apri <b>Il tuo ordine</b>, scrivi il nome e l’ora di ritiro.</li>
+              <li>Il messaggio parte su WhatsApp già scritto: ti confermiamo noi prezzo e orario.</li>
+            </ol>
+            <a class="btn btn--line" href="https://deliveroo.it/it/menu/bari/barletta/morsi-via-cavour-83" target="_blank" rel="noopener">Ordina su Deliveroo</a>
+          </div>
+          <div class="menu-legal">
+            <p><b>Prezzi:</b> sono quelli del nostro menù online e possono cambiare. Il totale dell’ordine è indicativo: lo confermiamo noi.</p>
+            <p><b>Allergeni e intolleranze:</b> le informazioni sulla presenza di sostanze che provocano allergie o intolleranze sono disponibili rivolgendosi al personale. “Vegetariana” e “piccante” sono indicazioni sugli ingredienti principali.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ordine d'asporto: barra in basso + finestra con il riepilogo -->
+  <div class="cart-bar" data-cart-bar hidden>
+    <button type="button" class="cart-open" data-cart-open><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag"/></svg><span><b>Il tuo ordine</b> <span data-cart-count></span></span><span class="cart-total" data-cart-total></span></button>
+  </div>
+  <dialog class="cart" data-cart aria-labelledby="cart-title">
+    <form data-cart-form novalidate>
+      <header class="cart-head"><h2 id="cart-title">Il tuo ordine d’asporto</h2><button type="button" class="cart-x" data-cart-close aria-label="Chiudi">×</button></header>
+      <ul class="cart-list" data-cart-list></ul>
+      <p class="cart-sum">Totale indicativo <b data-cart-total></b></p>
+      <div class="frow">
+        <label class="field"><span>Nome</span><input name="name" autocomplete="name" maxlength="60" required /></label>
+        <label class="field"><span>Ritiro alle <small>vuoto = appena pronto</small></span><input name="when" type="time" min="19:30" max="23:30" step="900" /></label>
+      </div>
+      <label class="field"><span>Note <small>facoltative</small></span><textarea name="notes" rows="2" maxlength="300" placeholder="Es. una senza rucola"></textarea></label>
+      <p class="form-msg is-err" data-cart-msg role="alert"></p>
+      <button type="submit" class="btn btn--wa"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Invia l’ordine su WhatsApp</button>
+      <p class="cart-fine">Il messaggio parte dal tuo telefono: nessun pagamento online. <button type="button" class="link-btn" data-cart-clear>Svuota l’ordine</button></p>
+    </form>
+  </dialog>
+  <script type="application/json" id="menu-data">[{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":0,"slug":"morsi","name":"Morsí","description":"Capocollo di Martina Franca, burrata, funghi misti, rucola","price":11,"featured":true},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":10,"slug":"cinghialosa","name":"La Cinghialosa","description":"Pesto di olive, mortadella di cinghiale, cipolla caramellata, pecorino, glassa balsamica e rucola","price":12,"featured":true},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":20,"slug":"pistacchiosa","name":"Pistacchiosa","description":"Mortadella, pesto di pistacchio, stracciatella, olio al limone","price":9,"featured":true},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":30,"slug":"maremma","name":"Maremma","description":"Finocchiona IGP, crema cacio e pepe, pomodori secchi","price":9,"featured":true},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":40,"slug":"tricolore","name":"Tricolore","description":"Stracciatella, pomodori al forno, capocollo e pesto di basilico fresco","price":11.5},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":50,"slug":"cuor-d-ariccia","name":"Cuor d’Ariccia","description":"Porchetta di Ariccia, crema di porcini, patate arrosto","price":10},{"category":"schiacciate","visible":true,"tags":["piccante"],"allergens":[],"sort":60,"slug":"terrona","name":"Terrona","description":"Cotto alla brace alle erbe, friarielli, mozzarella e crema piccante calabrese","price":11},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":70,"slug":"tirolese","name":"La Tirolese","description":"Speck, burrata, pomodori semi dry, basilico","price":10},{"category":"schiacciate","visible":true,"tags":["piccante"],"allergens":[],"sort":80,"slug":"maialosa","name":"Maialosa","description":"Porchetta di Ariccia, melanzane grigliate, nduja, rucola","price":9},{"category":"schiacciate","visible":true,"tags":["veg"],"allergens":[],"sort":90,"slug":"contadina","name":"Contadina","description":"Zucchine grigliate, melanzane grigliate, crema di porcini, pecorino","price":8.5},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":100,"slug":"ciociara","name":"La Ciociara","description":"Guanciale, crema cacio e pepe, pomodori semi dry, carciofi","price":10},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":110,"slug":"abruzzese","name":"Abruzzese","description":"Ventricina, mozzarella, pomodori semi dry, basilico","price":9},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":120,"slug":"fior-di-crudo","name":"Fior di crudo","description":"Prosciutto crudo, pesto rosso, mozzarella, misticanza","price":9},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":130,"slug":"rustichella","name":"Rustichella","description":"Cotto alla brace alle erbe, fior di latte, zucchine grigliate, olio all’arancia e misticanza","price":11},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":140,"slug":"toscana","name":"La Toscana","description":"Finocchiona, crema al tartufo, pecorino, zucchine grigliate","price":10},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":150,"slug":"cantabrica","name":"Cantabrica","description":"Acciughe, bufala, pomodori secchi, rucola","price":11,"featured":true},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":160,"slug":"norvegese","name":"Norvegese","description":"Salmone affumicato, zucchine grigliate, stracciatella, misticanza, olio al limone","price":14},{"category":"schiacciate","visible":true,"tags":["piccante"],"allergens":[],"sort":170,"slug":"arrabbiata","name":"L’Arrabbiata","description":"Ventricina, crema piccante, mozzarella, rucola","price":8.5},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":180,"slug":"tartufona","name":"Tartufona","description":"Speck, crema al tartufo, melanzane grigliate, pomodori secchi","price":10},{"category":"schiacciate","visible":true,"tags":["piccante"],"allergens":[],"sort":190,"slug":"calabrese","name":"Calabrese","description":"Zucchine grigliate, stracciatella, nduja, misticanza","price":9},{"category":"schiacciate","visible":true,"tags":[],"allergens":[],"sort":200,"slug":"carciofona","name":"Carciofona","description":"Prosciutto crudo, carciofi arrosto, crema di carciofi e scaglie di pecorino","price":11},{"category":"schiacciate","visible":true,"tags":["veg"],"allergens":[],"sort":210,"slug":"fior-di-verdure","name":"Fior di verdure","description":"Zucchine grigliate, melanzane grigliate, carciofi arrosto, cipolla caramellata, olio al rosmarino","price":9,"featured":true},{"category":"antipasti","visible":true,"tags":["veg"],"allergens":[],"sort":220,"slug":"patate-americane","name":"Patate americane","description":"Patate americane dolci fritte","price":7},{"category":"antipasti","visible":true,"tags":["veg"],"allergens":[],"sort":230,"slug":"patate-al-forno","name":"Patate al forno","price":4},{"category":"antipasti","visible":true,"tags":["veg"],"allergens":[],"sort":240,"slug":"bruschette","name":"Bruschette","price":4},{"category":"fritti","visible":true,"tags":[],"allergens":[],"sort":250,"slug":"meteoritos","name":"Meteoritos","description":"Filetti di pollo panati e speziati (5 pezzi)","price":8},{"category":"fritti","visible":true,"tags":[],"allergens":[],"sort":260,"slug":"gamberi-corn-flakes","name":"Gamberi corn flakes","description":"8 pezzi","price":9},{"category":"fritti","visible":true,"tags":[],"allergens":[],"sort":270,"slug":"fiori-di-zucca","name":"Fiori di zucca","description":"Fiori di zucca pastellati, farciti con mozzarella e alici","price":6},{"category":"fritti","visible":true,"tags":[],"allergens":[],"sort":280,"slug":"dippers","name":"Dippers","price":4.5},{"category":"fritti","visible":true,"tags":[],"allergens":[],"sort":290,"slug":"baccala-in-pastella","name":"Baccalà in pastella","price":9},{"category":"birre","visible":true,"tags":[],"allergens":[],"sort":300,"slug":"viola-rossa","name":"Viola rossa 0,75 l","description":"Red ale, 6,6% vol.","price":15},{"category":"birre","visible":true,"tags":[],"allergens":[],"sort":310,"slug":"viola-bionda","name":"Viola bionda 0,75 l","description":"Lager, 5,6% vol.","price":15},{"category":"birre","visible":true,"tags":[],"allergens":[],"sort":320,"slug":"paulaner-weisse","name":"Paulaner Weisse 0,50 l","description":"In vetro","price":5.5},{"category":"birre","visible":true,"tags":[],"allergens":[],"sort":330,"slug":"corona-extra","name":"Corona Extra","price":4.5},{"category":"birre","visible":true,"tags":[],"allergens":[],"sort":340,"slug":"raffo","name":"Raffo","price":3},{"category":"vini","visible":true,"tags":[],"allergens":[],"sort":350,"slug":"calafuria","name":"Calafuria","description":"Bottiglia 75 cl","price":22},{"category":"vini","visible":true,"tags":[],"allergens":[],"sort":360,"slug":"tramari","name":"Tramari","description":"Bottiglia 75 cl","price":18},{"category":"vini","visible":true,"tags":[],"allergens":[],"sort":370,"slug":"nero-di-troia-rivera","name":"Nero di Troia","description":"Cantina Rivera","price":18},{"category":"vini","visible":true,"tags":[],"allergens":[],"sort":380,"slug":"primitivo-rivera","name":"Primitivo","description":"Cantina Rivera","price":18},{"category":"vini","visible":true,"tags":[],"allergens":[],"sort":390,"slug":"primitivo-di-manduria","name":"Primitivo di Manduria","description":"Cantina Cantolio","price":20},{"category":"vini","visible":true,"tags":[],"allergens":[],"sort":400,"slug":"susumaniello","name":"Susumaniello rosso","price":20},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":410,"slug":"acqua-naturale","name":"Acqua naturale 1 l","price":2},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":420,"slug":"acqua-frizzante","name":"Acqua frizzante 1 l","price":2},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":430,"slug":"coca-cola","name":"Coca-Cola 33 cl","description":"Lattina","price":2},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":440,"slug":"coca-cola-zero","name":"Coca-Cola Zero 33 cl","description":"Lattina","price":2},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":450,"slug":"fanta","name":"Fanta 33 cl","description":"Lattina","price":2},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":460,"slug":"te-limone","name":"Tè al limone 33 cl","description":"Lattina","price":2.5},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":470,"slug":"te-pesca","name":"Tè alla pesca 33 cl","description":"Lattina","price":2.5},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":480,"slug":"chinotto-lurisia","name":"Chinotto Lurisia 33 cl","description":"Vetro","price":3},{"category":"bevande","visible":true,"tags":[],"allergens":[],"sort":490,"slug":"limonata-lurisia","name":"Limonata Lurisia","price":3}]</script>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="/demo/morsi/" class="footer-logo" aria-label="Morsí – Schiacciateria, home"><svg class="logo " viewBox="0 0 1024 1024" aria-hidden="true">
+    <defs>
+      <path id="lg1t" d="M182 540A330 330 0 0 1 842 540"/>
+      <path id="lg1b" d="M118 500A394 394 0 0 0 906 500"/>
+    </defs>
+    <circle cx="512" cy="512" r="508" fill="#0d0d0d"/>
+    <g fill="#fff" font-family="'Barlow Condensed', 'Arial Narrow', 'Helvetica Neue Condensed', sans-serif">
+      <text font-size="96" font-weight="500" letter-spacing="6"><textPath href="#lg1t" startOffset="50%" text-anchor="middle">SCHIACCIATERIA</textPath></text>
+      <text font-size="80" font-weight="500" letter-spacing="5"><textPath href="#lg1b" startOffset="50%" text-anchor="middle">FOOD - DRINK - MORE</textPath></text>
+      <text x="512" y="628" text-anchor="middle" font-size="318" font-style="italic" font-weight="500" textLength="760" lengthAdjust="spacingAndGlyphs">MORSÍ</text>
+    </g>
+  </svg></a>
+        <p class="footer-claim">Un angolo di Toscana a Barletta.</p>
+      </div>
+      <div>
+        <p class="footer-h">Dove e quando</p>
+        <p>Via Cavour, 83 – 76121 Barletta (BT)</p>
+        <p class="footer-hours"><span><b>lun–mar</b> 19:30–23:30</span><span><b>mer</b> chiuso</span><span><b>gio–dom</b> 19:30–23:30</span><span><b>dom</b> anche a pranzo, su prenotazione</span></p>
+      </div>
+      <div>
+        <p class="footer-h">Info e prenotazioni</p>
+        <p><a href="tel:+393518376461">351 837 6461</a><br /><a href="https://wa.me/393518376461" data-wa-general target="_blank" rel="noopener">WhatsApp</a></p>
+        <p><a href="https://www.instagram.com/morsi_schiacciateria/" target="_blank" rel="noopener" class="footer-ig"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg><span>@morsi_schiacciateria</span></a></p>
+      </div>
+      <nav aria-label="Pagine del sito">
+        <p class="footer-h">Il sito</p>
+        <p class="footer-links"><a href="/demo/morsi/">Home</a><a href="/demo/morsi/menu">Menù</a><a href="/demo/morsi/taglieri-e-feste">Taglieri e feste</a><a href="/demo/morsi/chi-siamo">Chi siamo</a><a href="/demo/morsi/dove-siamo">Dove siamo</a><a href="/demo/morsi/prenota">Prenota</a><a href="/demo/morsi/privacy.html">Privacy e cookie</a></p>
+      </nav>
+    </div>
+    <p class="wrap footer-copy">© <span data-year>2026</span> Morsí – Schiacciateria · Barletta</p>
+  </footer>
+  <a class="fab-wa" data-wa-general href="https://wa.me/393518376461" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg></a>
+</body>
+</html>
