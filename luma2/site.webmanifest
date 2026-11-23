@@ -1,0 +1,9 @@
+{
+  "name": "LUMA Living · Barletta",
+  "short_name": "LUMA",
+  "icons": [{ "src": "/demo/luma2/favicon.svg", "type": "image/svg+xml", "sizes": "any" }],
+  "theme_color": "#57332a",
+  "background_color": "#f6f1e7",
+  "display": "browser",
+  "start_url": "/"
+}

@@ -1,0 +1,1 @@
+import"./wght-CPqns2Sy.js";document.documentElement.classList.add(`ready`);
