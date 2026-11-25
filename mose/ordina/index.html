@@ -10,10 +10,10 @@
 
   <link rel="preload" href="/demo/mose/assets/fraunces-latin-soft-normal-C-lS_vzd.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/demo/mose/assets/figtree-latin-wght-normal-D_ZTVpCC.woff2" as="font" type="font/woff2" crossorigin>
-  <style>html{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;background:#f7efe3}body{color:#2b1913;opacity:0;background:#f7efe3;margin:0;animation:0s 2.5s forwards mp-show}@keyframes mp-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
+  <style>html{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;background:#f7f2ec}body{color:#2a1a14;opacity:0;background:#f7f2ec;margin:0;animation:0s 2.5s forwards mp-show}@keyframes mp-show{to{opacity:1}}html.ready body{opacity:1;animation:none}</style>
   <noscript><style>body{opacity:1!important;animation:none!important}</style></noscript>
   
-  <meta name="theme-color" content="#f7efe3" />
+  <meta name="theme-color" content="#f7f2ec" />
   <meta name="format-detection" content="telephone=yes" />
   <meta name="geo.region" content="IT-BT" />
   <meta name="geo.placename" content="Barletta" />
@@ -30,12 +30,12 @@
   <meta property="og:title" content="Ordina una torta · Mosè Pasticceria" />
   <meta property="og:description" content="Occasione, gusto, persone e giorno di ritiro: in un minuto." />
   <meta property="og:url" content="http://localhost:4900/ordina" />
-  <script type="module" crossorigin src="/demo/mose/assets/ordina-rdfyHQza.js"></script>
+  <script type="module" crossorigin src="/demo/mose/assets/ordina-BYFDHkF-.js"></script>
   <link rel="modulepreload" crossorigin href="/demo/mose/assets/figtree-Z5m6J6B6.js">
-  <link rel="modulepreload" crossorigin href="/demo/mose/assets/time-BQKuABZW.js">
-  <link rel="modulepreload" crossorigin href="/demo/mose/assets/common-CWD111To.js">
+  <link rel="modulepreload" crossorigin href="/demo/mose/assets/time-CqEGAVCI.js">
+  <link rel="modulepreload" crossorigin href="/demo/mose/assets/common-xrBIeIDR.js">
   <link rel="stylesheet" crossorigin href="/demo/mose/assets/figtree-BMYwFw6O.css">
-  <link rel="stylesheet" crossorigin href="/demo/mose/assets/common-Cv_Cy_hH.css">
+  <link rel="stylesheet" crossorigin href="/demo/mose/assets/common-8lFR6Yjr.css">
 </head>
 <body data-page="ordina">
   <a href="#main" class="skip">Salta al contenuto</a>
@@ -85,11 +85,11 @@
     <fieldset class="ostep" data-step="1">
       <legend><span class="ostep-n">2</span>Che torta desideri?</legend>
       <label class="field"><span>Una torta del nostro banco <small>facoltativo</small></span>
-        <select name="cake" data-cake-select><option value="">Su misura, decidiamo insieme</option><option value="millefoglie">Millefoglie</option><option value="torta-esotica">Torta esotica</option><option value="torta-pistacchio">Torta al pistacchio</option><option value="torta-personalizzata">Torta personalizzata</option><option value="panettone-gran-cioccolato">Panettone Gran Cioccolato</option><option value="panettone-cioccolato-pera">Panettone Cioccolato e Pera</option><option value="panettone-sole">Panettone “Sole”</option></select>
+        <select name="cake" data-cake-select><option value="">Su misura, decidiamo insieme</option><option value="red-velvet">Red velvet</option><option value="millefoglie">Millefoglie</option><option value="torte-numero">Torte a numero</option><option value="torta-personalizzata">Torta personalizzata</option><option value="panettone-gran-cioccolato">Panettone Gran Cioccolato</option><option value="panettone-cioccolato-pera">Panettone Cioccolato e Pera</option><option value="panettone-sole">Panettone “Sole”</option></select>
       </label>
       <p class="field-label">Gusto o farcitura</p>
       <div class="chips" data-field="flavor"><label class="chip"><input type="radio" name="flavor" value="chantilly" required /><span>Crema chantilly</span></label><label class="chip"><input type="radio" name="flavor" value="chantilly-frutta" required /><span>Chantilly e frutta fresca</span></label><label class="chip"><input type="radio" name="flavor" value="millefoglie" required /><span>Millefoglie</span></label><label class="chip"><input type="radio" name="flavor" value="cioccolato" required /><span>Cioccolato</span></label><label class="chip"><input type="radio" name="flavor" value="pistacchio" required /><span>Pistacchio</span></label><label class="chip"><input type="radio" name="flavor" value="caramello" required /><span>Caramello</span></label><label class="chip"><input type="radio" name="flavor" value="esotica" required /><span>Esotica</span></label><label class="chip"><input type="radio" name="flavor" value="nocciola" required /><span>Nocciola</span></label><label class="chip"><input type="radio" name="flavor" value="consiglio" required /><span>Consigliatemi voi</span></label></div>
-      <p class="hint"><span class="ph">farciture di esempio: la lista vera la dà la pasticceria</span></p>
+      <p class="hint">Non trovi il gusto che cerchi? Scrivilo nelle note all’ultimo passo.</p>
       <label class="field"><span>Scritta sulla torta <small>facoltativo</small></span><input name="writing" maxlength="60" placeholder="Es. Auguri Sofia!" /></label>
     </fieldset>
 
@@ -137,10 +137,11 @@
   </div>
         </div>
         <aside class="order-side">
+          <figure class="side-photo"><img src="/demo/mose/images/foto/torta-numero-due-1200.webp" srcset="/demo/mose/images/foto/torta-numero-due-640.webp 640w, /demo/mose/images/foto/torta-numero-due-1200.webp 1200w" sizes="(max-width: 980px) 100vw, 400px" alt="Torta a forma di numero 2 con macarons, arcobaleni e frutti di bosco" width="1200" height="1600" loading="lazy" decoding="async" /></figure>
           <div class="side-card">
             <h2 class="side-title">Buono a sapersi</h2>
             <ul class="side-list">
-              <li>Servono almeno <b>2 giorni</b> di preavviso <span class="ph">da confermare</span>.</li>
+              <li>Servono almeno <b>2 giorni</b> di preavviso.</li>
               <li>Per matrimoni e torte a piani parliamone prima: <a href="/demo/mose/torte-e-cerimonie">Torte e cerimonie</a>.</li>
               <li>Allergie o intolleranze? Scrivile nelle note: ne teniamo conto e te lo confermiamo a voce.</li>
               <li>Le torte si ritirano in pasticceria, Via Isidoro Alvisi, 68 – 76121 Barletta (BT).</li>
@@ -148,9 +149,9 @@
           </div>
           <aside class="talk" aria-labelledby="talk-title">
     <h2 id="talk-title" class="talk-title">Parla con noi</h2>
-    <p>Hai un’idea per una torta, un’allergia da segnalare, un vassoio da preparare? Scrivici o chiamaci.</p>
+    <p>Un’idea per una torta, un’allergia da segnalare, un vassoio da preparare? Scrivici o chiamaci.</p>
     <div class="talk-list">
-      <a class="talk-item talk-item--wa" data-wa-general href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span><b>WhatsApp</b><small><span class="ph">numero WhatsApp da inserire</span></small></span></a>
+      <a class="talk-item talk-item--wa" data-wa-general href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span><b>WhatsApp</b><small>Anche con una foto di riferimento</small></span></a>
       <a class="talk-item" href="tel:+390883332545"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg><span><b>0883 332545</b><small>Chiama in pasticceria</small></span></a>
       <a class="talk-item" href="https://www.instagram.com/mose_pasticceria" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg><span><b>Instagram</b><small>Le novità del banco</small></span></a>
     </div>
