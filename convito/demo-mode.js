@@ -20,6 +20,7 @@
         t = t.replace(/__DAY\+(\d+)__/g, function (_, n) {
           var x = new Date(today + 'T12:00:00Z'); x.setUTCDate(x.getUTCDate() + Number(n)); return x.toISOString().slice(0, 10);
         });
+        t = t.replace(/__AGO\+(\d+)m__/g, function (_, n) { return new Date(d.getTime() - Number(n) * 60000).toISOString(); });
         t = t.split('__TODAY__').join(today).split('__NOW__').join(new Date(d.getTime() - 3 * 3600e3).toISOString());
         return new Response(t, { status: 200, headers: { 'Content-Type': 'application/json' } });
       }).catch(function () {
